@@ -13,7 +13,7 @@ export function Hero() {
                         de forma simplificada e organizada.
                     </p>
 
-                    <Button>
+                    <Button className="mb-16 lg:mb-0">
                         Encontre um profissional
                     </Button>
                 </article>
