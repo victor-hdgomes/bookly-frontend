@@ -1,6 +1,6 @@
-import { Sidebar } from "@/app/(company-panel)/dashboard/_components/Sidebar/Sidebar";
+import { Sidebar } from "@/app/(company-panel)/panel/_components/Sidebar/Sidebar";
 
-export default function DashboardLayout({
+export default function PanelLayout({
     children
 }: { children: React.ReactNode }) {
     return (

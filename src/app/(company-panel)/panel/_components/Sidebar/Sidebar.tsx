@@ -21,17 +21,17 @@ const navSections: NavSection[] = [
   {
     title: "Principal",
     items: [
-      { label: "Dashboard", href: "/dashboard", icon: <Home /> },
-      { label: "Agendamentos", href: "/agendamentos", icon: <Calendar /> },
+      { label: "Dashboard", href: "/panel/dashboard", icon: <Home /> },
+      { label: "Agendamentos", href: "/panel/agendamentos", icon: <Calendar /> },
     ],
   },
   {
     title: "Gestão",
     items: [
-      { label: "Profissionais", href: "/profissionais", icon: <Users /> },
-      { label: "Serviços", href: "/service", icon: <Briefcase /> },
-      { label: "Planos", href: "/plans", icon: <CreditCard /> },
-      { label: "Perfil", href: "/profile", icon: <User /> },
+      { label: "Profissionais", href: "/panel/profissionais", icon: <Users /> },
+      { label: "Serviços", href: "/panel/service", icon: <Briefcase /> },
+      { label: "Planos", href: "/panel/plans", icon: <CreditCard /> },
+      { label: "Perfil", href: "/panel/profile", icon: <User /> },
     ],
   },
 ]

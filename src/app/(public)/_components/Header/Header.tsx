@@ -17,36 +17,40 @@ import { useState } from "react"
 export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  const session = true;
+  const session = false;
 
   const renderLink = (
-    link: { href: string; label: string; isButton?: boolean },
+    link: { href: string; label: string; isButton?: boolean; onClick?: () => void },
     closeMenu?: () => void
   ) => {
+    const handleClick: () => void = () => {
+      if (closeMenu) closeMenu();
+      if (link.onClick) link.onClick();
+    };
+
     if (link.isButton) {
       return (
         <Button
           key={link.href}
-          asChild
-          onClick={closeMenu}
+          onClick={handleClick}
           className="transition-colors"
         >
-          <Link href={link.href}>{link.label}</Link>
+          {link.label}
         </Button>
-      )
+      );
     }
 
     return (
       <Link
         key={link.href}
         href={link.href}
-        onClick={closeMenu}
-        className={`transition-colors`}
+        onClick={handleClick}
+        className="transition-colors"
       >
         {link.label}
       </Link>
-    )
-  }
+    );
+  };
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 py-4 px-6 bg-background/80 backdrop-blur-md border-b">
