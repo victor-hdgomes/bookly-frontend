@@ -63,7 +63,7 @@ export function Header() {
         {/* Mobile navigation */}
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden cursor-pointer">
+            <Button variant="ghost" size="icon" className="md:hidden">
               <Menu />
             </Button>
           </SheetTrigger>
