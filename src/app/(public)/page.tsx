@@ -1,4 +1,4 @@
-import { Header, Hero, Professionals } from "@/app/(public)/_components";
+import { Footer, Header, Hero, Professionals } from "@/app/(public)/_components";
 
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Professionals />
+      <Footer />
     </div>
   );
 }
