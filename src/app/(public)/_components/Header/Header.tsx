@@ -17,7 +17,7 @@ import { useState } from "react"
 export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  const session = false;
+  const session = true;
 
   const renderLink = (
     link: { href: string; label: string; isButton?: boolean },
