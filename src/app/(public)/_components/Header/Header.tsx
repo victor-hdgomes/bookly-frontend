@@ -13,11 +13,12 @@ import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import { navLinks } from "@/app/(public)/_components/Header/utils/navLinks"
 import { useState } from "react"
+import { useSession } from "@/app/(public)/_hooks/useSession"
 
 export function Header() {
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const { data: loggedIn, isLoading } = useSession();
 
-  const session = false;
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const renderLink = (
     link: { href: string; label: string; isButton?: boolean; onClick?: () => void },
@@ -61,7 +62,7 @@ export function Header() {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex gap-6 font-medium items-center">
-          {navLinks(session).map((link) => renderLink(link))}
+          {navLinks(loggedIn, isLoading).map((link) => renderLink(link))}
         </nav>
 
         {/* Mobile navigation */}
@@ -79,7 +80,7 @@ export function Header() {
             </SheetHeader>
 
             <nav className="flex flex-col gap-6 font-medium px-4">
-              {navLinks(session).map((link) =>
+              {navLinks(loggedIn, isLoading).map((link) =>
                 renderLink(link, () => setIsSheetOpen(false))
               )}
             </nav>

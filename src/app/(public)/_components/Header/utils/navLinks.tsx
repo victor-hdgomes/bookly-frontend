@@ -5,13 +5,19 @@ export type NavLink = {
   onClick?: () => void;
 };
 
-export const navLinks = (session: boolean): NavLink[] => {
+export const navLinks = (session?: boolean, isLoading?: boolean): NavLink[] => {
   const links: NavLink[] = [
     { href: "#professionals", label: "Profissionais" },
   ];
 
+  if (isLoading) {
+    return [];
+  }
+
   if (session) {
-    links.push({ href: "/panel/dashboard", label: "Acessar Painel", isButton: true });
+    links.push({ href: "/panel/dashboard", label: "Acessar Painel", isButton: true, onClick: () => {
+      window.location.href = "/panel/dashboard";
+    } });
   } else {
     links.push({
       href: "/login", label: "Login", isButton: true, onClick: () => {
