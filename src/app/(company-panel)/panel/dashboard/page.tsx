@@ -1,6 +1,6 @@
 "use client";
 
-import { useDashboard } from "@/hooks/dashboard/useDashboard";
+import { useDashboard } from "@/hooks/panel/dashboard/useDashboard";
 
 export default function Dashboard() {
   const { data, isLoading, error } = useDashboard();

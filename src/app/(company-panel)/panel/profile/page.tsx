@@ -1,7 +1,13 @@
+"use client";
+
+import { useAuth } from "@/hooks/panel/profile/useAuth";
+import ProfileContent from "@/app/(company-panel)/panel/profile/_components/ProfileContent/ProfileContent";
+
 export default function Profile() {
-  return (
-    <div>
-      Profile
-    </div>
-  );
+  const { data: user, isLoading, error } = useAuth();
+
+  if (isLoading) return <div>Carregando...</div>;
+  if (error || !user) return <div>Erro ao carregar dados</div>;
+
+  return <ProfileContent user={user} />
 }
