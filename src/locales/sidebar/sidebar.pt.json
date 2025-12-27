@@ -7,5 +7,8 @@
   "profile": "Perfil",
   "main": "Principal",
   "management": "Gestão",
-  "language": "Idioma"
+  "language": "Idioma",
+  "theme": "Tema",
+  "light": "Claro",
+  "dark": "Escuro"
 }

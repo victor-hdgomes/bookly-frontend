@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { ThemeSwitcher } from "./ThemeSwitcher"
 
 type NavSection = {
     title: string
@@ -51,9 +52,10 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
             {/* Sidebar Desktop */}
             <aside
                 className={cn(
-                    "hidden md:flex md:flex-col border-r h-screen transition-all duration-300",
+                    "hidden md:fixed md:inset-y-0 md:flex md:flex-col border-r h-screen transition-all duration-300 bg-background z-40",
                     collapsed ? "w-16" : "w-64"
                 )}
+                style={{ left: 0, top: 0 }}
             >
                 <div className="flex items-center justify-center h-16 border-b">
                     {!collapsed ? (
@@ -110,7 +112,10 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                     ))}
                 </nav>
 
-                <LanguageSwitcher className={cn("p-4 border-t", collapsed && "items-center")} />
+                <div className={cn("p-4 border-t flex flex-col gap-2", collapsed && "items-center")}> 
+                    <LanguageSwitcher className={cn("", collapsed && "items-center")} />
+                    <ThemeSwitcher />
+                </div>
             </aside>
 
             {/* Sidebar Mobile */}
@@ -159,11 +164,14 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                         ))}
 
                         <LanguageSwitcher className="mt-4" />
+                        <ThemeSwitcher />
                     </nav>
                 </SheetContent>
             </Sheet>
 
-            <main className="flex-1 p-6">{children}</main>
+            <main className="flex-1 p-6" style={{ minHeight: '100vh' }}>
+                <div className={cn("md:ml-64", collapsed && "md:ml-16")}>{children}</div>
+            </main>
         </div>
     )
 }
