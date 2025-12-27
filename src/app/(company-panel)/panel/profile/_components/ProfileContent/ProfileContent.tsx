@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { User, Company } from "@/types/prisma-models";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
@@ -13,6 +14,7 @@ export interface ProfileContentProps {
 }
 
 export default function ProfileContent({ user }: ProfileContentProps) {
+    const { t } = useTranslation('profile');
     const form = useProfileForm({
         defaultValues: {
             firstName: user.firstName || '',
@@ -29,7 +31,7 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                 <form action="">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Perfil</CardTitle>
+                            <CardTitle>{t('profileTitle')}</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-6">
                             <div className="flex justify-center">
@@ -50,9 +52,9 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                                 name="firstName"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Primeiro Nome</FormLabel>
+                                        <FormLabel>{t('firstName')}</FormLabel>
                                         <FormControl>
-                                            <Input {...field} placeholder="Digite o primeiro nome" />
+                                            <Input {...field} placeholder={t('enterFirstName')} disabled />
                                         </FormControl>
                                     </FormItem>
                                 )}
@@ -63,9 +65,9 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                                 name="lastName"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Sobrenome</FormLabel>
+                                        <FormLabel>{t('lastName')}</FormLabel>
                                         <FormControl>
-                                            <Input {...field} placeholder="Digite o sobrenome" />
+                                            <Input {...field} placeholder={t('enterLastName')} disabled />
                                         </FormControl>
                                     </FormItem>
                                 )}
@@ -76,9 +78,9 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                                 name="displayName"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Nome de Exibição</FormLabel>
+                                        <FormLabel>{t('displayName')}</FormLabel>
                                         <FormControl>
-                                            <Input {...field} placeholder="Digite o nome de exibição" />
+                                            <Input {...field} placeholder={t('enterDisplayName')} disabled />
                                         </FormControl>
                                     </FormItem>
                                 )}
@@ -89,9 +91,9 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Email</FormLabel>
+                                        <FormLabel>{t('email')}</FormLabel>
                                         <FormControl>
-                                            <Input {...field} placeholder="Digite o email" type="email" disabled />
+                                            <Input {...field} placeholder={t('enterEmail')} type="email" disabled />
                                         </FormControl>
                                     </FormItem>
                                 )}
@@ -99,7 +101,7 @@ export default function ProfileContent({ user }: ProfileContentProps) {
 
                             {user?.companies && user.companies.length > 0 ? (
                                 <div className="space-y-2">
-                                    <FormLabel className="font-semibold">Empresas vinculadas</FormLabel>
+                                    <FormLabel className="font-semibold">{t('linkedCompanies')}</FormLabel>
                                     <ul className="list-disc ml-6">
                                         {user.companies.map((company: Company) => (
                                             <li key={company.id}>{company.name}</li>
@@ -108,8 +110,8 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                                 </div>
                             ) : (
                                 <div className="space-y-2">
-                                    <FormLabel className="font-semibold">Você ainda não possui empresa</FormLabel>
-                                    <Button variant="outline">Criar empresa</Button>
+                                    <FormLabel className="font-semibold">{t('noCompany')}</FormLabel>
+                                    <Button variant="outline">{t('createCompany')}</Button>
                                 </div>
                             )}
                         </CardContent>

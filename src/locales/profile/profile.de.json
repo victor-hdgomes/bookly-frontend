@@ -1,0 +1,14 @@
+{
+  "profileTitle": "Profil",
+  "firstName": "Vorname",
+  "lastName": "Nachname",
+  "displayName": "Anzeigename",
+  "email": "E-Mail",
+  "enterFirstName": "Geben Sie den Vornamen ein",
+  "enterLastName": "Geben Sie den Nachnamen ein",
+  "enterDisplayName": "Geben Sie den Anzeigenamen ein",
+  "enterEmail": "Geben Sie die E-Mail ein",
+  "linkedCompanies": "Verknüpfte Unternehmen",
+  "noCompany": "Sie haben noch kein Unternehmen",
+  "createCompany": "Unternehmen erstellen"
+}

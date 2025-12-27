@@ -1,12 +1,14 @@
 "use client"
 
-import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, ChevronLeft, Calendar, Users, Home, CreditCard, User, Briefcase } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 type NavSection = {
     title: string
@@ -17,29 +19,32 @@ type NavSection = {
     }[]
 }
 
-const navSections: NavSection[] = [
-  {
-    title: "Principal",
-    items: [
-      { label: "Dashboard", href: "/panel/dashboard", icon: <Home /> },
-      { label: "Agendamentos", href: "/panel/agendamentos", icon: <Calendar /> },
-    ],
-  },
-  {
-    title: "Gestão",
-    items: [
-      { label: "Profissionais", href: "/panel/profissionais", icon: <Users /> },
-      { label: "Serviços", href: "/panel/service", icon: <Briefcase /> },
-      { label: "Planos", href: "/panel/plans", icon: <CreditCard /> },
-      { label: "Perfil", href: "/panel/profile", icon: <User /> },
-    ],
-  },
-]
-
 export function Sidebar({ children }: { children: React.ReactNode }) {
     const [collapsed, setCollapsed] = useState(false)
     const [openMobile, setOpenMobile] = useState(false)
     const pathname = usePathname()
+    const { t } = useTranslation('sidebar');
+    const [isMounted, setIsMounted] = useState(false);
+    useEffect(() => { setIsMounted(true); }, []);
+
+    const navSectionsTranslated: NavSection[] = isMounted ? [
+        {
+            title: t('main'),
+            items: [
+                { label: t('dashboard'), href: "/panel/dashboard", icon: <Home /> },
+                { label: t('appointments'), href: "/panel/agendamentos", icon: <Calendar /> },
+            ],
+        },
+        {
+            title: t('management'),
+            items: [
+                { label: t('professionals'), href: "/panel/profissionais", icon: <Users /> },
+                { label: t('services'), href: "/panel/service", icon: <Briefcase /> },
+                { label: t('plans'), href: "/panel/plans", icon: <CreditCard /> },
+                { label: t('profile'), href: "/panel/profile", icon: <User /> },
+            ],
+        },
+    ] : [];
 
     return (
         <div className="flex">
@@ -74,7 +79,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                 </div>
 
                 <nav className="flex-1 overflow-y-auto">
-                    {navSections.map((section) => (
+                    {navSectionsTranslated.map((section) => (
                         <div key={section.title} className="mb-4">
                             {!collapsed && (
                                 <p className="px-3 text-xs font-semibold uppercase">
@@ -104,6 +109,8 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                         </div>
                     ))}
                 </nav>
+
+                <LanguageSwitcher className={cn("p-4 border-t", collapsed && "items-center")} />
             </aside>
 
             {/* Sidebar Mobile */}
@@ -123,7 +130,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                     </SheetHeader>
 
                     <nav>
-                        {navSections.map((section) => (
+                        {navSectionsTranslated.map((section) => (
                             <div key={section.title} className="mb-4">
                                 <p className="px-3 text-xs font-semibold uppercase">
                                     {section.title}
@@ -150,6 +157,8 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                                 </ul>
                             </div>
                         ))}
+
+                        <LanguageSwitcher className="mt-4" />
                     </nav>
                 </SheetContent>
             </Sheet>
