@@ -1,4 +1,4 @@
-import { Sidebar } from "@/app/(company-panel)/panel/_components/Sidebar/Sidebar";
+import { Sidebar } from "@/app/(logged-panel)/panel/_components/Sidebar/Sidebar";
 
 export default function PanelLayout({
     children

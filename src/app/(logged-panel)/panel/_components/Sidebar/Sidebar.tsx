@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, ChevronLeft, Calendar, Users, Home, CreditCard, User, Briefcase } from "lucide-react"
+import { Menu, ChevronLeft } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -10,15 +10,7 @@ import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher"
-
-type NavSection = {
-    title: string
-    items: {
-        label: string
-        href: string
-        icon: React.ReactNode
-    }[]
-}
+import { getNavSections } from "./navSections"
 
 export function Sidebar({ children }: { children: React.ReactNode }) {
     const [collapsed, setCollapsed] = useState(false)
@@ -28,24 +20,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
     useEffect(() => { setIsMounted(true); }, []);
 
-    const navSectionsTranslated: NavSection[] = isMounted ? [
-        {
-            title: t('main'),
-            items: [
-                { label: t('dashboard'), href: "/panel/dashboard", icon: <Home /> },
-                { label: t('appointments'), href: "/panel/agendamentos", icon: <Calendar /> },
-            ],
-        },
-        {
-            title: t('management'),
-            items: [
-                { label: t('professionals'), href: "/panel/profissionais", icon: <Users /> },
-                { label: t('services'), href: "/panel/service", icon: <Briefcase /> },
-                { label: t('plans'), href: "/panel/plans", icon: <CreditCard /> },
-                { label: t('profile'), href: "/panel/profile", icon: <User /> },
-            ],
-        },
-    ] : [];
+    const navSections = getNavSections(t, isMounted);
 
     return (
         <div className="flex">
@@ -81,7 +56,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                 </div>
 
                 <nav className="flex-1 overflow-y-auto">
-                    {navSectionsTranslated.map((section) => (
+                    {navSections.map((section) => (
                         <div key={section.title} className="mb-4">
                             {!collapsed && (
                                 <p className="px-3 text-xs font-semibold uppercase">
@@ -113,8 +88,8 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                 </nav>
 
                 <div className={cn("p-4 border-t flex flex-col gap-2", collapsed && "items-center")}> 
-                    <LanguageSwitcher className={cn("", collapsed && "items-center")} />
-                    <ThemeSwitcher />
+                    <LanguageSwitcher collapsed={collapsed} className={cn("", collapsed && "items-center")} />
+                    <ThemeSwitcher compact={collapsed} />
                 </div>
             </aside>
 
@@ -134,8 +109,8 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                         <SheetTitle>Bookly</SheetTitle>
                     </SheetHeader>
 
-                    <nav>
-                        {navSectionsTranslated.map((section) => (
+                    <nav className="overflow-y-auto max-h-[calc(100vh-6rem)] pr-2">
+                        {navSections.map((section) => (
                             <div key={section.title} className="mb-4">
                                 <p className="px-3 text-xs font-semibold uppercase">
                                     {section.title}
@@ -163,8 +138,8 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                             </div>
                         ))}
 
-                        <LanguageSwitcher className="mt-4" />
-                        <ThemeSwitcher />
+                        <LanguageSwitcher collapsed={false} className="mt-4" />
+                        <ThemeSwitcher compact={false} />
                     </nav>
                 </SheetContent>
             </Sheet>

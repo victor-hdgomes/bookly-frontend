@@ -10,5 +10,13 @@
   "language": "Idioma",
   "theme": "Tema",
   "light": "Claro",
-  "dark": "Escuro"
+  "dark": "Escuro",
+  "client": "Cliente",
+  "employee": "Funcionário",
+  "company": "Empresa",
+  "myAppointments": "Meus Agendamentos",
+  "payments": "Pagamentos",
+  "mySchedule": "Minha Agenda",
+  "atendimentos": "Atendimentos",
+  "availability": "Disponibilidade"
 }

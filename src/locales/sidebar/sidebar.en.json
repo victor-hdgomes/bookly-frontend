@@ -10,5 +10,13 @@
   "language": "Language",
   "theme": "Theme",
   "light": "Light",
-  "dark": "Dark"
+  "dark": "Dark",
+  "client": "Client",
+  "employee": "Employee",
+  "company": "Company",
+  "myAppointments": "My Appointments",
+  "payments": "Payments",
+  "mySchedule": "My Schedule",
+  "atendimentos": "Appointments",
+  "availability": "Availability"
 }
