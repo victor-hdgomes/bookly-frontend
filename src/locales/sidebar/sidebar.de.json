@@ -10,5 +10,15 @@
   "language": "Sprache",
   "theme": "Thema",
   "light": "Hell",
-  "dark": "Dunkel"
+  "dark": "Dunkel",
+  "client": "Kunde",
+  "employee": "Mitarbeiter",
+  "company": "Unternehmen",
+  "myAppointments": "Meine Termine",
+  "payments": "Zahlungen",
+  "mySchedule": "Mein Zeitplan",
+  "atendimentos": "Termine",
+  "availability": "Verfügbarkeit",
+  "signOut": "Abmelden",
+  "signingOut": "Abmeldung..."
 }

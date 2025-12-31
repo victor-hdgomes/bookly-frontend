@@ -18,5 +18,7 @@
   "payments": "Payments",
   "mySchedule": "My Schedule",
   "atendimentos": "Appointments",
-  "availability": "Availability"
+  "availability": "Availability",
+  "signOut": "Sign Out",
+  "signingOut": "Signing out..."
 }

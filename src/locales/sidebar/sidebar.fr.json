@@ -10,5 +10,15 @@
   "language": "Langue",
   "theme": "Thème",
   "light": "Clair",
-  "dark": "Sombre"
+  "dark": "Sombre",
+  "client": "Client",
+  "employee": "Employé",
+  "company": "Entreprise",
+  "myAppointments": "Mes Rendez-vous",
+  "payments": "Paiements",
+  "mySchedule": "Mon Emploi du temps",
+  "atendimentos": "Rendez-vous",
+  "availability": "Disponibilité",
+  "signOut": "Se Déconnecter",
+  "signingOut": "Déconnexion..."
 }

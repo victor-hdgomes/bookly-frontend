@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, ChevronLeft } from "lucide-react"
+import { Menu, ChevronLeft, LogOut } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher"
 import { getNavSections } from "./navSections"
 import { useAuth } from "@/hooks/client/profile/useAuth"
+import { useSignOut } from "@/hooks/client/profile/useSignOut"
 
 export function Sidebar({ children }: { children: React.ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
@@ -21,6 +22,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
     const pathname = usePathname()
     const { data: user } = useAuth();
     const { t } = useTranslation('sidebar');
+    const { mutate: signOut, isPending: isSigningOut } = useSignOut();
 
     useEffect(() => { setIsMounted(true); }, []);
 
@@ -96,6 +98,15 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                 <div className={cn("p-4 border-t flex flex-col gap-2", collapsed && "items-center")}> 
                     <LanguageSwitcher collapsed={collapsed} className={cn("", collapsed && "items-center")} />
                     <ThemeSwitcher compact={collapsed} />
+                    <Button
+                        variant="ghost"
+                        className={cn("w-full justify-start gap-2", collapsed && "justify-center px-2")}
+                        onClick={() => signOut()}
+                        disabled={isSigningOut}
+                    >
+                        <LogOut className="h-4 w-4" />
+                        {!collapsed && (isSigningOut ? t('signingOut') : t('signOut'))}
+                    </Button>
                 </div>
             </aside>
 
@@ -146,6 +157,15 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
 
                         <LanguageSwitcher collapsed={false} className="mt-4" />
                         <ThemeSwitcher compact={false} />
+                        <Button
+                            variant="ghost"
+                            className="w-full justify-start gap-2 mt-2"
+                            onClick={() => signOut()}
+                            disabled={isSigningOut}
+                        >
+                            <LogOut className="h-4 w-4" />
+                            {isSigningOut ? t('signingOut') : t('signOut')}
+                        </Button>
                     </nav>
                 </SheetContent>
             </Sheet>
