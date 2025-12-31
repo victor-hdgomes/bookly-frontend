@@ -2,17 +2,15 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, ChevronLeft, LogOut } from "lucide-react"
+import { Menu, ChevronLeft } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import { ThemeSwitcher } from "./ThemeSwitcher"
 import { getNavSections } from "./navSections"
 import { useAuth } from "@/hooks/client/profile/useAuth"
-import { useSignOut } from "@/hooks/client/profile/useSignOut"
+import { UserMenu } from "./UserMenu"
 
 export function Sidebar({ children }: { children: React.ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
@@ -22,7 +20,6 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
     const pathname = usePathname()
     const { data: user } = useAuth();
     const { t } = useTranslation('sidebar');
-    const { mutate: signOut, isPending: isSigningOut } = useSignOut();
 
     useEffect(() => { setIsMounted(true); }, []);
 
@@ -95,18 +92,8 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                     ))}
                 </nav>
 
-                <div className={cn("p-4 border-t flex flex-col gap-2", collapsed && "items-center")}> 
-                    <LanguageSwitcher collapsed={collapsed} className={cn("", collapsed && "items-center")} />
-                    <ThemeSwitcher compact={collapsed} />
-                    <Button
-                        variant="ghost"
-                        className={cn("w-full justify-start gap-2", collapsed && "justify-center px-2")}
-                        onClick={() => signOut()}
-                        disabled={isSigningOut}
-                    >
-                        <LogOut className="h-4 w-4" />
-                        {!collapsed && (isSigningOut ? t('signingOut') : t('signOut'))}
-                    </Button>
+                <div className="p-2 border-t">
+                    <UserMenu user={user} collapsed={collapsed} />
                 </div>
             </aside>
 
@@ -126,46 +113,40 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
                         <SheetTitle>Bookly</SheetTitle>
                     </SheetHeader>
 
-                    <nav className="overflow-y-auto max-h-[calc(100vh-6rem)] pr-2">
-                        {navSections.map((section) => (
-                            <div key={section.title} className="mb-4">
-                                <p className="px-3 text-xs font-semibold uppercase">
-                                    {section.title}
-                                </p>
-                                <ul className="mt-2 space-y-1">
-                                    {section.items.map((item) => {
-                                        const isActive = pathname === item.href
-                                        return (
-                                            <li key={item.href}>
-                                                <Link
-                                                    href={item.href}
-                                                    className={cn(
-                                                        "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium hover:bg-secondary",
-                                                        isActive && "bg-secondary text-primary"
-                                                    )}
-                                                    onClick={() => setOpenMobile(false)}
-                                                >
-                                                    {item.icon}
-                                                    {item.label}
-                                                </Link>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        ))}
+                    <nav className="flex flex-col h-full">
+                        <div className="flex-1 overflow-y-auto pr-2">
+                            {navSections.map((section) => (
+                                <div key={section.title} className="mb-4">
+                                    <p className="px-3 text-xs font-semibold uppercase">
+                                        {section.title}
+                                    </p>
+                                    <ul className="mt-2 space-y-1">
+                                        {section.items.map((item) => {
+                                            const isActive = pathname === item.href
+                                            return (
+                                                <li key={item.href}>
+                                                    <Link
+                                                        href={item.href}
+                                                        className={cn(
+                                                            "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium hover:bg-secondary",
+                                                            isActive && "bg-secondary text-primary"
+                                                        )}
+                                                        onClick={() => setOpenMobile(false)}
+                                                    >
+                                                        {item.icon}
+                                                        {item.label}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
 
-                        <LanguageSwitcher collapsed={false} className="mt-4" />
-                        <ThemeSwitcher compact={false} />
-                        <Button
-                            variant="ghost"
-                            className="w-full justify-start gap-2 mt-2"
-                            onClick={() => signOut()}
-                            disabled={isSigningOut}
-                        >
-                            <LogOut className="h-4 w-4" />
-                            {isSigningOut ? t('signingOut') : t('signOut')}
-                        </Button>
+                        <div className="border-t pt-2 mt-2">
+                            <UserMenu user={user} collapsed={false} />
+                        </div>
                     </nav>
                 </SheetContent>
             </Sheet>

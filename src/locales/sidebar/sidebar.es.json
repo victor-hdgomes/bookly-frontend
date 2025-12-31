@@ -20,5 +20,6 @@
   "atendimentos": "Atenciones",
   "availability": "Disponibilidad",
   "signOut": "Cerrar Sesión",
-  "signingOut": "Cerrando sesión..."
+  "signingOut": "Cerrando sesión...",
+  "system": "Sistema"
 }

@@ -20,5 +20,6 @@
   "atendimentos": "Appuntamenti",
   "availability": "Disponibilità",
   "signOut": "Disconnetti",
-  "signingOut": "Disconnessione..."
+  "signingOut": "Disconnessione...",
+  "system": "Sistema"
 }

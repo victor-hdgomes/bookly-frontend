@@ -20,5 +20,6 @@
   "atendimentos": "Termine",
   "availability": "Verfügbarkeit",
   "signOut": "Abmelden",
-  "signingOut": "Abmeldung..."
+  "signingOut": "Abmeldung...",
+  "system": "System"
 }

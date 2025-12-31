@@ -20,5 +20,6 @@
   "atendimentos": "Appointments",
   "availability": "Availability",
   "signOut": "Sign Out",
-  "signingOut": "Signing out..."
+  "signingOut": "Signing out...",
+  "system": "System"
 }

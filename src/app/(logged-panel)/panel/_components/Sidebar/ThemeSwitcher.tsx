@@ -1,17 +1,17 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import { useThemes } from "@/hooks/useThemes";
 
 interface ThemeSwitcherProps {
   compact?: boolean;
 }
 
 export function ThemeSwitcher({ compact }: ThemeSwitcherProps) {
-  const { theme, setTheme } = useTheme();
+  const { currentTheme, setTheme } = useThemes();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export function ThemeSwitcher({ compact }: ThemeSwitcherProps) {
       suppressHydrationWarning
     >
       <Button
-        variant={mounted ? (theme === "light" ? "default" : "ghost") : "ghost"}
+        variant={mounted ? (currentTheme === "light" ? "default" : "ghost") : "ghost"}
         size="icon"
         aria-label="Tema claro"
         onClick={() => setTheme("light")}
@@ -37,7 +37,7 @@ export function ThemeSwitcher({ compact }: ThemeSwitcherProps) {
         <Sun className="w-5 h-5" />
       </Button>
       <Button
-        variant={mounted ? (theme === "dark" ? "default" : "ghost") : "ghost"}
+        variant={mounted ? (currentTheme === "dark" ? "default" : "ghost") : "ghost"}
         size="icon"
         aria-label="Tema escuro"
         onClick={() => setTheme("dark")}
