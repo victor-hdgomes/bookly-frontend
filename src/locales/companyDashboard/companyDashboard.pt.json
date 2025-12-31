@@ -1,0 +1,33 @@
+{
+  "title": "Dashboard da Empresa",
+  "subtitle": "Visão geral do seu negócio",
+  "loading": "Carregando dados...",
+  "selectCompany": "Selecione uma empresa",
+  "noCompany": {
+    "title": "Nenhuma empresa encontrada",
+    "description": "Você precisa criar uma empresa para acessar este dashboard."
+  },
+  "error": {
+    "title": "Erro ao carregar dados",
+    "description": "Não foi possível carregar as informações do dashboard. Tente novamente mais tarde."
+  },
+  "stats": {
+    "appointments": {
+      "total": "Total de Agendamentos",
+      "scheduled": "Agendados",
+      "completed": "Concluídos",
+      "canceled": "Cancelados"
+    },
+    "company": {
+      "totalServices": "Serviços Ativos",
+      "totalRevenue": "Receita Total"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Próximos Agendamentos",
+    "emptyMessage": "Nenhum agendamento próximo.",
+    "service": "Serviço",
+    "notes": "Observações"
+  }
+}
+

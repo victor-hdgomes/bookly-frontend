@@ -4,10 +4,9 @@ import { useProfileForm } from "@/app/(logged-panel)/panel/profile/hooks/useProf
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { User, Company } from "@/types/prisma-models";
+import { User } from "@/types/prisma-models";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 export interface ProfileContentProps {
     user: User;
@@ -98,22 +97,6 @@ export default function ProfileContent({ user }: ProfileContentProps) {
                                     </FormItem>
                                 )}
                             />
-
-                            {user?.companies && user.companies.length > 0 ? (
-                                <div className="space-y-2">
-                                    <FormLabel className="font-semibold">{t('linkedCompanies')}</FormLabel>
-                                    <ul className="list-disc ml-6">
-                                        {user.companies.map((company: Company) => (
-                                            <li key={company.id}>{company.name}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ) : (
-                                <div className="space-y-2">
-                                    <FormLabel className="font-semibold">{t('noCompany')}</FormLabel>
-                                    <Button variant="outline">{t('createCompany')}</Button>
-                                </div>
-                            )}
                         </CardContent>
                     </Card>
                 </form>

@@ -15,8 +15,8 @@ export const navLinks = (session?: boolean, isLoading?: boolean): NavLink[] => {
   }
 
   if (session) {
-    links.push({ href: "/panel/dashboard", label: "Acessar Painel", isButton: true, onClick: () => {
-      window.location.href = "/panel/dashboard";
+    links.push({ href: "/client/dashboard", label: "Acessar Painel", isButton: true, onClick: () => {
+      window.location.href = "/client/dashboard";
     } });
   } else {
     links.push({

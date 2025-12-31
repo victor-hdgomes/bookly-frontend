@@ -1,0 +1,28 @@
+{
+  "title": "Dashboard",
+  "subtitle": "Verfolgen Sie Ihre Termine",
+  "loading": "Wird geladen...",
+  "error": "Fehler beim Laden der Daten",
+  "stats": {
+    "total": {
+      "title": "Gesamt Termine"
+    },
+    "scheduled": {
+      "title": "Geplant"
+    },
+    "completed": {
+      "title": "Abgeschlossen"
+    },
+    "canceled": {
+      "title": "Storniert"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Bevorstehende Termine",
+    "emptyMessage": "Keine bevorstehenden Termine.",
+    "defaultTitle": "Termin",
+    "noDate": "Kein Datum",
+    "clientLabel": "Kunde:"
+  }
+}
+

@@ -11,16 +11,22 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher"
 import { getNavSections } from "./navSections"
+import { useAuth } from "@/hooks/client/profile/useAuth"
 
 export function Sidebar({ children }: { children: React.ReactNode }) {
-    const [collapsed, setCollapsed] = useState(false)
-    const [openMobile, setOpenMobile] = useState(false)
-    const pathname = usePathname()
-    const { t } = useTranslation('sidebar');
     const [isMounted, setIsMounted] = useState(false);
+    const [collapsed, setCollapsed] = useState(false);
+    const [openMobile, setOpenMobile] = useState(false);
+
+    const pathname = usePathname()
+    const { data: user } = useAuth();
+    const { t } = useTranslation('sidebar');
+
     useEffect(() => { setIsMounted(true); }, []);
 
-    const navSections = getNavSections(t, isMounted);
+    const isEmployee = false;
+    const hasCompanies = (user?.companies?.length ?? 0) > 0;
+    const navSections = getNavSections(t, isMounted, hasCompanies, isEmployee);
 
     return (
         <div className="flex">

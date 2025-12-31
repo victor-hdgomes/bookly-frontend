@@ -1,6 +1,6 @@
 "use client";
 
-import { useAuth } from "@/hooks/panel/profile/useAuth";
+import { useAuth } from "@/hooks/client/profile/useAuth";
 import ProfileContent from "@/app/(logged-panel)/panel/profile/_components/ProfileContent/ProfileContent";
 
 export default function Profile() {

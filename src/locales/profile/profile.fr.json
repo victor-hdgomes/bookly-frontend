@@ -7,8 +7,5 @@
   "enterFirstName": "Entrez le prénom",
   "enterLastName": "Entrez le nom de famille",
   "enterDisplayName": "Entrez le nom d'affichage",
-  "enterEmail": "Entrez l'email",
-  "linkedCompanies": "Entreprises liées",
-  "noCompany": "Vous n'avez pas encore d'entreprise",
-  "createCompany": "Créer une entreprise"
+  "enterEmail": "Entrez l'email"
 }

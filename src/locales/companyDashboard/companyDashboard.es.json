@@ -1,0 +1,33 @@
+{
+  "title": "Panel de la Empresa",
+  "subtitle": "Resumen de su negocio",
+  "loading": "Cargando datos...",
+  "selectCompany": "Seleccione una empresa",
+  "noCompany": {
+    "title": "No se encontró ninguna empresa",
+    "description": "Necesita crear una empresa para acceder a este panel."
+  },
+  "error": {
+    "title": "Error al cargar datos",
+    "description": "No se pudo cargar la información del panel. Inténtelo de nuevo más tarde."
+  },
+  "stats": {
+    "appointments": {
+      "total": "Total de Citas",
+      "scheduled": "Programadas",
+      "completed": "Completadas",
+      "canceled": "Canceladas"
+    },
+    "company": {
+      "totalServices": "Servicios Activos",
+      "totalRevenue": "Ingresos Totales"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Próximas Citas",
+    "emptyMessage": "No hay citas próximas.",
+    "service": "Servicio",
+    "notes": "Observaciones"
+  }
+}
+

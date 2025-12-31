@@ -1,0 +1,29 @@
+{
+  "title": "Panel de Control",
+  "subtitle": "Seguimiento de sus citas",
+  "loading": "Cargando...",
+  "error": "Error al cargar datos",
+  "errorDescription": "Por favor, inténtelo de nuevo más tarde.",
+  "stats": {
+    "total": {
+      "title": "Total de Citas"
+    },
+    "scheduled": {
+      "title": "Programadas"
+    },
+    "completed": {
+      "title": "Completadas"
+    },
+    "canceled": {
+      "title": "Canceladas"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Próximas Citas",
+    "emptyMessage": "No hay citas próximas.",
+    "defaultTitle": "Cita",
+    "noDate": "Sin fecha",
+    "clientLabel": "Cliente:"
+  }
+}
+

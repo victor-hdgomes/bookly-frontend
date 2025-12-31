@@ -1,0 +1,33 @@
+{
+  "title": "Dashboard Aziendale",
+  "subtitle": "Panoramica del tuo business",
+  "loading": "Caricamento dati...",
+  "selectCompany": "Seleziona un'azienda",
+  "noCompany": {
+    "title": "Nessuna azienda trovata",
+    "description": "È necessario creare un'azienda per accedere a questo dashboard."
+  },
+  "error": {
+    "title": "Errore nel caricamento dei dati",
+    "description": "Impossibile caricare le informazioni del dashboard. Riprova più tardi."
+  },
+  "stats": {
+    "appointments": {
+      "total": "Totale Appuntamenti",
+      "scheduled": "Programmati",
+      "completed": "Completati",
+      "canceled": "Cancellati"
+    },
+    "company": {
+      "totalServices": "Servizi Attivi",
+      "totalRevenue": "Ricavi Totali"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Prossimi Appuntamenti",
+    "emptyMessage": "Nessun appuntamento prossimo.",
+    "service": "Servizio",
+    "notes": "Note"
+  }
+}
+

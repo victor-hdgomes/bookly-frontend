@@ -1,0 +1,28 @@
+{
+  "title": "Tableau de bord",
+  "subtitle": "Suivez vos rendez-vous",
+  "loading": "Chargement...",
+  "error": "Erreur lors du chargement des données",
+  "stats": {
+    "total": {
+      "title": "Total des Rendez-vous"
+    },
+    "scheduled": {
+      "title": "Programmés"
+    },
+    "completed": {
+      "title": "Terminés"
+    },
+    "canceled": {
+      "title": "Annulés"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Rendez-vous à venir",
+    "emptyMessage": "Aucun rendez-vous à venir.",
+    "defaultTitle": "Rendez-vous",
+    "noDate": "Pas de date",
+    "clientLabel": "Client:"
+  }
+}
+

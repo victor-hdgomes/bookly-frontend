@@ -1,0 +1,29 @@
+{
+  "title": "Dashboard",
+  "subtitle": "Track your appointments",
+  "loading": "Loading...",
+  "error": "Error loading data",
+  "errorDescription": "Please try again later.",
+  "stats": {
+    "total": {
+      "title": "Total Appointments"
+    },
+    "scheduled": {
+      "title": "Scheduled"
+    },
+    "completed": {
+      "title": "Completed"
+    },
+    "canceled": {
+      "title": "Canceled"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Upcoming Appointments",
+    "emptyMessage": "No upcoming appointments.",
+    "defaultTitle": "Appointment",
+    "noDate": "No date",
+    "clientLabel": "Client:"
+  }
+}
+

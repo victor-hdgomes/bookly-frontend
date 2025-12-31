@@ -1,0 +1,29 @@
+{
+  "title": "Dashboard",
+  "subtitle": "Acompanhe seus agendamentos",
+  "loading": "Carregando...",
+  "error": "Erro ao carregar dados",
+  "errorDescription": "Tente novamente mais tarde.",
+  "stats": {
+    "total": {
+      "title": "Total de Agendamentos"
+    },
+    "scheduled": {
+      "title": "Agendados"
+    },
+    "completed": {
+      "title": "Concluídos"
+    },
+    "canceled": {
+      "title": "Cancelados"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Próximos Agendamentos",
+    "emptyMessage": "Nenhum agendamento próximo.",
+    "defaultTitle": "Agendamento",
+    "noDate": "Sem data",
+    "clientLabel": "Cliente:"
+  }
+}
+

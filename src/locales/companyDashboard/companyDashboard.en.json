@@ -1,0 +1,33 @@
+{
+  "title": "Company Dashboard",
+  "subtitle": "Overview of your business",
+  "loading": "Loading data...",
+  "selectCompany": "Select a company",
+  "noCompany": {
+    "title": "No company found",
+    "description": "You need to create a company to access this dashboard."
+  },
+  "error": {
+    "title": "Error loading data",
+    "description": "Unable to load dashboard information. Please try again later."
+  },
+  "stats": {
+    "appointments": {
+      "total": "Total Appointments",
+      "scheduled": "Scheduled",
+      "completed": "Completed",
+      "canceled": "Canceled"
+    },
+    "company": {
+      "totalServices": "Active Services",
+      "totalRevenue": "Total Revenue"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Upcoming Appointments",
+    "emptyMessage": "No upcoming appointments.",
+    "service": "Service",
+    "notes": "Notes"
+  }
+}
+

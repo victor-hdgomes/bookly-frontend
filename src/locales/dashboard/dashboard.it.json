@@ -1,0 +1,28 @@
+{
+  "title": "Cruscotto",
+  "subtitle": "Monitora i tuoi appuntamenti",
+  "loading": "Caricamento...",
+  "error": "Errore nel caricamento dei dati",
+  "stats": {
+    "total": {
+      "title": "Totale Appuntamenti"
+    },
+    "scheduled": {
+      "title": "Programmati"
+    },
+    "completed": {
+      "title": "Completati"
+    },
+    "canceled": {
+      "title": "Cancellati"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Prossimi Appuntamenti",
+    "emptyMessage": "Nessun appuntamento prossimo.",
+    "defaultTitle": "Appuntamento",
+    "noDate": "Nessuna data",
+    "clientLabel": "Cliente:"
+  }
+}
+

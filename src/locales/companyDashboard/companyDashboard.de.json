@@ -1,0 +1,33 @@
+{
+  "title": "Unternehmens-Dashboard",
+  "subtitle": "Überblick über Ihr Geschäft",
+  "loading": "Daten werden geladen...",
+  "selectCompany": "Wählen Sie ein Unternehmen",
+  "noCompany": {
+    "title": "Kein Unternehmen gefunden",
+    "description": "Sie müssen ein Unternehmen erstellen, um auf dieses Dashboard zuzugreifen."
+  },
+  "error": {
+    "title": "Fehler beim Laden der Daten",
+    "description": "Dashboard-Informationen konnten nicht geladen werden. Bitte versuchen Sie es später erneut."
+  },
+  "stats": {
+    "appointments": {
+      "total": "Gesamt Termine",
+      "scheduled": "Geplant",
+      "completed": "Abgeschlossen",
+      "canceled": "Storniert"
+    },
+    "company": {
+      "totalServices": "Aktive Dienste",
+      "totalRevenue": "Gesamtumsatz"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Bevorstehende Termine",
+    "emptyMessage": "Keine bevorstehenden Termine.",
+    "service": "Dienst",
+    "notes": "Notizen"
+  }
+}
+

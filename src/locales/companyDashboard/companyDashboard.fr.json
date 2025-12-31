@@ -1,0 +1,33 @@
+{
+  "title": "Tableau de Bord de l'Entreprise",
+  "subtitle": "Aperçu de votre entreprise",
+  "loading": "Chargement des données...",
+  "selectCompany": "Sélectionnez une entreprise",
+  "noCompany": {
+    "title": "Aucune entreprise trouvée",
+    "description": "Vous devez créer une entreprise pour accéder à ce tableau de bord."
+  },
+  "error": {
+    "title": "Erreur de chargement des données",
+    "description": "Impossible de charger les informations du tableau de bord. Réessayez plus tard."
+  },
+  "stats": {
+    "appointments": {
+      "total": "Total des Rendez-vous",
+      "scheduled": "Programmés",
+      "completed": "Terminés",
+      "canceled": "Annulés"
+    },
+    "company": {
+      "totalServices": "Services Actifs",
+      "totalRevenue": "Revenu Total"
+    }
+  },
+  "upcomingAppointments": {
+    "title": "Rendez-vous à Venir",
+    "emptyMessage": "Aucun rendez-vous à venir.",
+    "service": "Service",
+    "notes": "Notes"
+  }
+}
+

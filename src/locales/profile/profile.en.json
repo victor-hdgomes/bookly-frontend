@@ -7,8 +7,5 @@
   "enterFirstName": "Enter first name",
   "enterLastName": "Enter last name",
   "enterDisplayName": "Enter display name",
-  "enterEmail": "Enter email",
-  "linkedCompanies": "Linked Companies",
-  "noCompany": "You don't have a company yet",
-  "createCompany": "Create company"
+  "enterEmail": "Enter email"
 }

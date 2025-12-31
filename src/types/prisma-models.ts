@@ -24,16 +24,16 @@ export enum CompanyStatus {
 }
 
 export interface User {
-  id: string;
+  id?: string;
   googleId?: string | null;
   firstName?: string | null;
   lastName?: string | null;
   displayName?: string | null;
-  email: string;
+  email?: string;
   photo?: string | null;
-  provider: AuthProvider;
+  provider?: AuthProvider;
   password?: string | null;
-  createdAt: string;
-  updatedAt: string;
-  companies: Company[];
+  createdAt?: string;
+  updatedAt?: string;
+  companies?: Company[];
 }
