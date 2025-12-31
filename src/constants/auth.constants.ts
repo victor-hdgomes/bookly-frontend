@@ -9,6 +9,14 @@ export const AUTH_ENDPOINTS = {
 
 export const AUTH_ROUTES = {
   HOME: '/',
-  DASHBOARD: '/panel/company/dashboard',
+} as const;
+
+export const CLIENT_ROUTES = {
+  CLIENT_DASHBOARD: '/client/dashboard',
+  CLIENT_PROFILE: '/client/profile',
+} as const;
+
+export const COMPANY_ROUTES = {
+  COMPANY_DASHBOARD: '/company/dashboard',
 } as const;
 

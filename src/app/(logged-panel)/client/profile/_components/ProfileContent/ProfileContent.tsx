@@ -1,6 +1,6 @@
 "use client";
 
-import { useProfileForm } from "@/app/(logged-panel)/panel/profile/hooks/useProfileForm";
+import { useProfileForm } from "@/app/(logged-panel)/client/profile/hooks/useProfileForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
