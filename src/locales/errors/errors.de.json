@@ -1,0 +1,10 @@
+{
+  "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+  "network": "Verbindungsfehler. Überprüfen Sie Ihr Internet.",
+  "unauthorized": "Sitzung abgelaufen. Bitte melden Sie sich erneut an.",
+  "forbidden": "Sie haben keine Berechtigung für diese Aktion.",
+  "notFound": "Ressource nicht gefunden.",
+  "validation": "Ungültige Daten. Überprüfen Sie die Felder.",
+  "conflict": "Dieser Datensatz existiert bereits.",
+  "serverError": "Serverfehler. Bitte versuchen Sie es später erneut."
+}

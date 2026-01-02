@@ -1,4 +1,5 @@
 import axios from "axios";
+import { setupErrorInterceptor } from "./errorInterceptor";
 
 export const api = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -13,6 +14,7 @@ api.interceptors.response.use(
         window.location.href = "/"; 
       }
     }
-    return Promise.reject(error);
+
+    return setupErrorInterceptor()(error);
   }
 );

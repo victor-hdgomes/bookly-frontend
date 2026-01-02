@@ -1,0 +1,81 @@
+{
+  "createDialog": {
+    "title": "Neuer Dienst",
+    "description": "Fügen Sie einen neuen Dienst zur Gruppe hinzu",
+    "serviceGroupLabel": "Dienstgruppe",
+    "serviceGroupPlaceholder": "Wählen Sie eine Gruppe",
+    "serviceGroupDescription": "Wählen Sie die Gruppe aus, zu der dieser Dienst gehört",
+    "nameLabel": "Dienstname",
+    "namePlaceholder": "Z.B.: Haarschnitt",
+    "priceLabel": "Preis (€)",
+    "pricePlaceholder": "50.00",
+    "priceDescription": "Geben Sie den Preis in Euro ein",
+    "durationLabel": "Dauer (Minuten)",
+    "durationPlaceholder": "30",
+    "durationDescription": "Geschätzte Dienstzeit",
+    "cancelButton": "Abbrechen",
+    "createButton": "Erstellen",
+    "creatingButton": "Erstellen...",
+    "successTitle": "Erfolg!",
+    "successDescription": "Dienst erfolgreich erstellt"
+  },
+  "editDialog": {
+    "title": "Dienst Bearbeiten",
+    "description": "Dienstinformationen aktualisieren",
+    "serviceGroupLabel": "Dienstgruppe",
+    "serviceGroupPlaceholder": "Wählen Sie eine Gruppe",
+    "nameLabel": "Dienstname",
+    "namePlaceholder": "Z.B.: Haarschnitt",
+    "priceLabel": "Preis (€)",
+    "pricePlaceholder": "50.00",
+    "discountLabel": "Rabatt (%)",
+    "discountPlaceholder": "0",
+    "priceOriginalLabel": "Originalpreis:",
+    "priceFinalLabel": "Endpreis:",
+    "durationLabel": "Dauer (Minuten)",
+    "durationPlaceholder": "30",
+    "durationDescription": "Geschätzte Dienstzeit",
+    "isActiveLabel": "Aktiver Dienst",
+    "isActiveDescription": "Deaktivieren, um diesen Dienst vor Kunden zu verbergen",
+    "cancelButton": "Abbrechen",
+    "saveButton": "Speichern",
+    "savingButton": "Speichern...",
+    "successTitle": "Erfolg!",
+    "successDescription": "Dienst erfolgreich aktualisiert"
+  },
+  "page": {
+    "title": "Dienste",
+    "description": "Verwalten Sie alle vom Unternehmen angebotenen Dienste",
+    "newServiceButton": "Neuer Dienst",
+    "searchPlaceholder": "Dienste suchen...",
+    "allGroups": "Alle Gruppen",
+    "activeOnly": "Nur aktive",
+    "showInactive": "Inaktive anzeigen",
+    "emptyGroupsTitle": "Keine Dienstgruppen",
+    "emptyGroupsDescription": "Sie müssen eine Dienstgruppe erstellen, bevor Sie Dienste hinzufügen können",
+    "emptyServicesTitle": "Keine Dienste gefunden",
+    "emptyServicesDescription": "Erstellen Sie Ihren ersten Dienst, um zu beginnen",
+    "servicesTitle": "Dienste",
+    "itemsPerPage": "Elemente pro Seite"
+  },
+  "list": {
+    "inactiveBadge": "Inaktiv",
+    "durationMinutes": "{{duration}} Min"
+  },
+  "deleteDialog": {
+    "title": "Löschen bestätigen",
+    "description": "Sind Sie sicher, dass Sie den Dienst \"{{serviceName}}\" löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancelButton": "Abbrechen",
+    "deleteButton": "Löschen",
+    "successTitle": "Erfolg!",
+    "successDescription": "Dienst \"{{serviceName}}\" erfolgreich gelöscht"
+  },
+  "validation": {
+    "nameMinLength": "Der Name muss mindestens 3 Zeichen lang sein",
+    "priceMinValue": "Der Preis muss größer als Null sein",
+    "durationMinValue": "Die Dauer muss mindestens 1 Minute betragen",
+    "discountMinValue": "Der Rabatt kann nicht negativ sein",
+    "discountMaxValue": "Der Rabatt kann nicht größer als 100 sein",
+    "serviceGroupRequired": "Wählen Sie eine Dienstgruppe aus"
+  }
+}

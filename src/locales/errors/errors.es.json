@@ -1,0 +1,10 @@
+{
+  "generic": "Ocurrió un error. Inténtalo de nuevo.",
+  "network": "Error de conexión. Verifica tu internet.",
+  "unauthorized": "Sesión expirada. Inicia sesión nuevamente.",
+  "forbidden": "No tienes permiso para esta acción.",
+  "notFound": "Recurso no encontrado.",
+  "validation": "Datos inválidos. Verifica los campos.",
+  "conflict": "Este registro ya existe.",
+  "serverError": "Error en el servidor. Inténtalo más tarde."
+}

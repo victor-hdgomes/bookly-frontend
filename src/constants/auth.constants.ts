@@ -18,5 +18,7 @@ export const CLIENT_ROUTES = {
 
 export const COMPANY_ROUTES = {
   COMPANY_DASHBOARD: '/company/dashboard',
+  COMPANY_SERVICE_GROUPS: '/company/service-groups',
+  COMPANY_SERVICES: '/company/services',
 } as const;
 

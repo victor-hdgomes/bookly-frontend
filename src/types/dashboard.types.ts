@@ -12,7 +12,7 @@ export interface User {
   photo: string | null;
 }
 
-export interface Service {
+export interface AppointmentService {
   id: string;
   name: string;
   price: number;
@@ -25,7 +25,7 @@ export interface UpcomingAppointment {
   status: string;
   notes: string | null;
   user: User;
-  service: Service;
+  service: AppointmentService;
 }
 
 export interface CompanyStats {

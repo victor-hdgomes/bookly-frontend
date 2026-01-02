@@ -1,0 +1,58 @@
+{
+  "page": {
+    "title": "Service Groups",
+    "description": "Organize your services into groups for easier management",
+    "errorLoading": "Error loading service groups",
+    "newGroup": "New Group",
+    "emptyTitle": "No service groups",
+    "emptyDescription": "Create your first service group to start organizing your services"
+  },
+  "detail": {
+    "title": "Edit Service Group",
+    "description": "Manage this group's information and services",
+    "notFound": "Service group not found",
+    "groupInfo": "Group Information",
+    "groupName": "Group Name",
+    "groupNamePlaceholder": "Ex: Hair Services",
+    "save": "Save",
+    "saving": "Saving...",
+    "services": "Services ({{count}})",
+    "newService": "New Service",
+    "emptyServices": "No services",
+    "emptyServicesDescription": "Add services to this group to get started",
+    "deleteDialog": {
+      "title": "Confirm deletion",
+      "description": "Are you sure you want to delete the group \"{{name}}\"? All services in this group will also be deleted. This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Delete"
+    }
+  },
+  "createDialog": {
+    "title": "New Service Group",
+    "description": "Create a new group to organize your services",
+    "nameLabel": "Group Name",
+    "namePlaceholder": "Ex: Hair Services",
+    "cancelButton": "Cancel",
+    "createButton": "Create",
+    "creatingButton": "Creating...",
+    "successTitle": "Success!",
+    "successDescription": "Service group created successfully"
+  },
+  "validation": {
+    "nameMinLength": "Name must be at least 3 characters"
+  },
+  "card": {
+    "stats": {
+      "services": "Services",
+      "avgPrice": "Avg Price",
+      "avgDuration": "Avg Duration"
+    },
+    "buttons": {
+      "edit": "Edit",
+      "addService": "Add Service",
+      "showServices": "Show Services",
+      "hideServices": "Hide Services"
+    },
+    "duration": "{{duration}} min"
+  }
+}

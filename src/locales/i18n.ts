@@ -6,14 +6,18 @@ import profile from './profile';
 import sidebar from './sidebar';
 import dashboard from './dashboard';
 import companyDashboard from './companyDashboard';
+import services from './services';
+import serviceGroups from './serviceGroups';
+import errors from './errors';
+import common from './common';
 
 const resources = {
-  pt: { profile: profile.pt, sidebar: sidebar.pt, dashboard: dashboard.pt, companyDashboard: companyDashboard.pt },
-  en: { profile: profile.en, sidebar: sidebar.en, dashboard: dashboard.en, companyDashboard: companyDashboard.en },
-  es: { profile: profile.es, sidebar: sidebar.es, dashboard: dashboard.es, companyDashboard: companyDashboard.es },
-  it: { profile: profile.it, sidebar: sidebar.it, dashboard: dashboard.it, companyDashboard: companyDashboard.it },
-  fr: { profile: profile.fr, sidebar: sidebar.fr, dashboard: dashboard.fr, companyDashboard: companyDashboard.fr },
-  de: { profile: profile.de, sidebar: sidebar.de, dashboard: dashboard.de, companyDashboard: companyDashboard.de },
+  pt: { profile: profile.pt, sidebar: sidebar.pt, dashboard: dashboard.pt, companyDashboard: companyDashboard.pt, services: services.pt, serviceGroups: serviceGroups.pt, errors: errors.pt, common: common.pt },
+  en: { profile: profile.en, sidebar: sidebar.en, dashboard: dashboard.en, companyDashboard: companyDashboard.en, services: services.en, serviceGroups: serviceGroups.en, errors: errors.en, common: common.en },
+  es: { profile: profile.es, sidebar: sidebar.es, dashboard: dashboard.es, companyDashboard: companyDashboard.es, services: services.es, serviceGroups: serviceGroups.es, errors: errors.es, common: common.es },
+  it: { profile: profile.it, sidebar: sidebar.it, dashboard: dashboard.it, companyDashboard: companyDashboard.it, services: services.it, serviceGroups: serviceGroups.it, errors: errors.it, common: common.it },
+  fr: { profile: profile.fr, sidebar: sidebar.fr, dashboard: dashboard.fr, companyDashboard: companyDashboard.fr, services: services.fr, serviceGroups: serviceGroups.fr, errors: errors.fr, common: common.fr },
+  de: { profile: profile.de, sidebar: sidebar.de, dashboard: dashboard.de, companyDashboard: companyDashboard.de, services: services.de, serviceGroups: serviceGroups.de, errors: errors.de, common: common.de },
 };
 
 i18n
@@ -22,7 +26,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'pt',
-    ns: ['profile', 'sidebar', 'dashboard', 'companyDashboard'],
+    ns: ['profile', 'sidebar', 'dashboard', 'companyDashboard', 'services', 'serviceGroups', 'errors', 'common'],
     defaultNS: 'profile',
     interpolation: {
       escapeValue: false,

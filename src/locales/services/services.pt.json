@@ -1,0 +1,81 @@
+{
+  "createDialog": {
+    "title": "Novo Serviço",
+    "description": "Adicione um novo serviço ao grupo",
+    "serviceGroupLabel": "Grupo de Serviços",
+    "serviceGroupPlaceholder": "Selecione um grupo",
+    "serviceGroupDescription": "Selecione o grupo ao qual este serviço pertence",
+    "nameLabel": "Nome do Serviço",
+    "namePlaceholder": "Ex: Corte de Cabelo",
+    "priceLabel": "Preço (R$)",
+    "pricePlaceholder": "50.00",
+    "priceDescription": "Digite o valor em reais",
+    "durationLabel": "Duração (minutos)",
+    "durationPlaceholder": "30",
+    "durationDescription": "Tempo estimado do serviço",
+    "cancelButton": "Cancelar",
+    "createButton": "Criar",
+    "creatingButton": "Criando...",
+    "successTitle": "Sucesso!",
+    "successDescription": "Serviço criado com sucesso"
+  },
+  "editDialog": {
+    "title": "Editar Serviço",
+    "description": "Atualize as informações do serviço",
+    "serviceGroupLabel": "Grupo de Serviços",
+    "serviceGroupPlaceholder": "Selecione um grupo",
+    "nameLabel": "Nome do Serviço",
+    "namePlaceholder": "Ex: Corte de Cabelo",
+    "priceLabel": "Preço (R$)",
+    "pricePlaceholder": "50.00",
+    "discountLabel": "Desconto (%)",
+    "discountPlaceholder": "0",
+    "priceOriginalLabel": "Preço original:",
+    "priceFinalLabel": "Preço final:",
+    "durationLabel": "Duração (minutos)",
+    "durationPlaceholder": "30",
+    "durationDescription": "Tempo estimado do serviço",
+    "isActiveLabel": "Serviço Ativo",
+    "isActiveDescription": "Desative para ocultar este serviço dos clientes",
+    "cancelButton": "Cancelar",
+    "saveButton": "Salvar",
+    "savingButton": "Salvando...",
+    "successTitle": "Sucesso!",
+    "successDescription": "Serviço atualizado com sucesso"
+  },
+  "page": {
+    "title": "Serviços",
+    "description": "Gerencie todos os serviços oferecidos pela empresa",
+    "newServiceButton": "Novo Serviço",
+    "searchPlaceholder": "Buscar serviços...",
+    "allGroups": "Todos os grupos",
+    "activeOnly": "Somente ativos",
+    "showInactive": "Mostrar inativos",
+    "emptyGroupsTitle": "Nenhum grupo de serviços",
+    "emptyGroupsDescription": "Você precisa criar um grupo de serviços antes de adicionar serviços",
+    "emptyServicesTitle": "Nenhum serviço encontrado",
+    "emptyServicesDescription": "Crie seu primeiro serviço para começar",
+    "servicesTitle": "Serviços",
+    "itemsPerPage": "Itens por página"
+  },
+  "list": {
+    "inactiveBadge": "Inativo",
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Confirmar exclusão",
+    "description": "Tem certeza que deseja excluir o serviço \"{{serviceName}}\"? Esta ação não pode ser desfeita.",
+    "cancelButton": "Cancelar",
+    "deleteButton": "Excluir",
+    "successTitle": "Sucesso!",
+    "successDescription": "Serviço \"{{serviceName}}\" excluído com sucesso"
+  },
+  "validation": {
+    "nameMinLength": "O nome deve ter no mínimo 3 caracteres",
+    "priceMinValue": "O preço deve ser maior que zero",
+    "durationMinValue": "A duração deve ser de pelo menos 1 minuto",
+    "discountMinValue": "O desconto não pode ser negativo",
+    "discountMaxValue": "O desconto não pode ser maior que 100",
+    "serviceGroupRequired": "Selecione um grupo de serviços"
+  }
+}

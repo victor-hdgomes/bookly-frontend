@@ -1,0 +1,81 @@
+{
+  "createDialog": {
+    "title": "New Service",
+    "description": "Add a new service to the group",
+    "serviceGroupLabel": "Service Group",
+    "serviceGroupPlaceholder": "Select a group",
+    "serviceGroupDescription": "Select the group to which this service belongs",
+    "nameLabel": "Service Name",
+    "namePlaceholder": "Ex: Haircut",
+    "priceLabel": "Price ($)",
+    "pricePlaceholder": "50.00",
+    "priceDescription": "Enter the price in dollars",
+    "durationLabel": "Duration (minutes)",
+    "durationPlaceholder": "30",
+    "durationDescription": "Estimated service time",
+    "cancelButton": "Cancel",
+    "createButton": "Create",
+    "creatingButton": "Creating...",
+    "successTitle": "Success!",
+    "successDescription": "Service created successfully"
+  },
+  "editDialog": {
+    "title": "Edit Service",
+    "description": "Update service information",
+    "serviceGroupLabel": "Service Group",
+    "serviceGroupPlaceholder": "Select a group",
+    "nameLabel": "Service Name",
+    "namePlaceholder": "Ex: Haircut",
+    "priceLabel": "Price ($)",
+    "pricePlaceholder": "50.00",
+    "discountLabel": "Discount (%)",
+    "discountPlaceholder": "0",
+    "priceOriginalLabel": "Original price:",
+    "priceFinalLabel": "Final price:",
+    "durationLabel": "Duration (minutes)",
+    "durationPlaceholder": "30",
+    "durationDescription": "Estimated service time",
+    "isActiveLabel": "Active Service",
+    "isActiveDescription": "Disable to hide this service from customers",
+    "cancelButton": "Cancel",
+    "saveButton": "Save",
+    "savingButton": "Saving...",
+    "successTitle": "Success!",
+    "successDescription": "Service updated successfully"
+  },
+  "page": {
+    "title": "Services",
+    "description": "Manage all services offered by the company",
+    "newServiceButton": "New Service",
+    "searchPlaceholder": "Search services...",
+    "allGroups": "All groups",
+    "activeOnly": "Active only",
+    "showInactive": "Show inactive",
+    "emptyGroupsTitle": "No service groups",
+    "emptyGroupsDescription": "You need to create a service group before adding services",
+    "emptyServicesTitle": "No services found",
+    "emptyServicesDescription": "Create your first service to get started",
+    "servicesTitle": "Services",
+    "itemsPerPage": "Items per page"
+  },
+  "list": {
+    "inactiveBadge": "Inactive",
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Confirm deletion",
+    "description": "Are you sure you want to delete the service \"{{serviceName}}\"? This action cannot be undone.",
+    "cancelButton": "Cancel",
+    "deleteButton": "Delete",
+    "successTitle": "Success!",
+    "successDescription": "Service \"{{serviceName}}\" deleted successfully"
+  },
+  "validation": {
+    "nameMinLength": "Name must be at least 3 characters",
+    "priceMinValue": "Price must be greater than zero",
+    "durationMinValue": "Duration must be at least 1 minute",
+    "discountMinValue": "Discount cannot be negative",
+    "discountMaxValue": "Discount cannot be greater than 100",
+    "serviceGroupRequired": "Select a service group"
+  }
+}

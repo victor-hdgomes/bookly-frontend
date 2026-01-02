@@ -33,7 +33,7 @@ export default function Dashboard() {
   const upcoming = data?.upcomingAppointments || [];
 
   return (
-    <div className="flex flex-col gap-8 p-6">
+    <div className="flex flex-col gap-4">
       <PageHeader title={t('title')} subtitle={t('subtitle')} />
       
       <StatsCards stats={stats} />

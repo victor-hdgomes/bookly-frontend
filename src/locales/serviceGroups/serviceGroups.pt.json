@@ -1,0 +1,58 @@
+{
+  "page": {
+    "title": "Grupos de Serviços",
+    "description": "Organize seus serviços em grupos para facilitar o gerenciamento",
+    "errorLoading": "Erro ao carregar grupos de serviços",
+    "newGroup": "Novo Grupo",
+    "emptyTitle": "Nenhum grupo de serviços",
+    "emptyDescription": "Crie seu primeiro grupo de serviços para começar a organizar seus atendimentos"
+  },
+  "detail": {
+    "title": "Editar Grupo de Serviços",
+    "description": "Gerencie as informações e serviços deste grupo",
+    "notFound": "Grupo de serviços não encontrado",
+    "groupInfo": "Informações do Grupo",
+    "groupName": "Nome do Grupo",
+    "groupNamePlaceholder": "Ex: Serviços de Cabelo",
+    "save": "Salvar",
+    "saving": "Salvando...",
+    "services": "Serviços ({{count}})",
+    "newService": "Novo Serviço",
+    "emptyServices": "Nenhum serviço",
+    "emptyServicesDescription": "Adicione serviços a este grupo para começar",
+    "deleteDialog": {
+      "title": "Confirmar exclusão",
+      "description": "Tem certeza que deseja excluir o grupo \"{{name}}\"? Todos os serviços deste grupo também serão excluídos. Esta ação não pode ser desfeita.",
+      "cancel": "Cancelar",
+      "confirm": "Excluir"
+    }
+  },
+  "createDialog": {
+    "title": "Novo Grupo de Serviços",
+    "description": "Crie um novo grupo para organizar seus serviços",
+    "nameLabel": "Nome do Grupo",
+    "namePlaceholder": "Ex: Serviços de Cabelo",
+    "cancelButton": "Cancelar",
+    "createButton": "Criar",
+    "creatingButton": "Criando...",
+    "successTitle": "Sucesso!",
+    "successDescription": "Grupo de serviços criado com sucesso"
+  },
+  "validation": {
+    "nameMinLength": "O nome deve ter no mínimo 3 caracteres"
+  },
+  "card": {
+    "stats": {
+      "services": "Serviços",
+      "avgPrice": "Preço Médio",
+      "avgDuration": "Duração Média"
+    },
+    "buttons": {
+      "edit": "Editar",
+      "addService": "Adicionar Serviço",
+      "showServices": "Ver Serviços",
+      "hideServices": "Ocultar Serviços"
+    },
+    "duration": "{{duration}} min"
+  }
+}

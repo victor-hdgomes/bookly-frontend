@@ -1,0 +1,10 @@
+{
+  "generic": "Si è verificato un errore. Riprova.",
+  "network": "Errore di connessione. Controlla la tua internet.",
+  "unauthorized": "Sessione scaduta. Effettua nuovamente l'accesso.",
+  "forbidden": "Non hai il permesso per questa azione.",
+  "notFound": "Risorsa non trovata.",
+  "validation": "Dati non validi. Controlla i campi.",
+  "conflict": "Questo record esiste già.",
+  "serverError": "Errore del server. Riprova più tardi."
+}

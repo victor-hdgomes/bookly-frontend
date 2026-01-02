@@ -1,0 +1,58 @@
+{
+  "page": {
+    "title": "Dienstgruppen",
+    "description": "Organisieren Sie Ihre Dienste in Gruppen für eine einfachere Verwaltung",
+    "errorLoading": "Fehler beim Laden der Dienstgruppen",
+    "newGroup": "Neue Gruppe",
+    "emptyTitle": "Keine Dienstgruppen",
+    "emptyDescription": "Erstellen Sie Ihre erste Dienstgruppe, um Ihre Dienste zu organisieren"
+  },
+  "detail": {
+    "title": "Dienstgruppe Bearbeiten",
+    "description": "Verwalten Sie die Informationen und Dienste dieser Gruppe",
+    "notFound": "Dienstgruppe nicht gefunden",
+    "groupInfo": "Gruppeninformationen",
+    "groupName": "Gruppenname",
+    "groupNamePlaceholder": "Z.B.: Friseurdienstleistungen",
+    "save": "Speichern",
+    "saving": "Speichern...",
+    "services": "Dienste ({{count}})",
+    "newService": "Neuer Dienst",
+    "emptyServices": "Keine Dienste",
+    "emptyServicesDescription": "Fügen Sie Dienste zu dieser Gruppe hinzu, um zu beginnen",
+    "deleteDialog": {
+      "title": "Löschung bestätigen",
+      "description": "Sind Sie sicher, dass Sie die Gruppe \"{{name}}\" löschen möchten? Alle Dienste in dieser Gruppe werden ebenfalls gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "cancel": "Abbrechen",
+      "confirm": "Löschen"
+    }
+  },
+  "createDialog": {
+    "title": "Neue Dienstgruppe",
+    "description": "Erstellen Sie eine neue Gruppe zur Organisation Ihrer Dienste",
+    "nameLabel": "Gruppenname",
+    "namePlaceholder": "Z.B.: Friseurdienstleistungen",
+    "cancelButton": "Abbrechen",
+    "createButton": "Erstellen",
+    "creatingButton": "Erstellen...",
+    "successTitle": "Erfolg!",
+    "successDescription": "Dienstgruppe erfolgreich erstellt"
+  },
+  "validation": {
+    "nameMinLength": "Der Name muss mindestens 3 Zeichen lang sein"
+  },
+  "card": {
+    "stats": {
+      "services": "Dienste",
+      "avgPrice": "Durchschnittspreis",
+      "avgDuration": "Durchschnittsdauer"
+    },
+    "buttons": {
+      "edit": "Bearbeiten",
+      "addService": "Dienst hinzufügen",
+      "showServices": "Dienste anzeigen",
+      "hideServices": "Dienste ausblenden"
+    },
+    "duration": "{{duration}} Min"
+  }
+}

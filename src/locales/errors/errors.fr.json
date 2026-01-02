@@ -1,0 +1,10 @@
+{
+  "generic": "Une erreur s'est produite. Veuillez réessayer.",
+  "network": "Erreur de connexion. Vérifiez votre internet.",
+  "unauthorized": "Session expirée. Veuillez vous reconnecter.",
+  "forbidden": "Vous n'avez pas la permission pour cette action.",
+  "notFound": "Ressource introuvable.",
+  "validation": "Données invalides. Vérifiez les champs.",
+  "conflict": "Cet enregistrement existe déjà.",
+  "serverError": "Erreur serveur. Veuillez réessayer plus tard."
+}

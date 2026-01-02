@@ -1,0 +1,58 @@
+{
+  "page": {
+    "title": "Groupes de Services",
+    "description": "Organisez vos services en groupes pour faciliter la gestion",
+    "errorLoading": "Erreur lors du chargement des groupes de services",
+    "newGroup": "Nouveau Groupe",
+    "emptyTitle": "Aucun groupe de services",
+    "emptyDescription": "Créez votre premier groupe de services pour commencer à organiser vos services"
+  },
+  "detail": {
+    "title": "Modifier le Groupe de Services",
+    "description": "Gérez les informations et services de ce groupe",
+    "notFound": "Groupe de services introuvable",
+    "groupInfo": "Informations du Groupe",
+    "groupName": "Nom du Groupe",
+    "groupNamePlaceholder": "Ex: Services Capillaires",
+    "save": "Enregistrer",
+    "saving": "Enregistrement...",
+    "services": "Services ({{count}})",
+    "newService": "Nouveau Service",
+    "emptyServices": "Aucun service",
+    "emptyServicesDescription": "Ajoutez des services à ce groupe pour commencer",
+    "deleteDialog": {
+      "title": "Confirmer la suppression",
+      "description": "Êtes-vous sûr de vouloir supprimer le groupe \"{{name}}\"? Tous les services de ce groupe seront également supprimés. Cette action ne peut pas être annulée.",
+      "cancel": "Annuler",
+      "confirm": "Supprimer"
+    }
+  },
+  "createDialog": {
+    "title": "Nouveau Groupe de Services",
+    "description": "Créez un nouveau groupe pour organiser vos services",
+    "nameLabel": "Nom du Groupe",
+    "namePlaceholder": "Ex: Services Capillaires",
+    "cancelButton": "Annuler",
+    "createButton": "Créer",
+    "creatingButton": "Création...",
+    "successTitle": "Succès!",
+    "successDescription": "Groupe de services créé avec succès"
+  },
+  "validation": {
+    "nameMinLength": "Le nom doit contenir au moins 3 caractères"
+  },
+  "card": {
+    "stats": {
+      "services": "Services",
+      "avgPrice": "Prix Moyen",
+      "avgDuration": "Durée Moyenne"
+    },
+    "buttons": {
+      "edit": "Modifier",
+      "addService": "Ajouter un Service",
+      "showServices": "Afficher les Services",
+      "hideServices": "Masquer les Services"
+    },
+    "duration": "{{duration}} min"
+  }
+}

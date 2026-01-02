@@ -1,0 +1,15 @@
+{
+  "companySelector": {
+    "placeholder": "Seleziona un'azienda"
+  },
+  "pagination": {
+    "itemsPerPage": "Elementi per pagina",
+    "showing": "{{start}}-{{end}} di {{total}}"
+  },
+  "filters": {
+    "searchPlaceholder": "Cerca...",
+    "allGroups": "Tutti i gruppi",
+    "showInactive": "Mostra inattivi",
+    "new": "Nuovo"
+  }
+}
