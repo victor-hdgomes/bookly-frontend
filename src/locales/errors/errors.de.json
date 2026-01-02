@@ -1,4 +1,6 @@
-{
+{  
+  "errorTitle": "Fehler",
+  "conflictTitle": "Doppelter Datensatz",  
   "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
   "network": "Verbindungsfehler. Überprüfen Sie Ihr Internet.",
   "unauthorized": "Sitzung abgelaufen. Bitte melden Sie sich erneut an.",

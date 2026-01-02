@@ -1,0 +1,82 @@
+{
+  "title": "Dipendenti",
+  "description": "Gestisci i dipendenti dell'azienda",
+  "addEmployee": "Aggiungi Dipendente",
+  "activeEmployees": "Dipendenti Attivi",
+  "inactiveEmployees": "Dipendenti Inattivi",
+  "noEmployees": "Nessun dipendente registrato",
+  "noEmployeesDescription": "Aggiungi dipendenti per iniziare a gestire il team.",
+  "removeEmployee": "Rimuovi Dipendente",
+  "removeEmployeeConfirm": "Sei sicuro di voler rimuovere questo dipendente dall'azienda? Questa azione non può essere annullata.",
+  "cancel": "Annulla",
+  "remove": "Rimuovi",
+  "addEmployeeDialog": {
+    "title": "Aggiungi Dipendente",
+    "description": "Cerca un utente tramite email e aggiungilo come dipendente dell'azienda.",
+    "email": "Email dell'Utente",
+    "emailPlaceholder": "utente@email.com",
+    "position": "Posizione (Opzionale)",
+    "positionPlaceholder": "Es: Barbiere, Parrucchiere",
+    "search": "Cerca",
+    "searching": "Ricerca...",
+    "found": "Trovato",
+    "add": "Aggiungi",
+    "adding": "Aggiunta...",
+    "userFoundMessage": "✓ {{name}} trovato(a)"
+  },
+  "toast": {
+    "employeeRemoved": "Dipendente rimosso",
+    "employeeRemovedDescription": "Il dipendente è stato rimosso dall'azienda con successo.",
+    "employeeAdded": "Dipendente aggiunto",
+    "employeeAddedDescription": "Il dipendente è stato aggiunto all'azienda con successo.",
+    "errorRemoving": "Errore nella rimozione del dipendente",
+    "errorRemovingDescription": "Non è stato possibile rimuovere il dipendente. Riprova.",
+    "errorAdding": "Errore nell'aggiunta del dipendente",
+    "errorAddingDescription": "Non è stato possibile aggiungere il dipendente. Riprova.",
+    "userNotFound": "Utente non trovato",
+    "userNotFoundDescription": "Non è stato possibile trovare un utente con questa email.",
+    "userFound": "Utente trovato",
+    "userFoundDescription": "Inserisci la posizione e clicca su aggiungi.",
+    "searchFirst": "Cerca prima un utente",
+    "searchFirstDescription": "Inserisci l'email e cerca prima di aggiungere."  },
+  "errors": {
+    "emailRequired": "L'email è obbligatoria"  },
+  "stats": {
+    "totalAppointments": "Totale Appuntamenti",
+    "totalAppointmentsDescription": "Da tutti i dipendenti attivi",
+    "totalRevenue": "Ricavi Totali",
+    "totalRevenueDescription": "Generati da appuntamenti completati",
+    "topPerformer": "Migliore Prestazione",
+    "topPerformerDescription": "{{count}} appuntamenti"
+  },
+  "ranking": {
+    "title": "Classifica Appuntamenti",
+    "description": "Dipendenti ordinati per numero di appuntamenti completati",
+    "appointmentsLabel": "Appuntamenti",
+    "revenueLabel": "Ricavi"
+  },
+  "page": {
+    "title": "Dipendenti",
+    "description": "Gestisci i dipendenti di {{companyName}}",
+    "loadingMessage": "Caricamento dipendenti...",
+    "errorTitle": "Errore nel caricamento dei dipendenti",
+    "noCompanySelected": "Nessuna azienda selezionata",
+    "noCompanyDescription": "Seleziona un'azienda per gestire i dipendenti"
+  },
+  "deleteDialog": {
+    "title": "Rimuovi Dipendente",
+    "description": "Sei sicuro di voler rimuovere questo dipendente dall'azienda? Questa azione non può essere annullata.",
+    "cancel": "Annulla",
+    "confirm": "Rimuovi"
+  },
+  "statsPage": {
+    "title": "Statistiche dei Dipendenti",
+    "description": "Monitora le prestazioni dei dipendenti di {{companyName}}",
+    "loadingMessage": "Caricamento statistiche...",
+    "errorTitle": "Errore nel caricamento delle statistiche",
+    "noCompanySelected": "Nessuna azienda selezionata",
+    "noCompanyDescription": "Seleziona un'azienda per visualizzare le statistiche",
+    "noStats": "Nessuna statistica disponibile",
+    "noStatsDescription": "Aggiungi dipendenti e registra appuntamenti per visualizzare le statistiche."
+  }
+}

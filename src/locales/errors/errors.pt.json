@@ -1,4 +1,6 @@
 {
+  "errorTitle": "Erro",
+  "conflictTitle": "Registro Duplicado",
   "generic": "Ocorreu um erro. Tente novamente.",
   "network": "Erro de conexão. Verifique sua internet.",
   "unauthorized": "Sessão expirada. Faça login novamente.",

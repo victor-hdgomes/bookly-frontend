@@ -22,5 +22,7 @@
   "availability": "Disponibilidad",
   "signOut": "Cerrar Sesión",
   "signingOut": "Cerrando sesión...",
-  "system": "Sistema"
+  "system": "Sistema",
+  "employees": "Empleados",
+  "employeeStats": "Estadísticas"
 }

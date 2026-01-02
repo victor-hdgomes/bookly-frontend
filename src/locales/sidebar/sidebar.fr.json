@@ -22,5 +22,7 @@
   "availability": "Disponibilité",
   "signOut": "Se Déconnecter",
   "signingOut": "Déconnexion...",
-  "system": "Système"
+  "system": "Système",
+  "employees": "Employés",
+  "employeeStats": "Statistiques"
 }

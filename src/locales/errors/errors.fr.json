@@ -1,4 +1,6 @@
-{
+{  
+  "errorTitle": "Erreur",
+  "conflictTitle": "Enregistrement en Double", 
   "generic": "Une erreur s'est produite. Veuillez réessayer.",
   "network": "Erreur de connexion. Vérifiez votre internet.",
   "unauthorized": "Session expirée. Veuillez vous reconnecter.",

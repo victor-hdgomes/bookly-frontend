@@ -22,5 +22,7 @@
   "availability": "Availability",
   "signOut": "Sign Out",
   "signingOut": "Signing out...",
-  "system": "System"
+  "system": "System",
+  "employees": "Employees",
+  "employeeStats": "Statistics"
 }

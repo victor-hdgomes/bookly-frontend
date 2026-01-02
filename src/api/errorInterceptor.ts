@@ -17,6 +17,7 @@ export function setupErrorInterceptor() {
     const t = (key: string) => i18n.t(key, { ns: 'errors' });
 
     let errorMessage = t('generic');
+    let errorTitle = t('errorTitle');
 
     if (!error.response) {
       errorMessage = t('network');
@@ -32,9 +33,10 @@ export function setupErrorInterceptor() {
           errorMessage = t('forbidden');
           break;
         case 404:
-          errorMessage = t('notFound');
+          errorMessage = serverMessage || t('notFound');
           break;
         case 409:
+          errorTitle = t('conflictTitle');
           errorMessage = serverMessage || t('conflict');
           break;
         case 500:
@@ -48,7 +50,7 @@ export function setupErrorInterceptor() {
     }
 
     toast({
-      title: 'Erro',
+      title: errorTitle,
       description: errorMessage,
       variant: 'destructive',
     });

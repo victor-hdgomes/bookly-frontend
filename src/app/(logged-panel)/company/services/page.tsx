@@ -2,25 +2,22 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useAuth } from "@/hooks/client/profile/useAuth";
-import { useSelectedCompany } from "@/hooks/company/useSelectedCompany";
+import { useSelectedCompanyContext } from "@/contexts/SelectedCompanyContext";
 import { useServices } from "@/hooks/company/services/useServices";
 import { useServiceGroups } from "@/hooks/company/service-groups/useServiceGroups";
 import { useServiceFilters } from "@/hooks/company/services/useServiceFilters";
 import { useDeleteService } from "@/hooks/company/services/useDeleteService";
 import { usePagination } from "@/hooks/usePagination";
-import { LoadingState, ErrorState } from "@/components/states";
-import { PageHeader, CompanySelector, ServiceFilters, DataList } from "@/components/globals";
+import { ErrorState } from "@/components/states";
+import { PageHeader, ServiceFilters, DataList } from "@/components/globals";
 import { Package } from "lucide-react";
 import { CreateServiceDialog } from "../_components/CreateServiceDialog";
 import { ServiceListItem } from "../_components/ServiceListItem";
-import { Card, CardContent } from "@/components/ui/card";
 import { Service } from "@/types";
 
 export default function ServicesPage() {
   const { t } = useTranslation("services");
-  const { data: user } = useAuth();
-  const { selectedCompanyId, setSelectedCompanyId } = useSelectedCompany(user?.companies);
+  const { selectedCompanyId } = useSelectedCompanyContext();
   const [selectedServiceGroupId, setSelectedServiceGroupId] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showInactive, setShowInactive] = useState<boolean>(false);
@@ -54,10 +51,6 @@ export default function ServicesPage() {
     await deleteService.mutateAsync(serviceId);
   };
 
-  if (!user) {
-    return <LoadingState />;
-  }
-
   if (servicesError) {
     return <ErrorState description="Erro ao carregar serviços" />;
   }
@@ -67,13 +60,7 @@ export default function ServicesPage() {
       <PageHeader
         title={t("page.title")}
         description={t("page.description")}
-        actions={
-          <CompanySelector
-            companies={user.companies || []}
-            selectedCompanyId={selectedCompanyId}
-            onCompanyChange={setSelectedCompanyId}
-          />
-        }
+        showCompanySelector
       />
 
       <ServiceFilters
@@ -88,35 +75,32 @@ export default function ServicesPage() {
         canCreate={filteredServiceGroups.length > 0}
       />
 
-      <Card>
-        <CardContent className="space-y-4">
-          <DataList<Service>
-            isLoading={isLoadingServices}
-            data={paginatedItems}
-            renderItem={(service) => (
-              <ServiceListItem
-                service={service}
-                companyId={selectedCompanyId}
-                onDelete={handleDeleteService}
-               />
-            )}
-            emptyState={{
-              icon: Package,
-              title: t("page.emptyServicesTitle"),
-              description: t("page.emptyServicesDescription"),
-            }}
-            gridClassName="space-y-2"
-            pagination={{
-              currentPage,
-              totalPages,
-              itemsPerPage,
-              totalItems: filteredServices.length,
-              onPageChange: setCurrentPage,
-              onItemsPerPageChange: setItemsPerPage,
-            }}
-          />
-        </CardContent>
-      </Card>
+      
+      <DataList<Service>
+        isLoading={isLoadingServices}
+        data={paginatedItems}
+        renderItem={(service) => (
+          <ServiceListItem
+            service={service}
+            companyId={selectedCompanyId}
+            onDelete={handleDeleteService}
+           />
+        )}
+        emptyState={{
+          icon: Package,
+          title: t("page.emptyServicesTitle"),
+          description: t("page.emptyServicesDescription"),
+        }}
+        gridClassName="space-y-2"
+        pagination={{
+          currentPage,
+          totalPages,
+          itemsPerPage,
+          totalItems: filteredServices.length,
+          onPageChange: setCurrentPage,
+          onItemsPerPageChange: setItemsPerPage,
+        }}
+      />
 
       {filteredServiceGroups.length > 0 && (
         <CreateServiceDialog

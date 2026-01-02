@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useAuth } from "@/hooks/client/profile/useAuth";
-import { useSelectedCompany } from "@/hooks/company/useSelectedCompany";
+import { useSelectedCompanyContext } from "@/contexts/SelectedCompanyContext";
 import { useServiceGroups } from "@/hooks/company/service-groups/useServiceGroups";
-import { LoadingState, ErrorState } from "@/components/states";
-import { PageHeader, CompanySelector, DataList } from "@/components/globals";
+import { ErrorState } from "@/components/states";
+import { PageHeader, DataList } from "@/components/globals";
 import { Button } from "@/components/ui/button";
 import { Plus, FolderOpen } from "lucide-react";
 import { CreateServiceGroupDialog } from "../_components/CreateServiceGroupDialog";
@@ -15,19 +14,14 @@ import { ServiceGroup } from "@/types";
 
 export default function ServiceGroupsPage() {
   const { t } = useTranslation("serviceGroups");
-  const { data: user } = useAuth();
-  const { selectedCompanyId, setSelectedCompanyId, hasMultipleCompanies } = useSelectedCompany(user?.companies);
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
+  const { selectedCompanyId } = useSelectedCompanyContext();
   
   const { data, isLoading, error } = useServiceGroups();
 
   const filteredServiceGroups = data?.data.filter(
     group => group.companyId === selectedCompanyId
   ) || [];
-
-  if (!user) {
-    return <LoadingState />;
-  }
 
   if (error) {
     return <ErrorState description={t("page.errorLoading")} />;
@@ -38,15 +32,7 @@ export default function ServiceGroupsPage() {
       <PageHeader
         title={t("page.title")}
         description={t("page.description")}
-        actions={
-          hasMultipleCompanies ? (
-            <CompanySelector
-              companies={user?.companies || []}
-              selectedCompanyId={selectedCompanyId}
-              onCompanyChange={setSelectedCompanyId}
-            />
-          ) : undefined
-        }
+        showCompanySelector
       />
 
       <div className="flex justify-end">

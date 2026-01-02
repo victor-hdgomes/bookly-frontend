@@ -1,0 +1,82 @@
+{
+  "title": "Empleados",
+  "description": "Administrar empleados de la empresa",
+  "addEmployee": "Agregar Empleado",
+  "activeEmployees": "Empleados Activos",
+  "inactiveEmployees": "Empleados Inactivos",
+  "noEmployees": "No hay empleados registrados",
+  "noEmployeesDescription": "Agregue empleados para comenzar a administrar el equipo.",
+  "removeEmployee": "Eliminar Empleado",
+  "removeEmployeeConfirm": "¿Está seguro de que desea eliminar este empleado de la empresa? Esta acción no se puede deshacer.",
+  "cancel": "Cancelar",
+  "remove": "Eliminar",
+  "addEmployeeDialog": {
+    "title": "Agregar Empleado",
+    "description": "Busque un usuario por correo electrónico y agréguelo como empleado de la empresa.",
+    "email": "Correo del Usuario",
+    "emailPlaceholder": "usuario@email.com",
+    "position": "Cargo (Opcional)",
+    "positionPlaceholder": "Ej: Barbero, Peluquero",
+    "search": "Buscar",
+    "searching": "Buscando...",
+    "found": "Encontrado",
+    "add": "Agregar",
+    "adding": "Agregando...",
+    "userFoundMessage": "✓ {{name}} encontrado(a)"
+  },
+  "toast": {
+    "employeeRemoved": "Empleado eliminado",
+    "employeeRemovedDescription": "El empleado fue eliminado de la empresa con éxito.",
+    "employeeAdded": "Empleado agregado",
+    "employeeAddedDescription": "El empleado fue agregado a la empresa con éxito.",
+    "errorRemoving": "Error al eliminar empleado",
+    "errorRemovingDescription": "No fue posible eliminar el empleado. Inténtelo de nuevo.",
+    "errorAdding": "Error al agregar empleado",
+    "errorAddingDescription": "No fue posible agregar el empleado. Inténtelo de nuevo.",
+    "userNotFound": "Usuario no encontrado",
+    "userNotFoundDescription": "No fue posible encontrar un usuario con este correo electrónico.",
+    "userFound": "Usuario encontrado",
+    "userFoundDescription": "Ingrese el cargo y haga clic en agregar.",
+    "searchFirst": "Busque un usuario primero",
+    "searchFirstDescription": "Ingrese el correo electrónico y busque antes de agregar."  },
+  "errors": {
+    "emailRequired": "El correo electrónico es obligatorio"  },
+  "stats": {
+    "totalAppointments": "Total de Citas",
+    "totalAppointmentsDescription": "De todos los empleados activos",
+    "totalRevenue": "Ingresos Totales",
+    "totalRevenueDescription": "Generados por citas completadas",
+    "topPerformer": "Mejor Desempeño",
+    "topPerformerDescription": "{{count}} citas"
+  },
+  "ranking": {
+    "title": "Ranking de Citas",
+    "description": "Empleados ordenados por número de citas completadas",
+    "appointmentsLabel": "Citas",
+    "revenueLabel": "Ingresos"
+  },
+  "page": {
+    "title": "Empleados",
+    "description": "Administrar empleados de {{companyName}}",
+    "loadingMessage": "Cargando empleados...",
+    "errorTitle": "Error al cargar empleados",
+    "noCompanySelected": "Ninguna empresa seleccionada",
+    "noCompanyDescription": "Seleccione una empresa para administrar empleados"
+  },
+  "deleteDialog": {
+    "title": "Eliminar Empleado",
+    "description": "¿Está seguro de que desea eliminar este empleado de la empresa? Esta acción no se puede deshacer.",
+    "cancel": "Cancelar",
+    "confirm": "Eliminar"
+  },
+  "statsPage": {
+    "title": "Estadísticas de Empleados",
+    "description": "Seguimiento del desempeño de los empleados de {{companyName}}",
+    "loadingMessage": "Cargando estadísticas...",
+    "errorTitle": "Error al cargar estadísticas",
+    "noCompanySelected": "Ninguna empresa seleccionada",
+    "noCompanyDescription": "Seleccione una empresa para ver estadísticas",
+    "noStats": "No hay estadísticas disponibles",
+    "noStatsDescription": "Agregue empleados y registre citas para ver las estadísticas."
+  }
+}

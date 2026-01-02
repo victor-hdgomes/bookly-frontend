@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/app/theme-provider";
 import { Providers } from "@/app/providers";
 import { Toaster } from "@/components/ui/toaster";
+import { NavigationProgress } from "@/components/globals";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +68,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <NavigationProgress />
           <Providers>
             {children}
           </Providers>

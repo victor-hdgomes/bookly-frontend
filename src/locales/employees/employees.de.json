@@ -1,0 +1,84 @@
+{
+  "title": "Mitarbeiter",
+  "description": "Unternehmensmitarbeiter verwalten",
+  "addEmployee": "Mitarbeiter hinzufügen",
+  "activeEmployees": "Aktive Mitarbeiter",
+  "inactiveEmployees": "Inaktive Mitarbeiter",
+  "noEmployees": "Keine Mitarbeiter registriert",
+  "noEmployeesDescription": "Fügen Sie Mitarbeiter hinzu, um das Team zu verwalten.",
+  "removeEmployee": "Mitarbeiter entfernen",
+  "removeEmployeeConfirm": "Sind Sie sicher, dass Sie diesen Mitarbeiter aus dem Unternehmen entfernen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+  "cancel": "Abbrechen",
+  "remove": "Entfernen",
+  "addEmployeeDialog": {
+    "title": "Mitarbeiter hinzufügen",
+    "description": "Suchen Sie einen Benutzer per E-Mail und fügen Sie ihn als Mitarbeiter des Unternehmens hinzu.",
+    "email": "Benutzer-E-Mail",
+    "emailPlaceholder": "benutzer@email.com",
+    "position": "Position (Optional)",
+    "positionPlaceholder": "Z.B.: Friseur, Stylist",
+    "search": "Suchen",
+    "searching": "Suche...",
+    "found": "Gefunden",
+    "add": "Hinzufügen",
+    "adding": "Hinzufügen...",
+    "userFoundMessage": "✓ {{name}} gefunden"
+  },
+  "toast": {
+    "employeeRemoved": "Mitarbeiter entfernt",
+    "employeeRemovedDescription": "Der Mitarbeiter wurde erfolgreich aus dem Unternehmen entfernt.",
+    "employeeAdded": "Mitarbeiter hinzugefügt",
+    "employeeAddedDescription": "Der Mitarbeiter wurde erfolgreich dem Unternehmen hinzugefügt.",
+    "errorRemoving": "Fehler beim Entfernen des Mitarbeiters",
+    "errorRemovingDescription": "Der Mitarbeiter konnte nicht entfernt werden. Bitte versuchen Sie es erneut.",
+    "errorAdding": "Fehler beim Hinzufügen des Mitarbeiters",
+    "errorAddingDescription": "Der Mitarbeiter konnte nicht hinzugefügt werden. Bitte versuchen Sie es erneut.",
+    "userNotFound": "Benutzer nicht gefunden",
+    "userNotFoundDescription": "Es konnte kein Benutzer mit dieser E-Mail gefunden werden.",
+    "userFound": "Benutzer gefunden",
+    "userFoundDescription": "Geben Sie die Position ein und klicken Sie auf Hinzufügen.",
+    "searchFirst": "Suchen Sie zuerst einen Benutzer",
+    "searchFirstDescription": "Geben Sie die E-Mail ein und suchen Sie, bevor Sie hinzufügen."
+  },
+  "errors": {
+    "emailRequired": "E-Mail ist erforderlich"
+  },
+  "stats": {
+    "totalAppointments": "Gesamtzahl der Termine",
+    "totalAppointmentsDescription": "Von allen aktiven Mitarbeitern",
+    "totalRevenue": "Gesamtumsatz",
+    "totalRevenueDescription": "Generiert durch abgeschlossene Termine",
+    "topPerformer": "Top-Performer",
+    "topPerformerDescription": "{{count}} Termine"
+  },
+  "ranking": {
+    "title": "Termin-Ranking",
+    "description": "Mitarbeiter nach Anzahl abgeschlossener Termine sortiert",
+    "appointmentsLabel": "Termine",
+    "revenueLabel": "Umsatz"
+  },
+  "page": {
+    "title": "Mitarbeiter",
+    "description": "Mitarbeiter von {{companyName}} verwalten",
+    "loadingMessage": "Mitarbeiter werden geladen...",
+    "errorTitle": "Fehler beim Laden der Mitarbeiter",
+    "noCompanySelected": "Kein Unternehmen ausgewählt",
+    "noCompanyDescription": "Wählen Sie ein Unternehmen aus, um Mitarbeiter zu verwalten"
+  },
+  "deleteDialog": {
+    "title": "Mitarbeiter Entfernen",
+    "description": "Sind Sie sicher, dass Sie diesen Mitarbeiter aus dem Unternehmen entfernen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancel": "Abbrechen",
+    "confirm": "Entfernen"
+  },
+  "statsPage": {
+    "title": "Mitarbeiterstatistiken",
+    "description": "Verfolgen Sie die Leistung der Mitarbeiter von {{companyName}}",
+    "loadingMessage": "Statistiken werden geladen...",
+    "errorTitle": "Fehler beim Laden der Statistiken",
+    "noCompanySelected": "Kein Unternehmen ausgewählt",
+    "noCompanyDescription": "Wählen Sie ein Unternehmen aus, um Statistiken anzuzeigen",
+    "noStats": "Keine Statistiken verfügbar",
+    "noStatsDescription": "Fügen Sie Mitarbeiter hinzu und erfassen Sie Termine, um Statistiken anzuzeigen."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "title": "Employés",
+  "description": "Gérer les employés de l'entreprise",
+  "addEmployee": "Ajouter un Employé",
+  "activeEmployees": "Employés Actifs",
+  "inactiveEmployees": "Employés Inactifs",
+  "noEmployees": "Aucun employé enregistré",
+  "noEmployeesDescription": "Ajoutez des employés pour commencer à gérer l'équipe.",
+  "removeEmployee": "Supprimer l'Employé",
+  "removeEmployeeConfirm": "Êtes-vous sûr de vouloir supprimer cet employé de l'entreprise ? Cette action ne peut pas être annulée.",
+  "cancel": "Annuler",
+  "remove": "Supprimer",
+  "addEmployeeDialog": {
+    "title": "Ajouter un Employé",
+    "description": "Recherchez un utilisateur par email et ajoutez-le comme employé de l'entreprise.",
+    "email": "Email de l'Utilisateur",
+    "emailPlaceholder": "utilisateur@email.com",
+    "position": "Poste (Optionnel)",
+    "positionPlaceholder": "Ex: Barbier, Coiffeur",
+    "search": "Rechercher",
+    "searching": "Recherche...",
+    "found": "Trouvé",
+    "add": "Ajouter",
+    "adding": "Ajout...",
+    "userFoundMessage": "✓ {{name}} trouvé(e)"
+  },
+  "toast": {
+    "employeeRemoved": "Employé supprimé",
+    "employeeRemovedDescription": "L'employé a été supprimé de l'entreprise avec succès.",
+    "employeeAdded": "Employé ajouté",
+    "employeeAddedDescription": "L'employé a été ajouté à l'entreprise avec succès.",
+    "errorRemoving": "Erreur lors de la suppression de l'employé",
+    "errorRemovingDescription": "Impossible de supprimer l'employé. Veuillez réessayer.",
+    "errorAdding": "Erreur lors de l'ajout de l'employé",
+    "errorAddingDescription": "Impossible d'ajouter l'employé. Veuillez réessayer.",
+    "userNotFound": "Utilisateur non trouvé",
+    "userNotFoundDescription": "Impossible de trouver un utilisateur avec cet email.",
+    "userFound": "Utilisateur trouvé",
+    "userFoundDescription": "Entrez le poste et cliquez sur ajouter.",
+    "searchFirst": "Recherchez d'abord un utilisateur",
+    "searchFirstDescription": "Entrez l'email et recherchez avant d'ajouter."
+  },
+  "errors": {
+    "emailRequired": "L'email est requis"
+  },
+  "stats": {
+    "totalAppointments": "Total des Rendez-vous",
+    "totalAppointmentsDescription": "De tous les employés actifs",
+    "totalRevenue": "Revenu Total",
+    "totalRevenueDescription": "Généré par les rendez-vous terminés",
+    "topPerformer": "Meilleure Performance",
+    "topPerformerDescription": "{{count}} rendez-vous"
+  },
+  "ranking": {
+    "title": "Classement des Rendez-vous",
+    "description": "Employés classés par nombre de rendez-vous terminés",
+    "appointmentsLabel": "Rendez-vous",
+    "revenueLabel": "Revenu"
+  },
+  "page": {
+    "title": "Employés",
+    "description": "Gérer les employés de {{companyName}}",
+    "loadingMessage": "Chargement des employés...",
+    "errorTitle": "Erreur lors du chargement des employés",
+    "noCompanySelected": "Aucune entreprise sélectionnée",
+    "noCompanyDescription": "Sélectionnez une entreprise pour gérer les employés"
+  },
+  "deleteDialog": {
+    "title": "Supprimer l'Employé",
+    "description": "Êtes-vous sûr de vouloir supprimer cet employé de l'entreprise ? Cette action ne peut pas être annulée.",
+    "cancel": "Annuler",
+    "confirm": "Supprimer"
+  },
+  "statsPage": {
+    "title": "Statistiques des Employés",
+    "description": "Suivez les performances des employés de {{companyName}}",
+    "loadingMessage": "Chargement des statistiques...",
+    "errorTitle": "Erreur lors du chargement des statistiques",
+    "noCompanySelected": "Aucune entreprise sélectionnée",
+    "noCompanyDescription": "Sélectionnez une entreprise pour voir les statistiques",
+    "noStats": "Aucune statistique disponible",
+    "noStatsDescription": "Ajoutez des employés et enregistrez des rendez-vous pour voir les statistiques."
+  }
+}
