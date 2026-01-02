@@ -24,5 +24,6 @@
   "signingOut": "Cerrando sesión...",
   "system": "Sistema",
   "employees": "Empleados",
-  "employeeStats": "Estadísticas"
+  "employeeStats": "Estadísticas",
+  "transactions": "Transacciones"
 }

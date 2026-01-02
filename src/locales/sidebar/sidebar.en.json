@@ -24,5 +24,6 @@
   "signingOut": "Signing out...",
   "system": "System",
   "employees": "Employees",
-  "employeeStats": "Statistics"
+  "employeeStats": "Statistics",
+  "transactions": "Transactions"
 }

@@ -3,6 +3,6 @@ export const COMPANY_ROUTES = {
   COMPANY_SERVICE_GROUPS: '/company/service-groups',
   COMPANY_SERVICES: '/company/services',
   COMPANY_EMPLOYEES: '/company/employees',
-  COMPANY_EMPLOYEE_STATS: '/company/employees/stats',
+  COMPANY_TRANSACTIONS: '/company/transactions',
 } as const;
 

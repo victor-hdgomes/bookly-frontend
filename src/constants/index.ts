@@ -4,3 +4,4 @@ export * from './company.constants';
 export * from './dashboard.constants';
 export * from './services.constants';
 export * from './employees.constants';
+export * from './transactions.constants';

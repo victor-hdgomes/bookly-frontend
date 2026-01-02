@@ -1,0 +1,115 @@
+{
+  "page": {
+    "title": "Transações Financeiras",
+    "description": "Gerencie receitas e despesas da {{companyName}}",
+    "addTransaction": "Nova Transação",
+    "noTransactions": "Nenhuma transação encontrada",
+    "noTransactionsDescription": "Comece adicionando sua primeira transação financeira"
+  },
+  "stats": {
+    "income": "Receitas",
+    "expenses": "Despesas",
+    "balance": "Saldo",
+    "incomeDescription": "Total de receitas",
+    "expensesDescription": "Total de despesas",
+    "balanceDescription": "Receitas - Despesas",
+    "recentTransactions": "Transações Recentes"
+  },
+  "list": {
+    "date": "Data",
+    "description": "Descrição",
+    "category": "Categoria",
+    "type": "Tipo",
+    "amount": "Valor",
+    "actions": "Ações"
+  },
+  "filters": {
+    "search": "Buscar transações...",
+    "type": "Tipo",
+    "category": "Categoria",
+    "startDate": "Data Inicial",
+    "endDate": "Data Final",
+    "allTypes": "Todos os tipos",
+    "allCategories": "Todas as categorias",
+    "income": "Receita",
+    "expense": "Despesa"
+  },
+  "form": {
+    "description": "Descrição",
+    "descriptionPlaceholder": "Ex: Pagamento de serviço",
+    "amount": "Valor",
+    "amountPlaceholder": "0.00",
+    "type": "Tipo",
+    "date": "Data",
+    "notes": "Observações",
+    "notesPlaceholder": "Informações adicionais (opcional)",
+    "category": "Categoria",
+    "categoryPlaceholder": "Selecione uma categoria"
+  },
+  "dialog": {
+    "addTitle": "Nova Transação",
+    "addDescription": "Adicione uma nova transação financeira",
+    "editTitle": "Editar Transação",
+    "editDescription": "Atualize os dados da transação",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "create": "Criar"
+  },
+  "deleteDialog": {
+    "title": "Excluir Transação",
+    "description": "Tem certeza que deseja excluir esta transação? Esta ação não pode ser desfeita.",
+    "cancel": "Cancelar",
+    "confirm": "Excluir"
+  },
+  "validation": {
+    "descriptionRequired": "Descrição é obrigatória",
+    "descriptionMaxLength": "Descrição deve ter no máximo 255 caracteres",
+    "amountPositive": "Valor deve ser positivo",
+    "notesMaxLength": "Observações devem ter no máximo 500 caracteres",
+    "categoryNameRequired": "Nome da categoria é obrigatório",
+    "categoryNameMaxLength": "Nome da categoria deve ter no máximo 100 caracteres"
+  },
+  "toast": {
+    "createSuccess": "Transação criada com sucesso",
+    "createError": "Erro ao criar transação",
+    "updateSuccess": "Transação atualizada com sucesso",
+    "updateError": "Erro ao atualizar transação",
+    "deleteSuccess": "Transação excluída com sucesso",
+    "deleteError": "Erro ao excluir transação"
+  },
+  "categories": {
+    "title": "Categorias",
+    "description": "Gerencie as categorias de transações",
+    "add": "Nova Categoria",
+    "addTitle": "Nova Categoria",
+    "addDescription": "Crie uma nova categoria para organizar transações",
+    "name": "Nome",
+    "namePlaceholder": "Ex: Serviços",
+    "noCategories": "Nenhuma categoria encontrada",
+    "noCategoriesDescription": "Crie categorias para organizar suas transações",
+    "incomeCategories": "Categorias de Receita",
+    "expenseCategories": "Categorias de Despesa",
+    "transactionCount": "{{count}} transação",
+    "transactionCount_other": "{{count}} transações",
+    "dialog": {
+      "editTitle": "Editar Categoria",
+      "editDescription": "Atualize os dados da categoria",
+      "cancel": "Cancelar",
+      "save": "Salvar"
+    },
+    "deleteDialog": {
+      "title": "Excluir Categoria",
+      "description": "Tem certeza que deseja excluir esta categoria? Esta ação não pode ser desfeita.",
+      "cancel": "Cancelar",
+      "confirm": "Excluir"
+    },
+    "toast": {
+      "createSuccess": "Categoria criada com sucesso",
+      "createError": "Erro ao criar categoria",
+      "updateSuccess": "Categoria atualizada com sucesso",
+      "updateError": "Erro ao atualizar categoria",
+      "deleteSuccess": "Categoria excluída com sucesso",
+      "deleteError": "Erro ao excluir categoria"
+    }
+  }
+}

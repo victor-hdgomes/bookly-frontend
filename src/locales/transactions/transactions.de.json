@@ -1,0 +1,111 @@
+{
+  "page": {
+    "title": "Financial Transactions",
+    "description": "Manage income and expenses for {{companyName}}",
+    "addTransaction": "New Transaction",
+    "noTransactions": "No transactions found",
+    "noTransactionsDescription": "Start by adding your first financial transaction"
+  },
+  "stats": {
+    "income": "Income",
+    "expenses": "Expenses",
+    "balance": "Balance",
+    "incomeDescription": "Total income",
+    "expensesDescription": "Total expenses",
+    "balanceDescription": "Income - Expenses",
+    "recentTransactions": "Recent Transactions"
+  },
+  "filters": {
+    "search": "Search transactions...",
+    "type": "Type",
+    "category": "Category",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "allTypes": "All types",
+    "allCategories": "All categories",
+    "income": "Income",
+    "expense": "Expense"
+  },
+  "form": {
+    "description": "Description",
+    "descriptionPlaceholder": "e.g., Service payment",
+    "amount": "Amount",
+    "amountPlaceholder": "0.00",
+    "type": "Type",
+    "date": "Date",
+    "notes": "Notes",
+    "notesPlaceholder": "Additional information (optional)",
+    "category": "Category",
+    "categoryPlaceholder": "Select a category"
+  },
+  "dialog": {
+    "addTitle": "New Transaction",
+    "addDescription": "Add a new financial transaction",
+    "editTitle": "Edit Transaction",
+    "editDescription": "Update transaction details",
+    "cancel": "Cancel",
+    "save": "Save",
+    "create": "Create"
+  },
+  "deleteDialog": {
+    "title": "Delete Transaction",
+    "description": "Are you sure you want to delete this transaction? This action cannot be undone.",
+    "cancel": "Cancel",
+    "confirm": "Delete"
+  },
+  "validation": {
+    "descriptionRequired": "Beschreibung ist erforderlich",
+    "descriptionMaxLength": "Beschreibung darf maximal 255 Zeichen lang sein",
+    "amountPositive": "Betrag muss positiv sein",
+    "notesMaxLength": "Notizen dürfen maximal 500 Zeichen lang sein",
+    "categoryNameRequired": "Kategoriename ist erforderlich",
+    "categoryNameMaxLength": "Kategoriename darf maximal 100 Zeichen lang sein"
+  },
+  "toast": {
+    "createSuccess": "Transaction created successfully",
+    "createError": "Error creating transaction",
+    "updateSuccess": "Transaction updated successfully",
+    "updateError": "Error updating transaction",
+    "deleteSuccess": "Transaction deleted successfully",
+    "deleteError": "Error deleting transaction"
+  },
+  "categories": {
+    "title": "Categories",
+    "description": "Manage transaction categories",
+    "add": "New Category",
+    "noCategories": "No categories found",
+    "noCategoriesDescription": "Create categories to organize your transactions",
+    "incomeCategories": "Income Categories",
+    "expenseCategories": "Expense Categories",
+    "transactionCount": "{{count}} transaction",
+    "transactionCount_other": "{{count}} transactions",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "e.g., Services",
+      "type": "Type"
+    },
+    "dialog": {
+      "addTitle": "New Category",
+      "addDescription": "Create a new category to organize transactions",
+      "editTitle": "Edit Category",
+      "editDescription": "Update category details",
+      "cancel": "Cancel",
+      "save": "Save",
+      "create": "Create"
+    },
+    "deleteDialog": {
+      "title": "Delete Category",
+      "description": "Are you sure you want to delete this category? This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Delete"
+    },
+    "toast": {
+      "createSuccess": "Category created successfully",
+      "createError": "Error creating category",
+      "updateSuccess": "Category updated successfully",
+      "updateError": "Error updating category",
+      "deleteSuccess": "Category deleted successfully",
+      "deleteError": "Error deleting category"
+    }
+  }
+}
