@@ -27,7 +27,8 @@
     "title": "Upcoming Appointments",
     "emptyMessage": "No upcoming appointments.",
     "service": "Service",
-    "notes": "Notes"
+    "notes": "Notes",
+    "duration": "{{duration}} min"
   }
 }
 

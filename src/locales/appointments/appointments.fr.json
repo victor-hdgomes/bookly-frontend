@@ -1,0 +1,79 @@
+{
+  "createDialog": {
+    "title": "Nouveau Rendez-vous",
+    "description": "Créer un nouveau rendez-vous pour un client",
+    "serviceLabel": "Service",
+    "servicePlaceholder": "Sélectionnez un service",
+    "employeeLabel": "Employé",
+    "employeePlaceholder": "Sélectionnez un employé",
+    "dateLabel": "Date et Heure",
+    "datePlaceholder": "Sélectionnez la date et l'heure",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Ajouter des notes sur le rendez-vous (optionnel)",
+    "cancelButton": "Annuler",
+    "createButton": "Créer",
+    "creatingButton": "Création..."
+  },
+  "editDialog": {
+    "title": "Modifier le Rendez-vous",
+    "description": "Mettre à jour les informations du rendez-vous",
+    "serviceLabel": "Service",
+    "employeeLabel": "Employé",
+    "statusLabel": "Statut",
+    "dateLabel": "Date et Heure",
+    "notesLabel": "Notes",
+    "cancelButton": "Annuler",
+    "updateButton": "Mettre à jour",
+    "updatingButton": "Mise à jour..."
+  },
+  "page": {
+    "title": "Rendez-vous",
+    "description": "Gérer tous les rendez-vous de l'entreprise",
+    "emptyAppointmentsTitle": "Aucun rendez-vous trouvé",
+    "emptyAppointmentsDescription": "Créez votre premier rendez-vous pour commencer"
+  },
+  "filters": {
+    "searchPlaceholder": "Rechercher par client ou notes...",
+    "createButton": "Nouveau Rendez-vous",
+    "servicePlaceholder": "Filtrer par service",
+    "allServices": "Tous les services",
+    "employeePlaceholder": "Filtrer par employé",
+    "allEmployees": "Tous les employés",
+    "statusPlaceholder": "Filtrer par statut",
+    "allStatuses": "Tous les statuts",
+    "clearFilters": "Effacer les filtres"
+  },
+  "list": {
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Confirmer la suppression",
+    "description": "Êtes-vous sûr de vouloir supprimer le rendez-vous du {{date}} ? Cette action ne peut pas être annulée.",
+    "cancelButton": "Annuler",
+    "confirmButton": "Supprimer"
+  },
+  "validation": {
+    "dateRequired": "La date et l'heure sont obligatoires",
+    "serviceRequired": "Sélectionnez un service",
+    "employeeRequired": "Sélectionnez un employé"
+  },
+  "status": {
+    "scheduled": "Programmé",
+    "completed": "Terminé",
+    "canceled": "Annulé"
+  },
+  "toast": {
+    "createSuccess": "Rendez-vous créé",
+    "createSuccessDescription": "Le rendez-vous a été créé avec succès.",
+    "createError": "Erreur lors de la création du rendez-vous",
+    "createErrorDescription": "Une erreur s'est produite lors de la création du rendez-vous. Veuillez réessayer.",
+    "updateSuccess": "Rendez-vous mis à jour",
+    "updateSuccessDescription": "Le rendez-vous a été mis à jour avec succès.",
+    "updateError": "Erreur lors de la mise à jour du rendez-vous",
+    "updateErrorDescription": "Une erreur s'est produite lors de la mise à jour du rendez-vous. Veuillez réessayer.",
+    "deleteSuccess": "Rendez-vous supprimé",
+    "deleteSuccessDescription": "Le rendez-vous a été supprimé avec succès.",
+    "deleteError": "Erreur lors de la suppression du rendez-vous",
+    "deleteErrorDescription": "Une erreur s'est produite lors de la suppression du rendez-vous. Veuillez réessayer."
+  }
+}

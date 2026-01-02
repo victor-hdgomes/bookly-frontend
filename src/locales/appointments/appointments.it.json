@@ -1,0 +1,77 @@
+{
+  "createDialog": {
+    "title": "Nuovo Appuntamento",
+    "description": "Crea un nuovo appuntamento per un cliente",
+    "serviceLabel": "Servizio",
+    "servicePlaceholder": "Seleziona un servizio",
+    "employeeLabel": "Dipendente",
+    "employeePlaceholder": "Seleziona un dipendente",
+    "dateLabel": "Data e Ora",
+    "datePlaceholder": "Seleziona data e ora",
+    "notesLabel": "Note",
+    "notesPlaceholder": "Aggiungi note sull'appuntamento (opzionale)",
+    "cancelButton": "Annulla",
+    "createButton": "Crea",
+    "creatingButton": "Creazione..."
+  },
+  "editDialog": {
+    "title": "Modifica Appuntamento",
+    "description": "Aggiorna le informazioni dell'appuntamento",
+    "serviceLabel": "Servizio",
+    "employeeLabel": "Dipendente",
+    "statusLabel": "Stato",
+    "dateLabel": "Data e Ora",
+    "notesLabel": "Note",
+    "cancelButton": "Annulla",
+    "updateButton": "Aggiorna",
+    "updatingButton": "Aggiornamento..."
+  },
+  "page": {
+    "title": "Appuntamenti",
+    "description": "Gestisci tutti gli appuntamenti dell'azienda",
+    "emptyAppointmentsTitle": "Nessun appuntamento trovato",
+    "emptyAppointmentsDescription": "Crea il tuo primo appuntamento per iniziare"
+  },
+  "filters": {
+    "searchPlaceholder": "Cerca per cliente o note...",
+    "createButton": "Nuovo Appuntamento",
+    "servicePlaceholder": "Filtra per servizio",
+    "allServices": "Tutti i servizi",
+    "employeePlaceholder": "Filtra per dipendente",
+    "allEmployees": "Tutti i dipendenti",
+    "statusPlaceholder": "Filtra per stato",
+    "allStatuses": "Tutti gli stati",
+    "clearFilters": "Cancella filtri"
+  },
+  "list": {
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Conferma eliminazione",
+    "description": "Sei sicuro di voler eliminare l'appuntamento del {{date}}? Questa azione non può essere annullata.",
+    "cancelButton": "Annulla",
+    "confirmButton": "Elimina"
+  },
+  "validation": {
+    "dateRequired": "Data e ora sono obbligatorie",
+    "serviceRequired": "Seleziona un servizio",
+    "employeeRequired": "Seleziona un dipendente"  },
+  "status": {
+    "scheduled": "Programmato",
+    "completed": "Completato",
+    "canceled": "Annullato"
+  },
+  "toast": {
+    "createSuccess": "Appuntamento creato",
+    "createSuccessDescription": "L'appuntamento è stato creato con successo.",
+    "createError": "Errore nella creazione dell'appuntamento",
+    "createErrorDescription": "Si è verificato un errore durante la creazione dell'appuntamento. Riprova.",
+    "updateSuccess": "Appuntamento aggiornato",
+    "updateSuccessDescription": "L'appuntamento è stato aggiornato con successo.",
+    "updateError": "Errore nell'aggiornamento dell'appuntamento",
+    "updateErrorDescription": "Si è verificato un errore durante l'aggiornamento dell'appuntamento. Riprova.",
+    "deleteSuccess": "Appuntamento eliminato",
+    "deleteSuccessDescription": "L'appuntamento è stato eliminato con successo.",
+    "deleteError": "Errore nell'eliminazione dell'appuntamento",
+    "deleteErrorDescription": "Si è verificato un errore durante l'eliminazione dell'appuntamento. Riprova."  }
+}

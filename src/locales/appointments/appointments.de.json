@@ -1,0 +1,77 @@
+{
+  "createDialog": {
+    "title": "Neuer Termin",
+    "description": "Erstellen Sie einen neuen Termin für einen Kunden",
+    "serviceLabel": "Dienstleistung",
+    "servicePlaceholder": "Wählen Sie eine Dienstleistung",
+    "employeeLabel": "Mitarbeiter",
+    "employeePlaceholder": "Wählen Sie einen Mitarbeiter",
+    "dateLabel": "Datum und Uhrzeit",
+    "datePlaceholder": "Wählen Sie Datum und Uhrzeit",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Notizen zum Termin hinzufügen (optional)",
+    "cancelButton": "Abbrechen",
+    "createButton": "Erstellen",
+    "creatingButton": "Erstellen..."
+  },
+  "editDialog": {
+    "title": "Termin bearbeiten",
+    "description": "Termininformationen aktualisieren",
+    "serviceLabel": "Dienstleistung",
+    "employeeLabel": "Mitarbeiter",
+    "statusLabel": "Status",
+    "dateLabel": "Datum und Uhrzeit",
+    "notesLabel": "Notizen",
+    "cancelButton": "Abbrechen",
+    "updateButton": "Aktualisieren",
+    "updatingButton": "Aktualisierung..."
+  },
+  "page": {
+    "title": "Termine",
+    "description": "Alle Unternehmenstermine verwalten",
+    "emptyAppointmentsTitle": "Keine Termine gefunden",
+    "emptyAppointmentsDescription": "Erstellen Sie Ihren ersten Termin, um zu beginnen"
+  },
+  "filters": {
+    "searchPlaceholder": "Suche nach Kunde oder Notizen...",
+    "createButton": "Neuer Termin",
+    "servicePlaceholder": "Nach Dienstleistung filtern",
+    "allServices": "Alle Dienstleistungen",
+    "employeePlaceholder": "Nach Mitarbeiter filtern",
+    "allEmployees": "Alle Mitarbeiter",
+    "statusPlaceholder": "Nach Status filtern",
+    "allStatuses": "Alle Status",
+    "clearFilters": "Filter löschen"
+  },
+  "list": {
+    "durationMinutes": "{{duration}} Min"
+  },
+  "deleteDialog": {
+    "title": "Löschen bestätigen",
+    "description": "Sind Sie sicher, dass Sie den Termin vom {{date}} löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancelButton": "Abbrechen",
+    "confirmButton": "Löschen"
+  },
+  "validation": {
+    "dateRequired": "Datum und Uhrzeit sind erforderlich",
+    "serviceRequired": "Wählen Sie eine Dienstleistung",
+    "employeeRequired": "Wählen Sie einen Mitarbeiter"  },
+  "status": {
+    "scheduled": "Geplant",
+    "completed": "Abgeschlossen",
+    "canceled": "Storniert"
+  },
+  "toast": {
+    "createSuccess": "Termin erstellt",
+    "createSuccessDescription": "Der Termin wurde erfolgreich erstellt.",
+    "createError": "Fehler beim Erstellen des Termins",
+    "createErrorDescription": "Beim Erstellen des Termins ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "updateSuccess": "Termin aktualisiert",
+    "updateSuccessDescription": "Der Termin wurde erfolgreich aktualisiert.",
+    "updateError": "Fehler beim Aktualisieren des Termins",
+    "updateErrorDescription": "Beim Aktualisieren des Termins ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "deleteSuccess": "Termin gelöscht",
+    "deleteSuccessDescription": "Der Termin wurde erfolgreich gelöscht.",
+    "deleteError": "Fehler beim Löschen des Termins",
+    "deleteErrorDescription": "Beim Löschen des Termins ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."  }
+}

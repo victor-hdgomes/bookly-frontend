@@ -1,0 +1,79 @@
+{
+  "createDialog": {
+    "title": "Nueva Cita",
+    "description": "Crear una nueva cita para un cliente",
+    "serviceLabel": "Servicio",
+    "servicePlaceholder": "Seleccione un servicio",
+    "employeeLabel": "Empleado",
+    "employeePlaceholder": "Seleccione un empleado",
+    "dateLabel": "Fecha y Hora",
+    "datePlaceholder": "Seleccione fecha y hora",
+    "notesLabel": "Observaciones",
+    "notesPlaceholder": "Añadir observaciones sobre la cita (opcional)",
+    "cancelButton": "Cancelar",
+    "createButton": "Crear",
+    "creatingButton": "Creando..."
+  },
+  "editDialog": {
+    "title": "Editar Cita",
+    "description": "Actualizar información de la cita",
+    "serviceLabel": "Servicio",
+    "employeeLabel": "Empleado",
+    "statusLabel": "Estado",
+    "dateLabel": "Fecha y Hora",
+    "notesLabel": "Observaciones",
+    "cancelButton": "Cancelar",
+    "updateButton": "Actualizar",
+    "updatingButton": "Actualizando..."
+  },
+  "page": {
+    "title": "Citas",
+    "description": "Gestionar todas las citas de la empresa",
+    "emptyAppointmentsTitle": "No se encontraron citas",
+    "emptyAppointmentsDescription": "Cree su primera cita para comenzar"
+  },
+  "filters": {
+    "searchPlaceholder": "Buscar por cliente u observaciones...",
+    "createButton": "Nueva Cita",
+    "servicePlaceholder": "Filtrar por servicio",
+    "allServices": "Todos los servicios",
+    "employeePlaceholder": "Filtrar por empleado",
+    "allEmployees": "Todos los empleados",
+    "statusPlaceholder": "Filtrar por estado",
+    "allStatuses": "Todos los estados",
+    "clearFilters": "Limpiar filtros"
+  },
+  "list": {
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Confirmar eliminación",
+    "description": "¿Está seguro de que desea eliminar la cita del {{date}}? Esta acción no se puede deshacer.",
+    "cancelButton": "Cancelar",
+    "confirmButton": "Eliminar"
+  },
+  "validation": {
+    "dateRequired": "La fecha y hora son obligatorias",
+    "serviceRequired": "Seleccione un servicio",
+    "employeeRequired": "Seleccione un empleado"
+  },
+  "status": {
+    "scheduled": "Programado",
+    "completed": "Completado",
+    "canceled": "Cancelado"
+  },
+  "toast": {
+    "createSuccess": "Cita creada",
+    "createSuccessDescription": "La cita se creó correctamente.",
+    "createError": "Error al crear la cita",
+    "createErrorDescription": "Ocurrió un error al crear la cita. Inténtelo de nuevo.",
+    "updateSuccess": "Cita actualizada",
+    "updateSuccessDescription": "La cita se actualizó correctamente.",
+    "updateError": "Error al actualizar la cita",
+    "updateErrorDescription": "Ocurrió un error al actualizar la cita. Inténtelo de nuevo.",
+    "deleteSuccess": "Cita eliminada",
+    "deleteSuccessDescription": "La cita se eliminó correctamente.",
+    "deleteError": "Error al eliminar la cita",
+    "deleteErrorDescription": "Ocurrió un error al eliminar la cita. Inténtelo de nuevo."
+  }
+}

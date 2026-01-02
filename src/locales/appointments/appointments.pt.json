@@ -1,0 +1,79 @@
+{
+  "createDialog": {
+    "title": "Novo Agendamento",
+    "description": "Crie um novo agendamento para um cliente",
+    "serviceLabel": "Serviço",
+    "servicePlaceholder": "Selecione um serviço",
+    "employeeLabel": "Funcionário",
+    "employeePlaceholder": "Selecione um funcionário",
+    "dateLabel": "Data e Hora",
+    "datePlaceholder": "Selecione a data e hora",
+    "notesLabel": "Observações",
+    "notesPlaceholder": "Adicione observações sobre o agendamento (opcional)",
+    "cancelButton": "Cancelar",
+    "createButton": "Criar",
+    "creatingButton": "Criando..."
+  },
+  "editDialog": {
+    "title": "Editar Agendamento",
+    "description": "Atualize as informações do agendamento",
+    "serviceLabel": "Serviço",
+    "employeeLabel": "Funcionário",
+    "statusLabel": "Status",
+    "dateLabel": "Data e Hora",
+    "notesLabel": "Observações",
+    "cancelButton": "Cancelar",
+    "updateButton": "Atualizar",
+    "updatingButton": "Atualizando..."
+  },
+  "page": {
+    "title": "Agendamentos",
+    "description": "Gerencie todos os agendamentos da empresa",
+    "emptyAppointmentsTitle": "Nenhum agendamento encontrado",
+    "emptyAppointmentsDescription": "Crie seu primeiro agendamento para começar"
+  },
+  "filters": {
+    "searchPlaceholder": "Buscar por cliente ou observações...",
+    "createButton": "Novo Agendamento",
+    "servicePlaceholder": "Filtrar por serviço",
+    "allServices": "Todos os serviços",
+    "employeePlaceholder": "Filtrar por funcionário",
+    "allEmployees": "Todos os funcionários",
+    "statusPlaceholder": "Filtrar por status",
+    "allStatuses": "Todos os status",
+    "clearFilters": "Limpar filtros"
+  },
+  "list": {
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Confirmar exclusão",
+    "description": "Tem certeza que deseja excluir o agendamento de {{date}}? Esta ação não pode ser desfeita.",
+    "cancelButton": "Cancelar",
+    "confirmButton": "Excluir"
+  },
+  "validation": {
+    "dateRequired": "A data e hora são obrigatórias",
+    "serviceRequired": "Selecione um serviço",
+    "employeeRequired": "Selecione um funcionário"
+  },
+  "status": {
+    "scheduled": "Agendado",
+    "completed": "Concluído",
+    "canceled": "Cancelado"
+  },
+  "toast": {
+    "createSuccess": "Agendamento criado",
+    "createSuccessDescription": "O agendamento foi criado com sucesso.",
+    "createError": "Erro ao criar agendamento",
+    "createErrorDescription": "Ocorreu um erro ao criar o agendamento. Tente novamente.",
+    "updateSuccess": "Agendamento atualizado",
+    "updateSuccessDescription": "O agendamento foi atualizado com sucesso.",
+    "updateError": "Erro ao atualizar agendamento",
+    "updateErrorDescription": "Ocorreu um erro ao atualizar o agendamento. Tente novamente.",
+    "deleteSuccess": "Agendamento excluído",
+    "deleteSuccessDescription": "O agendamento foi excluído com sucesso.",
+    "deleteError": "Erro ao excluir agendamento",
+    "deleteErrorDescription": "Ocorreu um erro ao excluir o agendamento. Tente novamente."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "createDialog": {
+    "title": "New Appointment",
+    "description": "Create a new appointment for a client",
+    "serviceLabel": "Service",
+    "servicePlaceholder": "Select a service",
+    "employeeLabel": "Employee",
+    "employeePlaceholder": "Select an employee",
+    "dateLabel": "Date and Time",
+    "datePlaceholder": "Select date and time",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Add notes about the appointment (optional)",
+    "cancelButton": "Cancel",
+    "createButton": "Create",
+    "creatingButton": "Creating..."
+  },
+  "editDialog": {
+    "title": "Edit Appointment",
+    "description": "Update appointment information",
+    "serviceLabel": "Service",
+    "employeeLabel": "Employee",
+    "statusLabel": "Status",
+    "dateLabel": "Date and Time",
+    "notesLabel": "Notes",
+    "cancelButton": "Cancel",
+    "updateButton": "Update",
+    "updatingButton": "Updating..."
+  },
+  "page": {
+    "title": "Appointments",
+    "description": "Manage all company appointments",
+    "emptyAppointmentsTitle": "No appointments found",
+    "emptyAppointmentsDescription": "Create your first appointment to get started"
+  },
+  "filters": {
+    "searchPlaceholder": "Search by client or notes...",
+    "createButton": "New Appointment",
+    "servicePlaceholder": "Filter by service",
+    "allServices": "All services",
+    "employeePlaceholder": "Filter by employee",
+    "allEmployees": "All employees",
+    "statusPlaceholder": "Filter by status",
+    "allStatuses": "All statuses",
+    "clearFilters": "Clear filters"
+  },
+  "list": {
+    "durationMinutes": "{{duration}} min"
+  },
+  "deleteDialog": {
+    "title": "Confirm deletion",
+    "description": "Are you sure you want to delete the appointment on {{date}}? This action cannot be undone.",
+    "cancelButton": "Cancel",
+    "confirmButton": "Delete"
+  },
+  "validation": {
+    "dateRequired": "Date and time are required",
+    "serviceRequired": "Select a service",
+    "employeeRequired": "Select an employee"
+  },
+  "status": {
+    "scheduled": "Scheduled",
+    "completed": "Completed",
+    "canceled": "Canceled"
+  },
+  "toast": {
+    "createSuccess": "Appointment created",
+    "createSuccessDescription": "The appointment was created successfully.",
+    "createError": "Error creating appointment",
+    "createErrorDescription": "An error occurred while creating the appointment. Please try again.",
+    "updateSuccess": "Appointment updated",
+    "updateSuccessDescription": "The appointment was updated successfully.",
+    "updateError": "Error updating appointment",
+    "updateErrorDescription": "An error occurred while updating the appointment. Please try again.",
+    "deleteSuccess": "Appointment deleted",
+    "deleteSuccessDescription": "The appointment was deleted successfully.",
+    "deleteError": "Error deleting appointment",
+    "deleteErrorDescription": "An error occurred while deleting the appointment. Please try again."
+  }
+}

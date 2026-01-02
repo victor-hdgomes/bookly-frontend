@@ -27,7 +27,8 @@
     "title": "Rendez-vous à Venir",
     "emptyMessage": "Aucun rendez-vous à venir.",
     "service": "Service",
-    "notes": "Notes"
+    "notes": "Notes",
+    "duration": "{{duration}} min"
   }
 }
 

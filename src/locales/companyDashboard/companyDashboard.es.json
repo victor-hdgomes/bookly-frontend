@@ -27,7 +27,8 @@
     "title": "Próximas Citas",
     "emptyMessage": "No hay citas próximas.",
     "service": "Servicio",
-    "notes": "Observaciones"
+    "notes": "Observaciones",
+    "duration": "{{duration}} min"
   }
 }
 

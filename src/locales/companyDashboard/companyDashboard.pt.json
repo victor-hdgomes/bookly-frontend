@@ -27,7 +27,8 @@
     "title": "Próximos Agendamentos",
     "emptyMessage": "Nenhum agendamento próximo.",
     "service": "Serviço",
-    "notes": "Observações"
+    "notes": "Observações",
+    "duration": "{{duration}} min"
   }
 }
 

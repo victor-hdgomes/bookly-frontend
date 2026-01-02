@@ -27,7 +27,8 @@
     "title": "Bevorstehende Termine",
     "emptyMessage": "Keine bevorstehenden Termine.",
     "service": "Dienst",
-    "notes": "Notizen"
+    "notes": "Notizen",
+    "duration": "{{duration}} Min"
   }
 }
 
