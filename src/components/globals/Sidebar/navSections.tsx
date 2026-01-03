@@ -1,6 +1,6 @@
 import { CLIENT_ROUTES, COMPANY_ROUTES } from "@/constants";
 import { TFunction } from "i18next";
-import { Home, User, FolderOpen, Package, Users, DollarSign, Calendar } from "lucide-react";
+import { Home, User, FolderOpen, Package, Users, DollarSign, Calendar, Building2 } from "lucide-react";
 
 export type NavSection = {
   title: string;
@@ -26,6 +26,7 @@ export function getNavSections(
       roles: ["client"],
       items: [
         { label: t("dashboard"), href: CLIENT_ROUTES.CLIENT_DASHBOARD, icon: <Home /> },
+        { label: t("find"), href: CLIENT_ROUTES.CLIENT_COMPANIES_SEARCH, icon: <Building2 /> },
         // { label: t("myAppointments"), href: "/panel/client/agendamentos", icon: <Calendar /> },
         // { label: t("payments"), href: "/panel/client/pagamentos", icon: <CreditCard /> },
         { label: t("profile"), href: CLIENT_ROUTES.CLIENT_PROFILE, icon: <User /> },

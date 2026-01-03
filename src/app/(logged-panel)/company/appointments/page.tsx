@@ -20,7 +20,7 @@ export default function AppointmentsPage() {
   const { selectedCompanyId } = useSelectedCompanyContext();
   const [selectedServiceId, setSelectedServiceId] = useState<string>("");
   const [selectedUserId, setSelectedUserId] = useState<string>("");
-  const [selectedStatus, setSelectedStatus] = useState<AppointmentStatus | "">("");
+  const [selectedStatus, setSelectedStatus] = useState<AppointmentStatus | "">(AppointmentStatus.SCHEDULED);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);

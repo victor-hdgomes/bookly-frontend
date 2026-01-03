@@ -1,0 +1,29 @@
+{
+  "title": "Find Companies",
+  "subtitle": "Discover and book services at barbershops and salons",
+  "searchPlaceholder": "Search by company name...",
+  "noResults": {
+    "title": "No companies found",
+    "description": "Try adjusting your search criteria"
+  },
+  "loading": "Loading companies...",
+  "error": {
+    "title": "Error loading companies",
+    "description": "An error occurred while loading companies. Please try again."
+  },
+  "viewServices": "View Services",
+  "bookNow": "Book Now",
+  "closed": "Closed",
+  "open": "Open",
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {{page}} of {{total}}"
+  },
+  "table": {
+    "name": "Name",
+    "contact": "Contact",
+    "status": "Status",
+    "actions": "Actions"
+  }
+}

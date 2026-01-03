@@ -1,0 +1,29 @@
+{
+  "title": "Unternehmen Finden",
+  "subtitle": "Entdecken und buchen Sie Dienstleistungen in Barbershops und Salons",
+  "searchPlaceholder": "Nach Firmennamen suchen...",
+  "noResults": {
+    "title": "Keine Unternehmen gefunden",
+    "description": "Versuchen Sie, Ihre Suchkriterien anzupassen"
+  },
+  "loading": "Unternehmen werden geladen...",
+  "error": {
+    "title": "Fehler beim Laden der Unternehmen",
+    "description": "Beim Laden der Unternehmen ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "viewServices": "Dienstleistungen Anzeigen",
+  "bookNow": "Jetzt Buchen",
+  "closed": "Geschlossen",
+  "open": "Geöffnet",
+  "pagination": {
+    "previous": "Zurück",
+    "next": "Weiter",
+    "page": "Seite {{page}} von {{total}}"
+  },
+  "table": {
+    "name": "Name",
+    "contact": "Kontakt",
+    "status": "Status",
+    "actions": "Aktionen"
+  }
+}

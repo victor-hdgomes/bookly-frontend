@@ -1,0 +1,29 @@
+{
+  "title": "Trouver des Entreprises",
+  "subtitle": "Découvrez et réservez des services dans les salons de coiffure",
+  "searchPlaceholder": "Rechercher par nom d'entreprise...",
+  "noResults": {
+    "title": "Aucune entreprise trouvée",
+    "description": "Essayez d'ajuster vos critères de recherche"
+  },
+  "loading": "Chargement des entreprises...",
+  "error": {
+    "title": "Erreur lors du chargement des entreprises",
+    "description": "Une erreur s'est produite lors du chargement des entreprises. Veuillez réessayer."
+  },
+  "viewServices": "Voir les Services",
+  "bookNow": "Réserver Maintenant",
+  "closed": "Fermé",
+  "open": "Ouvert",
+  "pagination": {
+    "previous": "Précédente",
+    "next": "Suivante",
+    "page": "Page {{page}} sur {{total}}"
+  },
+  "table": {
+    "name": "Nom",
+    "contact": "Contact",
+    "status": "Statut",
+    "actions": "Actions"
+  }
+}

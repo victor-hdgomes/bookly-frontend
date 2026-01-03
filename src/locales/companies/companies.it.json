@@ -1,0 +1,29 @@
+{
+  "title": "Trova Aziende",
+  "subtitle": "Scopri e prenota servizi presso barbieri e saloni",
+  "searchPlaceholder": "Cerca per nome azienda...",
+  "noResults": {
+    "title": "Nessuna azienda trovata",
+    "description": "Prova a modificare i criteri di ricerca"
+  },
+  "loading": "Caricamento aziende...",
+  "error": {
+    "title": "Errore nel caricamento delle aziende",
+    "description": "Si è verificato un errore durante il caricamento delle aziende. Riprova."
+  },
+  "viewServices": "Visualizza Servizi",
+  "bookNow": "Prenota Ora",
+  "closed": "Chiuso",
+  "open": "Aperto",
+  "pagination": {
+    "previous": "Precedente",
+    "next": "Successiva",
+    "page": "Pagina {{page}} di {{total}}"
+  },
+  "table": {
+    "name": "Nome",
+    "contact": "Contatto",
+    "status": "Stato",
+    "actions": "Azioni"
+  }
+}

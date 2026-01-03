@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { useSelectedCompanyContext } from "@/contexts/SelectedCompanyContext";
+import { useSelectedCompanyContextOptional } from "@/contexts/SelectedCompanyContext";
 import { CompanySelector } from "./CompanySelector";
 
 interface PageHeaderProps {
@@ -17,7 +17,11 @@ export function PageHeader({
   actions,
   showCompanySelector,
 }: PageHeaderProps) {
-  const { selectedCompanyId, setSelectedCompanyId, hasMultipleCompanies, companies } = useSelectedCompanyContext();
+  const context = useSelectedCompanyContextOptional();
+  const selectedCompanyId = context?.selectedCompanyId;
+  const setSelectedCompanyId = context?.setSelectedCompanyId;
+  const hasMultipleCompanies = context?.hasMultipleCompanies;
+  const companies = context?.companies;
   
   return (
     <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -29,7 +33,7 @@ export function PageHeader({
       </div>
       
       <div className="flex gap-2">
-        {showCompanySelector && hasMultipleCompanies && companies && selectedCompanyId && (
+        {showCompanySelector && hasMultipleCompanies && companies && selectedCompanyId && setSelectedCompanyId && (
           <CompanySelector
             companies={companies}
             selectedCompanyId={selectedCompanyId}

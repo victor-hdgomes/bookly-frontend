@@ -70,3 +70,8 @@ export function useSelectedCompanyContext() {
   }
   return context;
 }
+
+export function useSelectedCompanyContextOptional() {
+  const context = useContext(SelectedCompanyContext);
+  return context;
+}

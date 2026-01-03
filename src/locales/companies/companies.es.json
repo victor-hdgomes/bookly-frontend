@@ -1,0 +1,29 @@
+{
+  "title": "Encontrar Empresas",
+  "subtitle": "Descubre y reserva servicios en barberías y salones",
+  "searchPlaceholder": "Buscar por nombre de empresa...",
+  "noResults": {
+    "title": "No se encontraron empresas",
+    "description": "Intenta ajustar tus criterios de búsqueda"
+  },
+  "loading": "Cargando empresas...",
+  "error": {
+    "title": "Error al cargar empresas",
+    "description": "Ocurrió un error al cargar las empresas. Por favor, inténtalo de nuevo."
+  },
+  "viewServices": "Ver Servicios",
+  "bookNow": "Reservar Ahora",
+  "closed": "Cerrado",
+  "open": "Abierto",
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "page": "Página {{page}} de {{total}}"
+  },
+  "table": {
+    "name": "Nombre",
+    "contact": "Contacto",
+    "status": "Estado",
+    "actions": "Acciones"
+  }
+}

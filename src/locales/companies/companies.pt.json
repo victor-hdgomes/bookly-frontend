@@ -1,0 +1,29 @@
+{
+  "title": "Encontrar Empresas",
+  "subtitle": "Descubra e agende serviços em barbearias e salões",
+  "searchPlaceholder": "Pesquisar por nome da empresa...",
+  "noResults": {
+    "title": "Nenhuma empresa encontrada",
+    "description": "Tente ajustar seus critérios de pesquisa"
+  },
+  "loading": "Carregando empresas...",
+  "error": {
+    "title": "Erro ao carregar empresas",
+    "description": "Ocorreu um erro ao carregar as empresas. Por favor, tente novamente."
+  },
+  "viewServices": "Ver Serviços",
+  "bookNow": "Agendar Agora",
+  "closed": "Fechado",
+  "open": "Aberto",
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Próxima",
+    "page": "Página {{page}} de {{total}}"
+  },
+  "table": {
+    "name": "Nome",
+    "contact": "Contato",
+    "status": "Status",
+    "actions": "Ações"
+  }
+}
