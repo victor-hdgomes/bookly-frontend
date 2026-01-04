@@ -25,6 +25,19 @@
     "defaultTitle": "Appointment",
     "noDate": "No date",
     "clientLabel": "Client:"
+  },
+  "deleteDialog": {
+    "title": "Cancel Appointment",
+    "description": "Are you sure you want to cancel the {{service}} appointment at {{company}}?",
+    "cancelButton": "Don't cancel",
+    "confirmButton": "Yes, cancel",
+    "deletingButton": "Canceling..."
+  },
+  "toast": {
+    "deleteSuccess": "Appointment canceled",
+    "deleteSuccessDescription": "Your appointment has been successfully canceled.",
+    "deleteError": "Error canceling",
+    "deleteErrorDescription": "Could not cancel the appointment. Please try again."
   }
 }
 

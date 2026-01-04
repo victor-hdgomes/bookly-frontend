@@ -25,6 +25,19 @@
     "defaultTitle": "Agendamento",
     "noDate": "Sem data",
     "clientLabel": "Cliente:"
+  },
+  "deleteDialog": {
+    "title": "Cancelar Agendamento",
+    "description": "Tem certeza que deseja cancelar o agendamento de {{service}} na {{company}}?",
+    "cancelButton": "Não cancelar",
+    "confirmButton": "Sim, cancelar",
+    "deletingButton": "Cancelando..."
+  },
+  "toast": {
+    "deleteSuccess": "Agendamento cancelado",
+    "deleteSuccessDescription": "Seu agendamento foi cancelado com sucesso.",
+    "deleteError": "Erro ao cancelar",
+    "deleteErrorDescription": "Não foi possível cancelar o agendamento. Tente novamente."
   }
 }
 

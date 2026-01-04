@@ -47,8 +47,8 @@ export default function ServicesPage() {
     setItemsPerPage,
   } = usePagination(filteredServices, 10);
 
-  const handleDeleteService = async (serviceId: string) => {
-    await deleteService.mutateAsync(serviceId);
+  const handleDeleteService = async (serviceId: string, serviceName: string) => {
+    await deleteService.mutateAsync({ serviceId, serviceName });
   };
 
   if (servicesError) {

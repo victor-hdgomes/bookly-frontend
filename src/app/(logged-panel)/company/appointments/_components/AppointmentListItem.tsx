@@ -6,9 +6,8 @@ import { Calendar, Clock, User, CheckCircle } from "lucide-react";
 import { Appointment, AppointmentStatus } from "@/types/appointment.types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ListItem } from "@/components/globals";
+import { ListItem, DeleteConfirmDialog } from "@/components/globals";
 import { AppointmentDeleteDialog } from "./AppointmentDeleteDialog";
-import { AppointmentCompleteDialog } from "./AppointmentCompleteDialog";
 import { EditAppointmentDialog } from "./EditAppointmentDialog";
 import { useUpdateAppointment } from "@/hooks/company/appointments/useAppointments";
 import { APPOINTMENT_STATUS_COLORS } from "@/constants";
@@ -139,11 +138,16 @@ export function AppointmentListItem({
         onConfirm={handleDeleteConfirm}
       />
 
-      <AppointmentCompleteDialog
+      <DeleteConfirmDialog
         open={isCompleteDialogOpen}
         onOpenChange={setIsCompleteDialogOpen}
-        appointmentDate={formattedDate}
-        serviceName={appointment.service.name}
+        title={t("completeDialog.title")}
+        description={t("completeDialog.description", {
+          service: appointment.service.name,
+          date: formattedDate,
+        })}
+        confirmText={updateAppointment.isPending ? t("completeDialog.confirmingButton") : t("completeDialog.confirmButton")}
+        cancelText={t("completeDialog.cancelButton")}
         onConfirm={handleCompleteAppointment}
         isPending={updateAppointment.isPending}
       />

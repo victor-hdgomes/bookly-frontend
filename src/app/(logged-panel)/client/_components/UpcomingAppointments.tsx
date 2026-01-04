@@ -1,12 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ListItem } from "@/components/globals";
+import { ListItem, DeleteConfirmDialog } from "@/components/globals";
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "react-i18next";
 import { Calendar, Clock } from "lucide-react";
@@ -14,10 +15,31 @@ import { useDateFormat } from "@/hooks";
 import { formatCurrency, formatDateTimeWithLocale } from "@/lib/date-utils";
 import { getInitials } from "@/lib/user-utils";
 import { UpcomingAppointment } from "@/types/dashboard.types";
+import { useDeleteAppointment } from "@/hooks/company/appointments";
+import { DASHBOARD_QUERY_KEYS } from "@/constants";
 
 export function UpcomingAppointments({ appointments }: { appointments: UpcomingAppointment[] }) {
   const { t } = useTranslation('dashboard');
   const { formatLongDate, formatTime } = useDateFormat();
+  const deleteAppointment = useDeleteAppointment({
+    namespace: "dashboard",
+    invalidateQueryKey: [...DASHBOARD_QUERY_KEYS.CLIENT_DASHBOARD],
+  });
+  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+  const [selectedAppointment, setSelectedAppointment] = useState<UpcomingAppointment | null>(null);
+
+  const handleDeleteClick = (appointment: UpcomingAppointment) => {
+    setSelectedAppointment(appointment);
+    setDeleteDialogOpen(true);
+  };
+
+  const handleDeleteConfirm = async () => {
+    if (selectedAppointment) {
+      await deleteAppointment.mutateAsync(selectedAppointment.id);
+      setDeleteDialogOpen(false);
+      setSelectedAppointment(null);
+    }
+  };
 
   return (
     <Card>
@@ -66,12 +88,29 @@ export function UpcomingAppointments({ appointments }: { appointments: UpcomingA
                     fallback: getInitials(appointment.company.name),
                   }}
                   content={content}
+                  onDelete={() => handleDeleteClick(appointment)}
                 />
               );
             })}
           </div>
         )}
       </CardContent>
+
+      {selectedAppointment && (
+        <DeleteConfirmDialog
+          open={deleteDialogOpen}
+          onOpenChange={setDeleteDialogOpen}
+          title={t("deleteDialog.title")}
+          description={t("deleteDialog.description", {
+            service: selectedAppointment.service.name,
+            company: selectedAppointment.company.name,
+          })}
+          confirmText={deleteAppointment.isPending ? t("deleteDialog.deletingButton") : t("deleteDialog.confirmButton")}
+          cancelText={t("deleteDialog.cancelButton")}
+          onConfirm={handleDeleteConfirm}
+          isPending={deleteAppointment.isPending}
+        />
+      )}
     </Card>
   );
 }

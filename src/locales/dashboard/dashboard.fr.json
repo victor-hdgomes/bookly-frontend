@@ -24,6 +24,19 @@
     "defaultTitle": "Rendez-vous",
     "noDate": "Pas de date",
     "clientLabel": "Client:"
+  },
+  "deleteDialog": {
+    "title": "Annuler le rendez-vous",
+    "description": "Êtes-vous sûr de vouloir annuler le rendez-vous de {{service}} chez {{company}} ?",
+    "cancelButton": "Ne pas annuler",
+    "confirmButton": "Oui, annuler",
+    "deletingButton": "Annulation..."
+  },
+  "toast": {
+    "deleteSuccess": "Rendez-vous annulé",
+    "deleteSuccessDescription": "Votre rendez-vous a été annulé avec succès.",
+    "deleteError": "Erreur d'annulation",
+    "deleteErrorDescription": "Impossible d'annuler le rendez-vous. Veuillez réessayer."
   }
 }
 

@@ -23,7 +23,18 @@
     "duration": "{{duration}} min",
     "defaultTitle": "Termin",
     "noDate": "Kein Datum",
-    "clientLabel": "Kunde:"
-  }
+    "clientLabel": "Kunde:"  },
+  "deleteDialog": {
+    "title": "Termin stornieren",
+    "description": "Sind Sie sicher, dass Sie den Termin für {{service}} bei {{company}} stornieren möchten?",
+    "cancelButton": "Nicht stornieren",
+    "confirmButton": "Ja, stornieren",
+    "deletingButton": "Wird storniert..."
+  },
+  "toast": {
+    "deleteSuccess": "Termin storniert",
+    "deleteSuccessDescription": "Ihr Termin wurde erfolgreich storniert.",
+    "deleteError": "Fehler beim Stornieren",
+    "deleteErrorDescription": "Der Termin konnte nicht storniert werden. Bitte versuchen Sie es erneut."  }
 }
 

@@ -23,7 +23,18 @@
     "duration": "{{duration}} min",
     "defaultTitle": "Appuntamento",
     "noDate": "Nessuna data",
-    "clientLabel": "Cliente:"
-  }
+    "clientLabel": "Cliente:"  },
+  "deleteDialog": {
+    "title": "Annulla Appuntamento",
+    "description": "Sei sicuro di voler annullare l'appuntamento di {{service}} presso {{company}}?",
+    "cancelButton": "Non annullare",
+    "confirmButton": "Sì, annulla",
+    "deletingButton": "Annullamento..."
+  },
+  "toast": {
+    "deleteSuccess": "Appuntamento annullato",
+    "deleteSuccessDescription": "Il tuo appuntamento è stato annullato con successo.",
+    "deleteError": "Errore di annullamento",
+    "deleteErrorDescription": "Non è stato possibile annullare l'appuntamento. Riprova."  }
 }
 

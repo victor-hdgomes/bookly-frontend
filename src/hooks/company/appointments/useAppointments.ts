@@ -4,6 +4,7 @@ import { api } from "@/api";
 import {
   APPOINTMENTS_QUERY_KEYS,
   APPOINTMENTS_ENDPOINTS,
+  CLIENT_QUERY_KEYS,
 } from "@/constants";
 import {
   Appointment,
@@ -158,10 +159,10 @@ export const useUpdateAppointment = () => {
   });
 };
 
-export const useDeleteAppointment = () => {
+export const useDeleteAppointment = (options?: { namespace?: string; invalidateQueryKey?: unknown[] }) => {
   const queryClient = useQueryClient();
   const { toast } = useToast();
-  const { t } = useTranslation("appointments");
+  const { t } = useTranslation(options?.namespace || "appointments");
 
   return useMutation({
     mutationFn: async (appointmentId: string) => {
@@ -171,13 +172,23 @@ export const useDeleteAppointment = () => {
       return response.data;
     },
     onSuccess: (data) => {
-      queryClient.invalidateQueries({
-        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY_PREFIX(data.companyId),
-      });
-      toast({
-        title: t("toast.deleteSuccess"),
-        description: t("toast.deleteSuccessDescription"),
-      });
+        queryClient.invalidateQueries({
+          queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY_PREFIX(data.companyId),
+        });
+        queryClient.invalidateQueries({
+          queryKey: CLIENT_QUERY_KEYS.CLIENT_APPOINTMENTS,
+        });
+
+        if (options?.invalidateQueryKey) {
+          queryClient.invalidateQueries({
+            queryKey: options.invalidateQueryKey,
+          });
+        }
+
+        toast({
+          title: t("toast.deleteSuccess"),
+          description: t("toast.deleteSuccessDescription"),
+        });
     },
     onError: () => {
       toast({

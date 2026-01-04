@@ -21,6 +21,7 @@ interface DeleteConfirmDialogProps {
   namespace?: string;
   confirmText?: string;
   cancelText?: string;
+  isPending?: boolean;
 }
 
 export function DeleteConfirmDialog({
@@ -32,6 +33,7 @@ export function DeleteConfirmDialog({
   namespace = "common",
   confirmText,
   cancelText,
+  isPending = false,
 }: DeleteConfirmDialogProps) {
   const { t } = useTranslation(namespace);
 
@@ -45,8 +47,10 @@ export function DeleteConfirmDialog({
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>{cancelText || t("deleteDialog.cancel")}</AlertDialogCancel>
-          <AlertDialogAction onClick={onConfirm}>
+          <AlertDialogCancel disabled={isPending}>
+            {cancelText || t("deleteDialog.cancel")}
+          </AlertDialogCancel>
+          <AlertDialogAction onClick={onConfirm} disabled={isPending}>
             {confirmText || t("deleteDialog.confirm")}
           </AlertDialogAction>
         </AlertDialogFooter>

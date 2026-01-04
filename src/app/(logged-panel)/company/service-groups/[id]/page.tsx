@@ -67,8 +67,8 @@ export default function ServiceGroupDetailPage() {
     router.push(COMPANY_ROUTES.COMPANY_SERVICE_GROUPS);
   };
 
-  const handleDeleteService = async (serviceId: string) => {
-    await deleteService.mutateAsync(serviceId);
+  const handleDeleteService = async (serviceId: string, serviceName: string) => {
+    await deleteService.mutateAsync({ serviceId, serviceName });
   };
 
   if (isLoading) {

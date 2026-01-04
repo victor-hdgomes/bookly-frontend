@@ -3,7 +3,6 @@
 import { useTranslation } from "react-i18next";
 import { Service } from "@/types/service-group.types";
 import { useDeleteService } from "@/hooks/company/services/useDeleteService";
-import { toast } from "@/hooks/useToast";
 import { ServiceListItem } from "./ServiceListItem";
 
 interface ServiceListProps {
@@ -16,12 +15,7 @@ export function ServiceList({ services, companyId }: ServiceListProps) {
   const deleteService = useDeleteService();
 
   const handleDelete = async (serviceId: string, serviceName: string) => {
-    await deleteService.mutateAsync(serviceId);
-
-    toast({
-      title: t("deleteDialog.successTitle"),
-      description: t("deleteDialog.successDescription", { serviceName }),
-    });
+    await deleteService.mutateAsync({ serviceId, serviceName });
   };
 
   return (

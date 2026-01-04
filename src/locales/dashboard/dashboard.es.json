@@ -25,6 +25,19 @@
     "defaultTitle": "Cita",
     "noDate": "Sin fecha",
     "clientLabel": "Cliente:"
+  },
+  "deleteDialog": {
+    "title": "Cancelar Cita",
+    "description": "¿Está seguro de que desea cancelar la cita de {{service}} en {{company}}?",
+    "cancelButton": "No cancelar",
+    "confirmButton": "Sí, cancelar",
+    "deletingButton": "Cancelando..."
+  },
+  "toast": {
+    "deleteSuccess": "Cita cancelada",
+    "deleteSuccessDescription": "Su cita ha sido cancelada con éxito.",
+    "deleteError": "Error al cancelar",
+    "deleteErrorDescription": "No se pudo cancelar la cita. Inténtelo de nuevo."
   }
 }
 
