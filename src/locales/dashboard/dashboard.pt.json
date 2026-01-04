@@ -20,7 +20,8 @@
   },
   "upcomingAppointments": {
     "title": "Próximos Agendamentos",
-    "emptyMessage": "Nenhum agendamento próximo.",
+    "emptyMessage": "Nenhum agendamento próximo",
+    "duration": "{{duration}} min",
     "defaultTitle": "Agendamento",
     "noDate": "Sem data",
     "clientLabel": "Cliente:"

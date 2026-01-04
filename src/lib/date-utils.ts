@@ -42,3 +42,8 @@ export function formatDateTime(date: string | Date): string {
     minute: '2-digit',
   }).replace(',', ' às');
 }
+
+export function formatDateTimeWithLocale(date: string | Date, formatLongDate: (d: Date) => string, formatTime: (d: Date) => string): string {
+  const d = typeof date === 'string' ? new Date(date) : date;
+  return `${formatLongDate(d)} - ${formatTime(d)}`;
+}

@@ -20,6 +20,7 @@
   "upcomingAppointments": {
     "title": "Bevorstehende Termine",
     "emptyMessage": "Keine bevorstehenden Termine.",
+    "duration": "{{duration}} min",
     "defaultTitle": "Termin",
     "noDate": "Kein Datum",
     "clientLabel": "Kunde:"

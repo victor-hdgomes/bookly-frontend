@@ -1,0 +1,55 @@
+{
+  "title": "Prenota Appuntamento",
+  "steps": {
+    "service": "Scegli Servizio",
+    "professional": "Scegli Professionista",
+    "dateTime": "Scegli Data e Ora",
+    "confirm": "Conferma"
+  },
+  "service": {
+    "title": "Quale servizio desideri?",
+    "noServices": "Nessun servizio disponibile",
+    "duration": "{{duration}} min",
+    "from": "Da"
+  },
+  "professional": {
+    "title": "Chi ti servirà?",
+    "any": "Nessuna preferenza",
+    "anyDescription": "Qualsiasi professionista disponibile",
+    "noProfessionals": "Nessun professionista disponibile"
+  },
+  "dateTime": {
+    "title": "Quando vuoi prenotare?",
+    "selectDate": "Seleziona una data",
+    "selectTime": "Seleziona un orario",
+    "noAvailableTimes": "Nessun orario disponibile per questa data",
+    "morning": "Mattina",
+    "afternoon": "Pomeriggio",
+    "evening": "Sera"
+  },
+  "confirm": {
+    "title": "Conferma Prenotazione",
+    "service": "Servizio",
+    "professional": "Professionista",
+    "date": "Data",
+    "time": "Orario",
+    "duration": "Durata",
+    "price": "Prezzo",
+    "notes": "Note (opzionale)",
+    "notesPlaceholder": "Qualche nota speciale?",
+    "confirmButton": "Conferma Prenotazione",
+    "success": "Prenotazione effettuata con successo!",
+    "redirecting": "Sarai reindirizzato alle tue prenotazioni...",
+    "error": "Errore durante la prenotazione. Riprova."
+  },
+  "navigation": {
+    "back": "Indietro",
+    "next": "Continua",
+    "loading": "Caricamento..."
+  },
+  "companyInfo": {
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "closed": "Chiuso"
+  }
+}

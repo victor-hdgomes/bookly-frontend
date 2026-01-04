@@ -19,7 +19,8 @@
   },
   "upcomingAppointments": {
     "title": "Rendez-vous à venir",
-    "emptyMessage": "Aucun rendez-vous à venir.",
+    "emptyMessage": "Aucun rendez-vous à venir",
+    "duration": "{{duration}} min",
     "defaultTitle": "Rendez-vous",
     "noDate": "Pas de date",
     "clientLabel": "Client:"

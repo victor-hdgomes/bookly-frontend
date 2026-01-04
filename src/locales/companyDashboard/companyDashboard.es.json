@@ -28,7 +28,9 @@
     "emptyMessage": "No hay citas próximas.",
     "service": "Servicio",
     "notes": "Observaciones",
-    "duration": "{{duration}} min"
+    "duration": "{{duration}} min",
+    "client": "Cliente",
+    "employee": "Empleado"
   }
 }
 

@@ -28,7 +28,9 @@
     "emptyMessage": "Nessun appuntamento prossimo.",
     "service": "Servizio",
     "notes": "Note",
-    "duration": "{{duration}} min"
+    "duration": "{{duration}} min",
+    "client": "Cliente",
+    "employee": "Dipendente"
   }
 }
 

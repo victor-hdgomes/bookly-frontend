@@ -28,7 +28,9 @@
     "emptyMessage": "Aucun rendez-vous à venir.",
     "service": "Service",
     "notes": "Notes",
-    "duration": "{{duration}} min"
+    "duration": "{{duration}} min",
+    "client": "Client",
+    "employee": "Employé"
   }
 }
 

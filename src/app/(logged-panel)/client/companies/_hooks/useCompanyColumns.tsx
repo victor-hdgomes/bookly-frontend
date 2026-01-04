@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Eye, MapPin, Phone } from "lucide-react";
 import { Company, CompanyStatus } from "@/types/prisma-models";
 import type { DataTableColumn } from "@/components/globals/DataTable/DataTable";
+import { CLIENT_ROUTES } from "@/constants";
 
 export function useCompanyColumns() {
   const router = useRouter();
@@ -13,7 +14,7 @@ export function useCompanyColumns() {
 
   const handleViewServices = useCallback(
     (slug: string) => {
-      router.push(`/company/${slug}`);
+      router.push(CLIENT_ROUTES.CLIENT_COMPANY_DETAILS(slug));
     },
     [router]
   );

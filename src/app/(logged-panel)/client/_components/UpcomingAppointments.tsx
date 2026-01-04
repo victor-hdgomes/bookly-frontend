@@ -6,35 +6,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ListItem } from "@/components/globals";
+import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "react-i18next";
-import { Calendar, Clock, Briefcase } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
+import { useDateFormat } from "@/hooks";
+import { formatCurrency, formatDateTimeWithLocale } from "@/lib/date-utils";
+import { getInitials } from "@/lib/user-utils";
+import { UpcomingAppointment } from "@/types/dashboard.types";
 
-export interface Appointment {
-  id?: string | number;
-  title?: string;
-  date?: string;
-  client?: string;
-}
-
-export function UpcomingAppointments({ appointments }: { appointments: Appointment[] }) {
+export function UpcomingAppointments({ appointments }: { appointments: UpcomingAppointment[] }) {
   const { t } = useTranslation('dashboard');
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('pt-BR', {
-      day: '2-digit',
-      month: '2-digit',
-      year: 'numeric',
-    });
-  };
-
-  const formatTime = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleTimeString('pt-BR', {
-      hour: '2-digit',
-      minute: '2-digit',
-    });
-  };
+  const { formatLongDate, formatTime } = useDateFormat();
 
   return (
     <Card>
@@ -47,47 +30,45 @@ export function UpcomingAppointments({ appointments }: { appointments: Appointme
             {t('upcomingAppointments.emptyMessage')}
           </p>
         ) : (
-          <div className="space-y-4">
-            {appointments.map((appt, idx) => (
-              <Card key={appt.id ?? idx} className="border-l-4 border-primary">
-                <CardContent className="pt-4">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Briefcase className="w-4 h-4 text-muted-foreground" />
-                      <span className="font-semibold">
-                        {appt.title || t('upcomingAppointments.defaultTitle')}
-                      </span>
-                    </div>
-
-                    {appt.date && (
-                      <div className="text-sm space-y-1">
-                        <div className="flex items-center gap-2">
-                          <Calendar className="w-4 h-4 text-muted-foreground" />
-                          <span>{formatDate(appt.date)}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Clock className="w-4 h-4 text-muted-foreground" />
-                          <span>{formatTime(appt.date)}</span>
-                        </div>
-                      </div>
-                    )}
-
-                    {!appt.date && (
-                      <div className="text-sm text-muted-foreground">
-                        {t('upcomingAppointments.noDate')}
-                      </div>
-                    )}
-
-                    {appt.client && (
-                      <div className="text-sm">
-                        <span className="font-medium">{t('upcomingAppointments.clientLabel')}</span>{' '}
-                        {appt.client}
-                      </div>
-                    )}
+          <div className="space-y-3">
+            {appointments.map((appointment) => {
+              const content = (
+                <div className="flex flex-col gap-2 text-sm text-muted-foreground mt-1">
+                  <div className="flex flex-wrap gap-6">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />
+                      {formatDateTimeWithLocale(appointment.date, formatLongDate, formatTime)}
+                    </span>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <div className="flex flex-wrap gap-6 items-center">
+                    <span className="flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      {t('upcomingAppointments.duration', { duration: appointment.service.duration })}
+                    </span>
+                    <Badge variant="secondary" className="text-xs">
+                      {formatCurrency(appointment.service.price)}
+                    </Badge>
+                  </div>
+                  {appointment.notes && (
+                    <p className="text-xs italic mt-1">{appointment.notes}</p>
+                  )}
+                </div>
+              );
+
+              return (
+                <ListItem
+                  key={appointment.id}
+                  isActive={true}
+                  title={appointment.service.name}
+                  subtitle={appointment.company.name}
+                  avatar={{
+                    src: appointment.company.photo,
+                    fallback: getInitials(appointment.company.name),
+                  }}
+                  content={content}
+                />
+              );
+            })}
           </div>
         )}
       </CardContent>

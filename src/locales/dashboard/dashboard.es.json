@@ -20,7 +20,8 @@
   },
   "upcomingAppointments": {
     "title": "Próximas Citas",
-    "emptyMessage": "No hay citas próximas.",
+    "emptyMessage": "No hay citas próximas",
+    "duration": "{{duration}} min",
     "defaultTitle": "Cita",
     "noDate": "Sin fecha",
     "clientLabel": "Cliente:"

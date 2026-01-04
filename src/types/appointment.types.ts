@@ -41,7 +41,7 @@ export interface CreateAppointmentPayload {
   notes?: string;
   companyId: string;
   serviceId: string;
-  userId: string;
+  employeeId?: string;
 }
 
 export interface UpdateAppointmentPayload {

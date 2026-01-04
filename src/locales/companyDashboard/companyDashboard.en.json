@@ -28,7 +28,9 @@
     "emptyMessage": "No upcoming appointments.",
     "service": "Service",
     "notes": "Notes",
-    "duration": "{{duration}} min"
+    "duration": "{{duration}} min",
+    "client": "Client",
+    "employee": "Employee"
   }
 }
 

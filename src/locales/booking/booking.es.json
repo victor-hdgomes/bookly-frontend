@@ -1,0 +1,55 @@
+{
+  "title": "Reservar Cita",
+  "steps": {
+    "service": "Elegir Servicio",
+    "professional": "Elegir Profesional",
+    "dateTime": "Elegir Fecha y Hora",
+    "confirm": "Confirmar"
+  },
+  "service": {
+    "title": "¿Qué servicio deseas?",
+    "noServices": "No hay servicios disponibles",
+    "duration": "{{duration}} min",
+    "from": "Desde"
+  },
+  "professional": {
+    "title": "¿Quién te atenderá?",
+    "any": "Sin preferencia",
+    "anyDescription": "Cualquier profesional disponible",
+    "noProfessionals": "No hay profesionales disponibles"
+  },
+  "dateTime": {
+    "title": "¿Cuándo quieres reservar?",
+    "selectDate": "Selecciona una fecha",
+    "selectTime": "Selecciona una hora",
+    "noAvailableTimes": "No hay horarios disponibles para esta fecha",
+    "morning": "Mañana",
+    "afternoon": "Tarde",
+    "evening": "Noche"
+  },
+  "confirm": {
+    "title": "Confirmar Reserva",
+    "service": "Servicio",
+    "professional": "Profesional",
+    "date": "Fecha",
+    "time": "Hora",
+    "duration": "Duración",
+    "price": "Precio",
+    "notes": "Observaciones (opcional)",
+    "notesPlaceholder": "¿Alguna observación especial?",
+    "confirmButton": "Confirmar Reserva",
+    "success": "¡Reserva realizada con éxito!",
+    "redirecting": "Serás redirigido a tus reservas...",
+    "error": "Error al realizar la reserva. Inténtalo de nuevo."
+  },
+  "navigation": {
+    "back": "Volver",
+    "next": "Continuar",
+    "loading": "Cargando..."
+  },
+  "companyInfo": {
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "closed": "Cerrado"
+  }
+}

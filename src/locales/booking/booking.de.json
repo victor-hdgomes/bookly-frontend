@@ -1,0 +1,55 @@
+{
+  "title": "Termin Buchen",
+  "steps": {
+    "service": "Dienstleistung Wählen",
+    "professional": "Fachkraft Wählen",
+    "dateTime": "Datum und Uhrzeit Wählen",
+    "confirm": "Bestätigen"
+  },
+  "service": {
+    "title": "Welche Dienstleistung möchten Sie?",
+    "noServices": "Keine Dienstleistungen verfügbar",
+    "duration": "{{duration}} min",
+    "from": "Ab"
+  },
+  "professional": {
+    "title": "Wer soll Sie bedienen?",
+    "any": "Keine Präferenz",
+    "anyDescription": "Jede verfügbare Fachkraft",
+    "noProfessionals": "Keine Fachkräfte verfügbar"
+  },
+  "dateTime": {
+    "title": "Wann möchten Sie buchen?",
+    "selectDate": "Wählen Sie ein Datum",
+    "selectTime": "Wählen Sie eine Uhrzeit",
+    "noAvailableTimes": "Keine verfügbaren Zeiten für dieses Datum",
+    "morning": "Morgen",
+    "afternoon": "Nachmittag",
+    "evening": "Abend"
+  },
+  "confirm": {
+    "title": "Buchung Bestätigen",
+    "service": "Dienstleistung",
+    "professional": "Fachkraft",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "duration": "Dauer",
+    "price": "Preis",
+    "notes": "Anmerkungen (optional)",
+    "notesPlaceholder": "Besondere Anmerkungen?",
+    "confirmButton": "Buchung Bestätigen",
+    "success": "Buchung erfolgreich abgeschlossen!",
+    "redirecting": "Sie werden zu Ihren Buchungen weitergeleitet...",
+    "error": "Fehler bei der Buchung. Bitte versuchen Sie es erneut."
+  },
+  "navigation": {
+    "back": "Zurück",
+    "next": "Weiter",
+    "loading": "Wird geladen..."
+  },
+  "companyInfo": {
+    "address": "Adresse",
+    "phone": "Telefon",
+    "closed": "Geschlossen"
+  }
+}

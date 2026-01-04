@@ -1,0 +1,55 @@
+{
+  "title": "Réserver un Rendez-vous",
+  "steps": {
+    "service": "Choisir le Service",
+    "professional": "Choisir le Professionnel",
+    "dateTime": "Choisir Date et Heure",
+    "confirm": "Confirmer"
+  },
+  "service": {
+    "title": "Quel service souhaitez-vous?",
+    "noServices": "Aucun service disponible",
+    "duration": "{{duration}} min",
+    "from": "À partir de"
+  },
+  "professional": {
+    "title": "Qui vous servira?",
+    "any": "Sans préférence",
+    "anyDescription": "N'importe quel professionnel disponible",
+    "noProfessionals": "Aucun professionnel disponible"
+  },
+  "dateTime": {
+    "title": "Quand souhaitez-vous réserver?",
+    "selectDate": "Sélectionnez une date",
+    "selectTime": "Sélectionnez une heure",
+    "noAvailableTimes": "Aucun horaire disponible pour cette date",
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir"
+  },
+  "confirm": {
+    "title": "Confirmer la Réservation",
+    "service": "Service",
+    "professional": "Professionnel",
+    "date": "Date",
+    "time": "Heure",
+    "duration": "Durée",
+    "price": "Prix",
+    "notes": "Remarques (optionnel)",
+    "notesPlaceholder": "Des remarques spéciales?",
+    "confirmButton": "Confirmer la Réservation",
+    "success": "Réservation effectuée avec succès!",
+    "redirecting": "Vous serez redirigé vers vos réservations...",
+    "error": "Erreur lors de la réservation. Veuillez réessayer."
+  },
+  "navigation": {
+    "back": "Retour",
+    "next": "Continuer",
+    "loading": "Chargement..."
+  },
+  "companyInfo": {
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "closed": "Fermé"
+  }
+}

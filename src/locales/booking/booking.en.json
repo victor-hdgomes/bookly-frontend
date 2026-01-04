@@ -1,0 +1,55 @@
+{
+  "title": "Book Appointment",
+  "steps": {
+    "service": "Choose Service",
+    "professional": "Choose Professional",
+    "dateTime": "Choose Date & Time",
+    "confirm": "Confirm"
+  },
+  "service": {
+    "title": "What service do you want?",
+    "noServices": "No services available",
+    "duration": "{{duration}} min",
+    "from": "From"
+  },
+  "professional": {
+    "title": "Who will serve you?",
+    "any": "No preference",
+    "anyDescription": "Any available professional",
+    "noProfessionals": "No professionals available"
+  },
+  "dateTime": {
+    "title": "When do you want to schedule?",
+    "selectDate": "Select a date",
+    "selectTime": "Select a time",
+    "noAvailableTimes": "No available times for this date",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening"
+  },
+  "confirm": {
+    "title": "Confirm Appointment",
+    "service": "Service",
+    "professional": "Professional",
+    "date": "Date",
+    "time": "Time",
+    "duration": "Duration",
+    "price": "Price",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Any special notes?",
+    "confirmButton": "Confirm Appointment",
+    "success": "Appointment booked successfully!",
+    "redirecting": "You will be redirected to your appointments...",
+    "error": "Error booking appointment. Please try again."
+  },
+  "navigation": {
+    "back": "Back",
+    "next": "Continue",
+    "loading": "Loading..."
+  },
+  "companyInfo": {
+    "address": "Address",
+    "phone": "Phone",
+    "closed": "Closed"
+  }
+}

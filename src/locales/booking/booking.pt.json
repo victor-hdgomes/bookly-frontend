@@ -1,0 +1,55 @@
+{
+  "title": "Agendar Horário",
+  "steps": {
+    "service": "Escolha o Serviço",
+    "professional": "Escolha o Profissional",
+    "dateTime": "Escolha Data e Hora",
+    "confirm": "Confirmar"
+  },
+  "service": {
+    "title": "Qual serviço você deseja?",
+    "noServices": "Nenhum serviço disponível",
+    "duration": "{{duration}} min",
+    "from": "A partir de"
+  },
+  "professional": {
+    "title": "Quem vai te atender?",
+    "any": "Sem preferência",
+    "anyDescription": "Qualquer profissional disponível",
+    "noProfessionals": "Nenhum profissional disponível"
+  },
+  "dateTime": {
+    "title": "Quando você quer agendar?",
+    "selectDate": "Selecione uma data",
+    "selectTime": "Selecione um horário",
+    "noAvailableTimes": "Nenhum horário disponível para esta data",
+    "morning": "Manhã",
+    "afternoon": "Tarde",
+    "evening": "Noite"
+  },
+  "confirm": {
+    "title": "Confirmar Agendamento",
+    "service": "Serviço",
+    "professional": "Profissional",
+    "date": "Data",
+    "time": "Horário",
+    "duration": "Duração",
+    "price": "Valor",
+    "notes": "Observações (opcional)",
+    "notesPlaceholder": "Alguma observação especial?",
+    "confirmButton": "Confirmar Agendamento",
+    "success": "Agendamento realizado com sucesso!",
+    "redirecting": "Você será redirecionado para seus agendamentos...",
+    "error": "Erro ao realizar agendamento. Tente novamente."
+  },
+  "navigation": {
+    "back": "Voltar",
+    "next": "Continuar",
+    "loading": "Carregando..."
+  },
+  "companyInfo": {
+    "address": "Endereço",
+    "phone": "Telefone",
+    "closed": "Fechado"
+  }
+}

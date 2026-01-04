@@ -19,13 +19,21 @@ export interface AppointmentService {
   duration: number;
 }
 
+export interface AppointmentCompany {
+  id: string;
+  name: string;
+  photo: string | null;
+}
+
 export interface UpcomingAppointment {
   id: string;
   date: string;
   status: string;
   notes: string | null;
   user: User;
+  employee?: User;
   service: AppointmentService;
+  company: AppointmentCompany;
 }
 
 export interface CompanyStats {

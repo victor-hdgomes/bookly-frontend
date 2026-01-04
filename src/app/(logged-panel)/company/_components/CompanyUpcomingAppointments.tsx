@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { ListItem } from "@/components/globals";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { useTranslation } from "react-i18next";
 import { Calendar, Clock } from "lucide-react";
 import { UpcomingAppointment } from "@/types/dashboard.types";
@@ -31,25 +32,39 @@ export function CompanyUpcomingAppointments({ appointments }: { appointments: Up
           <div className="space-y-3">
             {appointments.map((appointment) => {
               const content = (
-                <div className="flex flex-col gap-2 text-sm text-muted-foreground mt-1">
-                  <div className="flex flex-wrap gap-6">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      {formatDateTime(appointment.date)}
-                    </span>
+                <div className="flex items-center justify-between">
+                    <div className="flex flex-col gap-2 text-sm text-muted-foreground mt-1">
+                    <div className="flex flex-wrap gap-6">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="h-3 w-3" />
+                        {formatDateTime(appointment.date)}
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-6 items-center">
+                      <span className="flex items-center gap-1">
+                        <Clock className="h-3 w-3" />
+                        {t('upcomingAppointments.duration', { duration: appointment.service.duration })}
+                      </span>
+                      <Badge variant="secondary" className="text-xs">
+                        {formatCurrency(appointment.service.price)}
+                      </Badge>
+                    </div>
+                    {appointment.notes && (
+                      <p className="text-xs italic mt-1">{appointment.notes}</p>
+                    )}
                   </div>
-                  <div className="flex flex-wrap gap-6 items-center">
-                    <span className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {t('upcomingAppointments.duration', { duration: appointment.service.duration })}
-                    </span>
-                    <Badge variant="secondary" className="text-xs">
-                      {formatCurrency(appointment.service.price)}
-                    </Badge>
-                  </div>
-                  {appointment.notes && (
-                    <p className="text-xs italic mt-1">{appointment.notes}</p>
-                  )}
+
+                  <div className="flex items-center justify-between mt-2">
+                      <div className="flex items-center gap-2">
+                        <Avatar className="h-6 w-6">
+                          <AvatarImage src={appointment.user.photo ?? undefined} alt={getUserDisplayName(appointment.user)} />
+                          <AvatarFallback className="text-xs">{getUserInitials(appointment.user)}</AvatarFallback>
+                        </Avatar>
+                        <span className="text-xs">
+                          <span className="font-medium">{t('upcomingAppointments.client')}:</span> {getUserDisplayName(appointment.user)}
+                        </span>
+                      </div>
+                    </div>
                 </div>
               );
 
@@ -58,11 +73,7 @@ export function CompanyUpcomingAppointments({ appointments }: { appointments: Up
                   key={appointment.id}
                   isActive={true}
                   title={appointment.service.name}
-                  subtitle={getUserDisplayName(appointment.user)}
-                  avatar={{
-                    src: appointment.user.photo,
-                    fallback: getUserInitials(appointment.user),
-                  }}
+                  subtitle={`${getUserDisplayName(appointment.user)}${appointment.employee ? ` • ${getUserDisplayName(appointment.employee)}` : ''}`}
                   content={content}
                 />
               );

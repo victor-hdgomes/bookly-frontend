@@ -32,3 +32,12 @@ export function getUserInitials(user: UserWithNames): string {
   }
   return user.email.substring(0, 2).toUpperCase();
 }
+
+export function getInitials(name: string): string {
+  return name
+    .split(' ')
+    .map(word => word[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2);
+}

@@ -28,7 +28,9 @@
     "emptyMessage": "Keine bevorstehenden Termine.",
     "service": "Dienst",
     "notes": "Notizen",
-    "duration": "{{duration}} Min"
+    "duration": "{{duration}} Min",
+    "client": "Kunde",
+    "employee": "Mitarbeiter"
   }
 }
 
