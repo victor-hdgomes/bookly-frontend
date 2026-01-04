@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { getNavSections } from "./navSections"
 import { useAuth } from "@/hooks/client/profile/useAuth"
 import { UserMenu } from "./UserMenu"
+import { LoadingState } from "@/components/states/LoadingState"
 
 export function Sidebar({ children }: { children: React.ReactNode }) {
     const [isMounted, setIsMounted] = useState(false);
@@ -18,7 +19,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
     const [openMobile, setOpenMobile] = useState(false);
 
     const pathname = usePathname()
-    const { data: user } = useAuth();
+    const { data: user, isPending } = useAuth();
     const { t } = useTranslation('sidebar');
 
     useEffect(() => { setIsMounted(true); }, []);
@@ -26,6 +27,10 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
     const isEmployee = false;
     const hasCompanies = (user?.companies?.length ?? 0) > 0;
     const navSections = getNavSections(t, isMounted, hasCompanies, isEmployee);
+
+    if (isPending) {
+        return <LoadingState />;
+    }
 
     return (
         <div className="flex">

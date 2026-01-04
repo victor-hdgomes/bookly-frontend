@@ -16,14 +16,15 @@ import { transactionsLocales } from './transactions';
 import { appointmentsLocales } from './appointments';
 import { companiesTranslations } from './companies';
 import { bookingTranslations } from './booking';
+import notFoundLocales from './notFound';
 
 const resources = {
-  pt: { profile: profile.pt, sidebar: sidebar.pt, dashboard: dashboard.pt, companyDashboard: companyDashboard.pt, services: services.pt, serviceGroups: serviceGroups.pt, errors: errors.pt, common: common.pt, landing: landing.pt, employees: employeesLocales.pt, transactions: transactionsLocales.pt, appointments: appointmentsLocales.pt, companies: companiesTranslations.pt.companies, booking: bookingTranslations.pt.booking },
-  en: { profile: profile.en, sidebar: sidebar.en, dashboard: dashboard.en, companyDashboard: companyDashboard.en, services: services.en, serviceGroups: serviceGroups.en, errors: errors.en, common: common.en, landing: landing.en, employees: employeesLocales.en, transactions: transactionsLocales.en, appointments: appointmentsLocales.en, companies: companiesTranslations.en.companies, booking: bookingTranslations.en.booking },
-  es: { profile: profile.es, sidebar: sidebar.es, dashboard: dashboard.es, companyDashboard: companyDashboard.es, services: services.es, serviceGroups: serviceGroups.es, errors: errors.es, common: common.es, landing: landing.es, employees: employeesLocales.es, transactions: transactionsLocales.es, appointments: appointmentsLocales.es, companies: companiesTranslations.es.companies, booking: bookingTranslations.es.booking },
-  it: { profile: profile.it, sidebar: sidebar.it, dashboard: dashboard.it, companyDashboard: companyDashboard.it, services: services.it, serviceGroups: serviceGroups.it, errors: errors.it, common: common.it, landing: landing.it, employees: employeesLocales.it, transactions: transactionsLocales.it, appointments: appointmentsLocales.it, companies: companiesTranslations.it.companies, booking: bookingTranslations.it.booking },
-  fr: { profile: profile.fr, sidebar: sidebar.fr, dashboard: dashboard.fr, companyDashboard: companyDashboard.fr, services: services.fr, serviceGroups: serviceGroups.fr, errors: errors.fr, common: common.fr, landing: landing.fr, employees: employeesLocales.fr, transactions: transactionsLocales.fr, appointments: appointmentsLocales.fr, companies: companiesTranslations.fr.companies, booking: bookingTranslations.fr.booking },
-  de: { profile: profile.de, sidebar: sidebar.de, dashboard: dashboard.de, companyDashboard: companyDashboard.de, services: services.de, serviceGroups: serviceGroups.de, errors: errors.de, common: common.de, landing: landing.de, employees: employeesLocales.de, transactions: transactionsLocales.de, appointments: appointmentsLocales.de, companies: companiesTranslations.de.companies, booking: bookingTranslations.de.booking },
+  pt: { profile: profile.pt, sidebar: sidebar.pt, dashboard: dashboard.pt, companyDashboard: companyDashboard.pt, services: services.pt, serviceGroups: serviceGroups.pt, errors: errors.pt, common: common.pt, landing: landing.pt, employees: employeesLocales.pt, transactions: transactionsLocales.pt, appointments: appointmentsLocales.pt, companies: companiesTranslations.pt.companies, booking: bookingTranslations.pt.booking, notFound: notFoundLocales.pt },
+  en: { profile: profile.en, sidebar: sidebar.en, dashboard: dashboard.en, companyDashboard: companyDashboard.en, services: services.en, serviceGroups: serviceGroups.en, errors: errors.en, common: common.en, landing: landing.en, employees: employeesLocales.en, transactions: transactionsLocales.en, appointments: appointmentsLocales.en, companies: companiesTranslations.en.companies, booking: bookingTranslations.en.booking, notFound: notFoundLocales.en },
+  es: { profile: profile.es, sidebar: sidebar.es, dashboard: dashboard.es, companyDashboard: companyDashboard.es, services: services.es, serviceGroups: serviceGroups.es, errors: errors.es, common: common.es, landing: landing.es, employees: employeesLocales.es, transactions: transactionsLocales.es, appointments: appointmentsLocales.es, companies: companiesTranslations.es.companies, booking: bookingTranslations.es.booking, notFound: notFoundLocales.es },
+  it: { profile: profile.it, sidebar: sidebar.it, dashboard: dashboard.it, companyDashboard: companyDashboard.it, services: services.it, serviceGroups: serviceGroups.it, errors: errors.it, common: common.it, landing: landing.it, employees: employeesLocales.it, transactions: transactionsLocales.it, appointments: appointmentsLocales.it, companies: companiesTranslations.it.companies, booking: bookingTranslations.it.booking, notFound: notFoundLocales.it },
+  fr: { profile: profile.fr, sidebar: sidebar.fr, dashboard: dashboard.fr, companyDashboard: companyDashboard.fr, services: services.fr, serviceGroups: serviceGroups.fr, errors: errors.fr, common: common.fr, landing: landing.fr, employees: employeesLocales.fr, transactions: transactionsLocales.fr, appointments: appointmentsLocales.fr, companies: companiesTranslations.fr.companies, booking: bookingTranslations.fr.booking, notFound: notFoundLocales.fr },
+  de: { profile: profile.de, sidebar: sidebar.de, dashboard: dashboard.de, companyDashboard: companyDashboard.de, services: services.de, serviceGroups: serviceGroups.de, errors: errors.de, common: common.de, landing: landing.de, employees: employeesLocales.de, transactions: transactionsLocales.de, appointments: appointmentsLocales.de, companies: companiesTranslations.de.companies, booking: bookingTranslations.de.booking, notFound: notFoundLocales.de },
 };
 
 i18n
@@ -32,7 +33,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'pt',
-    ns: ['profile', 'sidebar', 'dashboard', 'companyDashboard', 'services', 'serviceGroups', 'errors', 'common', 'landing', 'employees', 'transactions', 'appointments', 'companies', 'booking'],
+    ns: ['profile', 'sidebar', 'dashboard', 'companyDashboard', 'services', 'serviceGroups', 'errors', 'common', 'landing', 'employees', 'transactions', 'appointments', 'companies', 'booking', 'notFound'],
     defaultNS: 'profile',
     interpolation: {
       escapeValue: false,
