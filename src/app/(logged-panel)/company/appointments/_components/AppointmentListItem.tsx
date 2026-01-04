@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Calendar, Clock, User } from "lucide-react";
-import { Appointment } from "@/types/appointment.types";
+import { Calendar, Clock, User, CheckCircle } from "lucide-react";
+import { Appointment, AppointmentStatus } from "@/types/appointment.types";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ListItem } from "@/components/globals";
 import { AppointmentDeleteDialog } from "./AppointmentDeleteDialog";
+import { AppointmentCompleteDialog } from "./AppointmentCompleteDialog";
 import { EditAppointmentDialog } from "./EditAppointmentDialog";
+import { useUpdateAppointment } from "@/hooks/company/appointments/useAppointments";
 import { APPOINTMENT_STATUS_COLORS } from "@/constants";
 import { getUserDisplayName } from "@/lib/user-utils";
 import { format } from "date-fns";
@@ -27,10 +30,20 @@ export function AppointmentListItem({
   const { t } = useTranslation("appointments");
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false);
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
+  const [isCompleteDialogOpen, setIsCompleteDialogOpen] = useState(false);
+  const updateAppointment = useUpdateAppointment();
 
   const handleDeleteConfirm = async () => {
     await onDelete(appointment.id);
     setIsDeleteDialogOpen(false);
+  };
+
+  const handleCompleteAppointment = async () => {
+    await updateAppointment.mutateAsync({
+      appointmentId: appointment.id,
+      data: { status: AppointmentStatus.COMPLETED },
+    });
+    setIsCompleteDialogOpen(false);
   };
 
   const formattedDate = format(
@@ -86,6 +99,18 @@ export function AppointmentListItem({
     </div>
   );
 
+  const customActions = appointment.status === AppointmentStatus.SCHEDULED ? (
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={() => setIsCompleteDialogOpen(true)}
+      disabled={updateAppointment.isPending}
+      title={t("actions.complete")}
+    >
+      <CheckCircle className="h-4 w-4 text-green-600" />
+    </Button>
+  ) : null;
+
   return (
     <>
       <ListItem
@@ -93,6 +118,7 @@ export function AppointmentListItem({
         title={appointment.service.name}
         badges={badges}
         content={content}
+        customActions={customActions}
         onEdit={() => setIsEditDialogOpen(true)}
         onDelete={() => setIsDeleteDialogOpen(true)}
       />
@@ -111,6 +137,15 @@ export function AppointmentListItem({
         onOpenChange={setIsDeleteDialogOpen}
         appointmentDate={formattedDate}
         onConfirm={handleDeleteConfirm}
+      />
+
+      <AppointmentCompleteDialog
+        open={isCompleteDialogOpen}
+        onOpenChange={setIsCompleteDialogOpen}
+        appointmentDate={formattedDate}
+        serviceName={appointment.service.name}
+        onConfirm={handleCompleteAppointment}
+        isPending={updateAppointment.isPending}
       />
     </>
   );

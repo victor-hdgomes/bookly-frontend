@@ -1,4 +1,9 @@
 {
+  "title": "Perfil",
+  "subtitle": "Gerencie suas informações pessoais",
+  "loading": "Carregando...",
+  "error": "Erro ao carregar dados",
+  "errorDescription": "Tente novamente mais tarde.",
   "profileTitle": "Perfil",
   "firstName": "Primeiro Nome",
   "lastName": "Sobrenome",

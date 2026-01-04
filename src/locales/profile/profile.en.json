@@ -1,4 +1,9 @@
 {
+  "title": "Profile",
+  "subtitle": "Manage your personal information",
+  "loading": "Loading...",
+  "error": "Error loading data",
+  "errorDescription": "Please try again later.",
   "profileTitle": "Profile",
   "firstName": "First Name",
   "lastName": "Last Name",

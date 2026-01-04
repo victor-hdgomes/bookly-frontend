@@ -31,8 +31,9 @@
     "description": "Gérer tous les rendez-vous de l'entreprise",
     "emptyAppointmentsTitle": "Aucun rendez-vous trouvé",
     "emptyAppointmentsDescription": "Créez votre premier rendez-vous pour commencer"
-  },
-  "filters": {
+  },  "actions": {
+    "complete": "Terminer le rendez-vous"
+  },  "filters": {
     "searchPlaceholder": "Rechercher par client ou notes...",
     "createButton": "Nouveau Rendez-vous",
     "servicePlaceholder": "Filtrer par service",
@@ -51,6 +52,13 @@
     "description": "Êtes-vous sûr de vouloir supprimer le rendez-vous du {{date}} ? Cette action ne peut pas être annulée.",
     "cancelButton": "Annuler",
     "confirmButton": "Supprimer"
+  },
+  "completeDialog": {
+    "title": "Terminer le rendez-vous",
+    "description": "Êtes-vous sûr de vouloir marquer le rendez-vous de {{service}} du {{date}} comme terminé ?",
+    "cancelButton": "Annuler",
+    "confirmButton": "Terminer",
+    "confirmingButton": "En cours..."
   },
   "validation": {
     "dateRequired": "La date et l'heure sont obligatoires",

@@ -31,8 +31,9 @@
     "description": "Gestionar todas las citas de la empresa",
     "emptyAppointmentsTitle": "No se encontraron citas",
     "emptyAppointmentsDescription": "Cree su primera cita para comenzar"
-  },
-  "filters": {
+  },  "actions": {
+    "complete": "Completar cita"
+  },  "filters": {
     "searchPlaceholder": "Buscar por cliente u observaciones...",
     "createButton": "Nueva Cita",
     "servicePlaceholder": "Filtrar por servicio",
@@ -51,6 +52,13 @@
     "description": "¿Está seguro de que desea eliminar la cita del {{date}}? Esta acción no se puede deshacer.",
     "cancelButton": "Cancelar",
     "confirmButton": "Eliminar"
+  },
+  "completeDialog": {
+    "title": "Completar Cita",
+    "description": "¿Está seguro de que desea marcar la cita de {{service}} del {{date}} como completada?",
+    "cancelButton": "Cancelar",
+    "confirmButton": "Completar",
+    "confirmingButton": "Completando..."
   },
   "validation": {
     "dateRequired": "La fecha y hora son obligatorias",

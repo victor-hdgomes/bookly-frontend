@@ -1,4 +1,9 @@
 {
+  "title": "Profil",
+  "subtitle": "Verwalten Sie Ihre persönlichen Informationen",
+  "loading": "Wird geladen...",
+  "error": "Fehler beim Laden der Daten",
+  "errorDescription": "Bitte versuchen Sie es später erneut.",
   "profileTitle": "Profil",
   "firstName": "Vorname",
   "lastName": "Nachname",

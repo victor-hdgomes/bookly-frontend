@@ -18,6 +18,7 @@ interface ListItemProps {
   content?: ReactNode;
   onEdit?: () => void;
   onDelete?: () => void;
+  customActions?: ReactNode;
   className?: string;
 }
 
@@ -31,6 +32,7 @@ export function ListItem({
   content,
   onEdit,
   onDelete,
+  customActions,
   className = ""
 }: ListItemProps) {
   return (
@@ -62,8 +64,9 @@ export function ListItem({
         </div>
       </div>
       
-      {(onEdit || onDelete) && (
+      {(onEdit || onDelete || customActions) && (
         <div className="flex items-center gap-1">
+          {customActions}
           {onEdit && (
             <Button
               variant="ghost"

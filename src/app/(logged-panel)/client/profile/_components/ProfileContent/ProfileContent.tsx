@@ -1,7 +1,7 @@
 "use client";
 
 import { useProfileForm } from "@/app/(logged-panel)/client/profile/hooks/useProfileForm";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { User } from "@/types/prisma-models";
@@ -25,13 +25,10 @@ export default function ProfileContent({ user }: ProfileContentProps) {
     });
 
     return (
-        <div className="mx-auto">
+        <div className="mx-auto mt-4">
             <Form {...form}>
                 <form action="">
                     <Card>
-                        <CardHeader>
-                            <CardTitle>{t('profileTitle')}</CardTitle>
-                        </CardHeader>
                         <CardContent className="space-y-6">
                             <div className="flex justify-center">
                                 <div className="relative h-40 w-40 rounded-full overflow-hidden">

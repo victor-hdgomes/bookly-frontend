@@ -13,6 +13,7 @@ export const APPOINTMENTS_QUERY_KEYS = {
     endDate?: string,
     search?: string,
   ) => ['appointments', companyId, page, limit, status, serviceId, userId, startDate, endDate, search] as const,
+  APPOINTMENTS_BY_COMPANY_PREFIX: (companyId: string) => ['appointments', companyId] as const,
   APPOINTMENT_BY_ID: (id: string) => ['appointments', id] as const,
 } as const;
 

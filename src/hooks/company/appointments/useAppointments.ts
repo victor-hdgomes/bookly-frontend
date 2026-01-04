@@ -103,7 +103,7 @@ export const useCreateAppointment = () => {
     },
     onSuccess: (_, variables) => {
       queryClient.invalidateQueries({
-        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY(variables.companyId),
+        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY_PREFIX(variables.companyId),
       });
       toast({
         title: t("toast.createSuccess"),
@@ -141,7 +141,7 @@ export const useUpdateAppointment = () => {
     },
     onSuccess: (data) => {
       queryClient.invalidateQueries({
-        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY(data.companyId),
+        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY_PREFIX(data.companyId),
       });
       toast({
         title: t("toast.updateSuccess"),
@@ -172,7 +172,7 @@ export const useDeleteAppointment = () => {
     },
     onSuccess: (data) => {
       queryClient.invalidateQueries({
-        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY(data.companyId),
+        queryKey: APPOINTMENTS_QUERY_KEYS.APPOINTMENTS_BY_COMPANY_PREFIX(data.companyId),
       });
       toast({
         title: t("toast.deleteSuccess"),

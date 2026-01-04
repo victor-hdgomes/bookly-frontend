@@ -32,6 +32,9 @@
     "emptyAppointmentsTitle": "No appointments found",
     "emptyAppointmentsDescription": "Create your first appointment to get started"
   },
+  "actions": {
+    "complete": "Complete appointment"
+  },
   "filters": {
     "searchPlaceholder": "Search by client or notes...",
     "createButton": "New Appointment",
@@ -51,6 +54,13 @@
     "description": "Are you sure you want to delete the appointment on {{date}}? This action cannot be undone.",
     "cancelButton": "Cancel",
     "confirmButton": "Delete"
+  },
+  "completeDialog": {
+    "title": "Complete Appointment",
+    "description": "Are you sure you want to mark the {{service}} appointment on {{date}} as completed?",
+    "cancelButton": "Cancel",
+    "confirmButton": "Complete",
+    "confirmingButton": "Completing..."
   },
   "validation": {
     "dateRequired": "Date and time are required",

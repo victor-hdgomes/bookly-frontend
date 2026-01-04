@@ -32,6 +32,9 @@
     "emptyAppointmentsTitle": "Nessun appuntamento trovato",
     "emptyAppointmentsDescription": "Crea il tuo primo appuntamento per iniziare"
   },
+  "actions": {
+    "complete": "Completa appuntamento"
+  },
   "filters": {
     "searchPlaceholder": "Cerca per cliente o note...",
     "createButton": "Nuovo Appuntamento",
@@ -51,6 +54,13 @@
     "description": "Sei sicuro di voler eliminare l'appuntamento del {{date}}? Questa azione non può essere annullata.",
     "cancelButton": "Annulla",
     "confirmButton": "Elimina"
+  },
+  "completeDialog": {
+    "title": "Completa Appuntamento",
+    "description": "Sei sicuro di voler segnare l'appuntamento di {{service}} del {{date}} come completato?",
+    "cancelButton": "Annulla",
+    "confirmButton": "Completa",
+    "confirmingButton": "Completamento..."
   },
   "validation": {
     "dateRequired": "Data e ora sono obbligatorie",

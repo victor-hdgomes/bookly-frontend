@@ -32,6 +32,9 @@
     "emptyAppointmentsTitle": "Keine Termine gefunden",
     "emptyAppointmentsDescription": "Erstellen Sie Ihren ersten Termin, um zu beginnen"
   },
+  "actions": {
+    "complete": "Termin abschließen"
+  },
   "filters": {
     "searchPlaceholder": "Suche nach Kunde oder Notizen...",
     "createButton": "Neuer Termin",
@@ -51,6 +54,13 @@
     "description": "Sind Sie sicher, dass Sie den Termin vom {{date}} löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
     "cancelButton": "Abbrechen",
     "confirmButton": "Löschen"
+  },
+  "completeDialog": {
+    "title": "Termin abschließen",
+    "description": "Sind Sie sicher, dass Sie den Termin für {{service}} am {{date}} als abgeschlossen markieren möchten?",
+    "cancelButton": "Abbrechen",
+    "confirmButton": "Abschließen",
+    "confirmingButton": "Wird abgeschlossen..."
   },
   "validation": {
     "dateRequired": "Datum und Uhrzeit sind erforderlich",

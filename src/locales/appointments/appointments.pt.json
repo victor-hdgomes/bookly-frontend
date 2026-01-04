@@ -32,6 +32,9 @@
     "emptyAppointmentsTitle": "Nenhum agendamento encontrado",
     "emptyAppointmentsDescription": "Crie seu primeiro agendamento para começar"
   },
+  "actions": {
+    "complete": "Concluir agendamento"
+  },
   "filters": {
     "searchPlaceholder": "Buscar por cliente ou observações...",
     "createButton": "Novo Agendamento",
@@ -51,6 +54,13 @@
     "description": "Tem certeza que deseja excluir o agendamento de {{date}}? Esta ação não pode ser desfeita.",
     "cancelButton": "Cancelar",
     "confirmButton": "Excluir"
+  },
+  "completeDialog": {
+    "title": "Concluir Agendamento",
+    "description": "Tem certeza que deseja marcar o agendamento de {{service}} em {{date}} como concluído?",
+    "cancelButton": "Cancelar",
+    "confirmButton": "Concluir",
+    "confirmingButton": "Concluindo..."
   },
   "validation": {
     "dateRequired": "A data e hora são obrigatórias",
