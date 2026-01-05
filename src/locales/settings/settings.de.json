@@ -1,0 +1,117 @@
+{
+  "title": "Unternehmenseinstellungen",
+  "subtitle": "Verwalten Sie die Informationen und Präferenzen Ihres Unternehmens",
+  "loading": "Einstellungen werden geladen...",
+  "tabs": {
+    "general": "Allgemein",
+    "workingHours": "Arbeitszeiten",
+    "subscription": "Abonnement"
+  },
+  "plans": {
+    "starter": "Starter",
+    "pro": "Pro",
+    "premium": "Premium"
+  },
+  "status": {
+    "active": "Aktiv",
+    "canceled": "Gekündigt",
+    "pastDue": "Zahlung Überfällig",
+    "trialing": "Testphase",
+    "incomplete": "Unvollständig"
+  },
+  "subscription": {
+    "loading": "Laden...",
+    "notFound": "Kein Abonnement gefunden",
+    "currentPlan": {
+      "title": "Aktuelles Abonnement",
+      "description": "Verwalten Sie Ihr Abonnement und Ihren Plan",
+      "free": "Kostenlos",
+      "perMonth": "/Monat",
+      "validUntil": "Gültig bis:",
+      "nextBilling": "Nächste Abrechnung:",
+      "cancelWarning": "Ihr Abonnement wird am Ende des Abrechnungszeitraums gekündigt",
+      "features": "Plan-Funktionen:",
+      "currentButton": "Aktueller Plan"
+    },
+    "actions": {
+      "cancelEndPeriod": "Am Ende des Zeitraums Kündigen",
+      "cancelImmediate": "Sofort Kündigen",
+      "reactivate": "Abonnement Reaktivieren",
+      "downgradeToFree": "Zurück zum Kostenlosen Plan",
+      "upgrade": "Upgrade",
+      "downgrade": "Downgrade",
+      "select": "Auswählen"
+    },
+    "availablePlans": {
+      "title": "Verfügbare Pläne"
+    },
+    "messages": {
+      "freePlan": {
+        "title": "Kostenloser Plan",
+        "description": "Der Starter-Plan ist kostenlos, keine Zahlung erforderlich"
+      },
+      "canceled": {
+        "title": "Abonnement gekündigt",
+        "endPeriod": "Ihr Abonnement wird am Ende des aktuellen Zeitraums gekündigt",
+        "immediate": "Ihr Abonnement wurde sofort gekündigt"
+      },
+      "reactivated": {
+        "title": "Abonnement reaktiviert",
+        "description": "Ihr Abonnement wurde erfolgreich reaktiviert"
+      },
+      "paymentRequired": {
+        "title": "Zahlung erforderlich",
+        "description": "Weiterleitung zur Kasse..."
+      },
+      "planChanged": {
+        "title": "Plan geändert",
+        "description": "Ihr Plan wurde erfolgreich geändert"
+      },
+      "alreadyFree": {
+        "title": "Hinweis",
+        "description": "Sie sind bereits im kostenlosen Plan"
+      },
+      "downgraded": {
+        "title": "Downgrade abgeschlossen",
+        "description": "Sie sind zum kostenlosen Starter-Plan zurückgekehrt"
+      }
+    },
+    "dialogs": {
+      "cancelImmediate": {
+        "title": "Abonnement sofort kündigen?",
+        "description": "Ihr Abonnement wird jetzt gekündigt und Sie kehren zum kostenlosen Starter-Plan zurück. Sie verlieren sofort den Zugriff auf Premium-Funktionen.",
+        "confirm": "Jetzt Kündigen"
+      },
+      "cancelEndPeriod": {
+        "title": "Am Ende des Zeitraums kündigen?",
+        "description": "Ihr Abonnement wird am {{date}} gekündigt. Sie behalten bis dahin Zugriff auf Premium-Funktionen.",
+        "descriptionNoDate": "Ihr Abonnement wird am Ende des aktuellen Zeitraums gekündigt. Sie behalten bis dahin Zugriff auf Premium-Funktionen.",
+        "confirm": "Kündigung Bestätigen"
+      },
+      "downgrade": {
+        "title": "Auf Starter downgraden?",
+        "description": "Sie kehren sofort zum kostenlosen Plan zurück und verlieren den Zugriff auf Premium-Funktionen.",
+        "confirm": "Downgrade Bestätigen"
+      },
+      "changePlanUpgrade": {
+        "title": "Auf {{plan}} upgraden?",
+        "description": "Sie werden zur Kasse weitergeleitet, um das Upgrade auf den {{plan}}-Plan abzuschließen ({{price}}€/Monat).",
+        "confirm": "Zur Kasse Gehen"
+      },
+      "changePlanDowngrade": {
+        "title": "Auf {{plan}} downgraden?",
+        "description": "Möchten Sie zum {{plan}}-Plan wechseln? Die Änderung wird sofort angewendet.",
+        "confirm": "Änderung Bestätigen"
+      },
+      "changePlan": {
+        "title": "Zum {{plan}}-Plan wechseln?",
+        "description": "Möchten Sie zum {{plan}}-Plan wechseln? Die Änderung wird sofort angewendet.",
+        "confirm": "Änderung Bestätigen"
+      }
+    }
+  },
+  "errors": {
+    "title": "Fehler",
+    "companyNotFound": "Unternehmens-ID nicht gefunden"
+  }
+}

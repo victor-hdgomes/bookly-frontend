@@ -1,0 +1,117 @@
+{
+  "title": "Configurações da Empresa",
+  "subtitle": "Gerencie as informações e preferências da sua empresa",
+  "loading": "Carregando configurações...",
+  "tabs": {
+    "general": "Geral",
+    "workingHours": "Horário",
+    "subscription": "Assinatura"
+  },
+  "plans": {
+    "starter": "Starter",
+    "pro": "Pro",
+    "premium": "Premium"
+  },
+  "status": {
+    "active": "Ativo",
+    "canceled": "Cancelado",
+    "pastDue": "Pagamento Atrasado",
+    "trialing": "Em Teste",
+    "incomplete": "Incompleto"
+  },
+  "subscription": {
+    "loading": "Carregando...",
+    "notFound": "Nenhuma assinatura encontrada",
+    "currentPlan": {
+      "title": "Assinatura Atual",
+      "description": "Gerencie sua assinatura e plano",
+      "free": "Gratuito",
+      "perMonth": "/mês",
+      "validUntil": "Válido até:",
+      "nextBilling": "Próxima cobrança:",
+      "cancelWarning": "Sua assinatura será cancelada no fim do período de cobrança",
+      "features": "Recursos do plano:",
+      "currentButton": "Plano Atual"
+    },
+    "actions": {
+      "cancelEndPeriod": "Cancelar no Fim do Período",
+      "cancelImmediate": "Cancelar Imediatamente",
+      "reactivate": "Reativar Assinatura",
+      "downgradeToFree": "Voltar para Plano Gratuito",
+      "upgrade": "Fazer Upgrade",
+      "downgrade": "Fazer Downgrade",
+      "select": "Selecionar"
+    },
+    "availablePlans": {
+      "title": "Planos Disponíveis"
+    },
+    "messages": {
+      "freePlan": {
+        "title": "Plano Gratuito",
+        "description": "O plano Starter é gratuito, não requer checkout"
+      },
+      "canceled": {
+        "title": "Assinatura cancelada",
+        "endPeriod": "Sua assinatura será cancelada no final do período atual",
+        "immediate": "Sua assinatura foi cancelada imediatamente"
+      },
+      "reactivated": {
+        "title": "Assinatura reativada",
+        "description": "Sua assinatura foi reativada com sucesso"
+      },
+      "paymentRequired": {
+        "title": "Pagamento necessário",
+        "description": "Redirecionando para checkout..."
+      },
+      "planChanged": {
+        "title": "Plano alterado",
+        "description": "Seu plano foi alterado com sucesso"
+      },
+      "alreadyFree": {
+        "title": "Aviso",
+        "description": "Você já está no plano gratuito"
+      },
+      "downgraded": {
+        "title": "Downgrade realizado",
+        "description": "Você voltou para o plano gratuito Starter"
+      }
+    },
+    "dialogs": {
+      "cancelImmediate": {
+        "title": "Cancelar assinatura imediatamente?",
+        "description": "Sua assinatura será cancelada agora e você voltará para o plano gratuito Starter. Você perderá acesso aos recursos premium imediatamente.",
+        "confirm": "Cancelar Agora"
+      },
+      "cancelEndPeriod": {
+        "title": "Cancelar no fim do período?",
+        "description": "Sua assinatura será cancelada em {{date}}. Você manterá acesso aos recursos premium até lá.",
+        "descriptionNoDate": "Sua assinatura será cancelada no fim do período atual. Você manterá acesso aos recursos premium até lá.",
+        "confirm": "Confirmar Cancelamento"
+      },
+      "downgrade": {
+        "title": "Fazer downgrade para Starter?",
+        "description": "Você voltará para o plano gratuito imediatamente e perderá acesso aos recursos premium.",
+        "confirm": "Confirmar Downgrade"
+      },
+      "changePlanUpgrade": {
+        "title": "Fazer upgrade para {{plan}}?",
+        "description": "Você será redirecionado para o checkout para completar o upgrade para o plano {{plan}} (R$ {{price}}/mês).",
+        "confirm": "Continuar para Checkout"
+      },
+      "changePlanDowngrade": {
+        "title": "Fazer downgrade para {{plan}}?",
+        "description": "Você deseja trocar para o plano {{plan}}? A mudança será aplicada imediatamente.",
+        "confirm": "Confirmar Mudança"
+      },
+      "changePlan": {
+        "title": "Trocar para plano {{plan}}?",
+        "description": "Você deseja trocar para o plano {{plan}}? A mudança será aplicada imediatamente.",
+        "confirm": "Confirmar Mudança"
+      }
+    }
+  },
+  "errors": {
+    "title": "Erro",
+    "companyNotFound": "ID da empresa não encontrado"
+  }
+}

@@ -1,6 +1,6 @@
 import { CLIENT_ROUTES, COMPANY_ROUTES } from "@/constants";
 import { TFunction } from "i18next";
-import { Home, User, FolderOpen, Package, Users, DollarSign, Calendar, Building2 } from "lucide-react";
+import { Home, User, FolderOpen, Package, Users, DollarSign, Calendar, Building2, Settings } from "lucide-react";
 
 export type NavSection = {
   title: string;
@@ -59,7 +59,7 @@ export function getNavSections(
         { label: t("services"), href: COMPANY_ROUTES.COMPANY_SERVICES, icon: <Package /> },
         { label: t("employees"), href: COMPANY_ROUTES.COMPANY_EMPLOYEES, icon: <Users /> },
         { label: t("transactions"), href: COMPANY_ROUTES.COMPANY_TRANSACTIONS, icon: <DollarSign /> },
-        // { label: t("plans"), href: "/panel/plans", icon: <CreditCard /> },
+        { label: t("settings"), href: COMPANY_ROUTES.COMPANY_SETTINGS, icon: <Settings /> },
       ],
     });
   }

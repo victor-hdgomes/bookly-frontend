@@ -10,6 +10,16 @@
     "searchPlaceholder": "Rechercher...",
     "allGroups": "Tous les groupes",
     "showInactive": "Afficher les inactifs",
-    "new": "Nouveau"
-  }
+    "new": "Nouveau"  },
+  "confirmDialog": {
+    "title": "Confirmer l'action",
+    "description": "Êtes-vous sûr de vouloir continuer?",
+    "confirm": "Confirmer",
+    "cancel": "Annuler"
+  },
+  "deleteDialog": {
+    "title": "Confirmer la suppression",
+    "description": "Cette action ne peut pas être annulée.",
+    "confirm": "Supprimer",
+    "cancel": "Annuler"  }
 }

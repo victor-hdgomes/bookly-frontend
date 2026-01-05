@@ -7,6 +7,7 @@ export { DataList } from "./DataList";
 export { ListItem } from "./ListItem";
 export { StatsCard } from "./StatsCard";
 export { DeleteConfirmDialog } from "./DeleteConfirmDialog";
+export { ConfirmDialog } from "./ConfirmDialog";
 export { NavigationProgress } from "./NavigationProgress";
 export * from "./DataTable";
 export * from "./DialogActions";

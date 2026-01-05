@@ -11,5 +11,17 @@
     "allGroups": "Todos os grupos",
     "showInactive": "Mostrar inativos",
     "new": "Novo"
+  },
+  "confirmDialog": {
+    "title": "Confirmar ação",
+    "description": "Tem certeza que deseja continuar?",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar"
+  },
+  "deleteDialog": {
+    "title": "Confirmar exclusão",
+    "description": "Esta ação não pode ser desfeita.",
+    "confirm": "Excluir",
+    "cancel": "Cancelar"
   }
 }

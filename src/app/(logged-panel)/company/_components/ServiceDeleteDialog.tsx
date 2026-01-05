@@ -1,22 +1,14 @@
 "use client";
 
+import { ConfirmDialog } from "@/components/globals";
 import { useTranslation } from "react-i18next";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
 
 interface ServiceDeleteDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   serviceName: string;
   onConfirm: () => Promise<void>;
+  isPending?: boolean;
 }
 
 export function ServiceDeleteDialog({
@@ -24,28 +16,22 @@ export function ServiceDeleteDialog({
   onOpenChange,
   serviceName,
   onConfirm,
+  isPending = false,
 }: ServiceDeleteDialogProps) {
   const { t } = useTranslation("services");
 
   return (
-    <AlertDialog open={open} onOpenChange={onOpenChange}>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogTitle>{t("deleteDialog.title")}</AlertDialogTitle>
-          <AlertDialogDescription>
-            {t("deleteDialog.description", { serviceName })}
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>{t("deleteDialog.cancelButton")}</AlertDialogCancel>
-          <AlertDialogAction
-            onClick={onConfirm}
-            className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
-          >
-            {t("deleteDialog.deleteButton")}
-          </AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    <ConfirmDialog
+      open={open}
+      onOpenChange={onOpenChange}
+      onConfirm={onConfirm}
+      title={t("deleteDialog.title")}
+      description={t("deleteDialog.description", { serviceName })}
+      confirmText={t("deleteDialog.deleteButton")}
+      cancelText={t("deleteDialog.cancelButton")}
+      variant="destructive"
+      isPending={isPending}
+      namespace="services"
+    />
   );
 }

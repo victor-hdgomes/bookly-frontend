@@ -5,4 +5,5 @@ export const COMPANY_ROUTES = {
   COMPANY_EMPLOYEES: '/company/employees',
   COMPANY_TRANSACTIONS: '/company/transactions',
   COMPANY_APPOINTMENTS: '/company/appointments',
+  COMPANY_SETTINGS: '/company/settings',
 } as const;

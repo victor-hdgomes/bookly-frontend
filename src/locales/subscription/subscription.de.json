@@ -1,0 +1,17 @@
+{
+  "result": {
+    "success": {
+      "title": "Zahlung Bestätigt!",
+      "description": "Ihr Abonnement wurde erfolgreich aktiviert",
+      "message1": "Sie erhalten eine Bestätigungs-E-Mail mit allen Details zu Ihrem Abonnement.",
+      "message2": "Jetzt können Sie alle Funktionen Ihres Plans nutzen!"
+    },
+    "cancel": {
+      "title": "Zahlung Abgebrochen",
+      "description": "Sie haben den Abonnementprozess abgebrochen",
+      "message1": "Keine Sorge! Sie können jederzeit zurückkehren, um einen unserer Pläne zu abonnieren.",
+      "message2": "Wenn Sie Fragen zu unseren Plänen haben, wenden Sie sich bitte an unseren Support."
+    },
+    "backToSettings": "Zurück zu Einstellungen"
+  }
+}

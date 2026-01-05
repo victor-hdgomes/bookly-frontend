@@ -1,0 +1,17 @@
+{
+  "result": {
+    "success": {
+      "title": "¡Pago Confirmado!",
+      "description": "Su suscripción ha sido activada con éxito",
+      "message1": "Recibirá un correo electrónico de confirmación con todos los detalles de su suscripción.",
+      "message2": "¡Ahora puede disfrutar de todas las funciones de su plan!"
+    },
+    "cancel": {
+      "title": "Pago Cancelado",
+      "description": "Ha cancelado el proceso de suscripción",
+      "message1": "¡No se preocupe! Puede volver en cualquier momento para suscribirse a uno de nuestros planes.",
+      "message2": "Si tiene alguna pregunta sobre nuestros planes, póngase en contacto con nuestro soporte."
+    },
+    "backToSettings": "Volver a Configuración"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "result": {
+    "success": {
+      "title": "Payment Confirmed!",
+      "description": "Your subscription has been successfully activated",
+      "message1": "You will receive a confirmation email with all the details of your subscription.",
+      "message2": "Now you can enjoy all the features of your plan!"
+    },
+    "cancel": {
+      "title": "Payment Cancelled",
+      "description": "You cancelled the subscription process",
+      "message1": "Don't worry! You can return at any time to subscribe to one of our plans.",
+      "message2": "If you have any questions about our plans, please contact our support."
+    },
+    "backToSettings": "Back to Settings"
+  }
+}

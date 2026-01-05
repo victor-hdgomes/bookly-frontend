@@ -1,0 +1,17 @@
+{
+  "result": {
+    "success": {
+      "title": "Pagamento Confermato!",
+      "description": "Il tuo abbonamento è stato attivato con successo",
+      "message1": "Riceverai un'email di conferma con tutti i dettagli del tuo abbonamento.",
+      "message2": "Ora puoi goderti tutte le funzionalità del tuo piano!"
+    },
+    "cancel": {
+      "title": "Pagamento Annullato",
+      "description": "Hai annullato il processo di abbonamento",
+      "message1": "Non preoccuparti! Puoi tornare in qualsiasi momento per abbonarti a uno dei nostri piani.",
+      "message2": "Se hai domande sui nostri piani, contatta il nostro supporto."
+    },
+    "backToSettings": "Torna alle Impostazioni"
+  }
+}

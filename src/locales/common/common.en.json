@@ -11,5 +11,17 @@
     "allGroups": "All groups",
     "showInactive": "Show inactive",
     "new": "New"
+  },
+  "confirmDialog": {
+    "title": "Confirm action",
+    "description": "Are you sure you want to continue?",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "deleteDialog": {
+    "title": "Confirm deletion",
+    "description": "This action cannot be undone.",
+    "confirm": "Delete",
+    "cancel": "Cancel"
   }
 }

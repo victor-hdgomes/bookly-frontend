@@ -1,0 +1,117 @@
+{
+  "title": "Company Settings",
+  "subtitle": "Manage your company's information and preferences",
+  "loading": "Loading settings...",
+  "tabs": {
+    "general": "General",
+    "workingHours": "Working Hours",
+    "subscription": "Subscription"
+  },
+  "plans": {
+    "starter": "Starter",
+    "pro": "Pro",
+    "premium": "Premium"
+  },
+  "status": {
+    "active": "Active",
+    "canceled": "Canceled",
+    "pastDue": "Past Due",
+    "trialing": "Trial",
+    "incomplete": "Incomplete"
+  },
+  "subscription": {
+    "loading": "Loading...",
+    "notFound": "No subscription found",
+    "currentPlan": {
+      "title": "Current Subscription",
+      "description": "Manage your subscription and plan",
+      "free": "Free",
+      "perMonth": "/month",
+      "validUntil": "Valid until:",
+      "nextBilling": "Next billing:",
+      "cancelWarning": "Your subscription will be canceled at the end of the billing period",
+      "features": "Plan features:",
+      "currentButton": "Current Plan"
+    },
+    "actions": {
+      "cancelEndPeriod": "Cancel at Period End",
+      "cancelImmediate": "Cancel Immediately",
+      "reactivate": "Reactivate Subscription",
+      "downgradeToFree": "Back to Free Plan",
+      "upgrade": "Upgrade",
+      "downgrade": "Downgrade",
+      "select": "Select"
+    },
+    "availablePlans": {
+      "title": "Available Plans"
+    },
+    "messages": {
+      "freePlan": {
+        "title": "Free Plan",
+        "description": "The Starter plan is free, no checkout required"
+      },
+      "canceled": {
+        "title": "Subscription canceled",
+        "endPeriod": "Your subscription will be canceled at the end of the current period",
+        "immediate": "Your subscription has been canceled immediately"
+      },
+      "reactivated": {
+        "title": "Subscription reactivated",
+        "description": "Your subscription has been successfully reactivated"
+      },
+      "paymentRequired": {
+        "title": "Payment required",
+        "description": "Redirecting to checkout..."
+      },
+      "planChanged": {
+        "title": "Plan changed",
+        "description": "Your plan has been successfully changed"
+      },
+      "alreadyFree": {
+        "title": "Notice",
+        "description": "You are already on the free plan"
+      },
+      "downgraded": {
+        "title": "Downgrade completed",
+        "description": "You have returned to the free Starter plan"
+      }
+    },
+    "dialogs": {
+      "cancelImmediate": {
+        "title": "Cancel subscription immediately?",
+        "description": "Your subscription will be canceled now and you will return to the free Starter plan. You will lose access to premium features immediately.",
+        "confirm": "Cancel Now"
+      },
+      "cancelEndPeriod": {
+        "title": "Cancel at end of period?",
+        "description": "Your subscription will be canceled on {{date}}. You will maintain access to premium features until then.",
+        "descriptionNoDate": "Your subscription will be canceled at the end of the current period. You will maintain access to premium features until then.",
+        "confirm": "Confirm Cancellation"
+      },
+      "downgrade": {
+        "title": "Downgrade to Starter?",
+        "description": "You will return to the free plan immediately and lose access to premium features.",
+        "confirm": "Confirm Downgrade"
+      },
+      "changePlanUpgrade": {
+        "title": "Upgrade to {{plan}}?",
+        "description": "You will be redirected to checkout to complete the upgrade to {{plan}} plan (${{price}}/month).",
+        "confirm": "Continue to Checkout"
+      },
+      "changePlanDowngrade": {
+        "title": "Downgrade to {{plan}}?",
+        "description": "Do you want to switch to {{plan}} plan? The change will be applied immediately.",
+        "confirm": "Confirm Change"
+      },
+      "changePlan": {
+        "title": "Switch to {{plan}} plan?",
+        "description": "Do you want to switch to {{plan}} plan? The change will be applied immediately.",
+        "confirm": "Confirm Change"
+      }
+    }
+  },
+  "errors": {
+    "title": "Error",
+    "companyNotFound": "Company ID not found"
+  }
+}

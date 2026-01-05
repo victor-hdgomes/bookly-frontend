@@ -1,11 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-
-interface Company {
-  id: string;
-  name: string;
-}
+import { Company } from "@/types/prisma-models";
 
 interface SelectedCompanyContextType {
   selectedCompanyId: string;

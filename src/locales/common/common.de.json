@@ -11,5 +11,17 @@
     "allGroups": "Alle Gruppen",
     "showInactive": "Inaktive anzeigen",
     "new": "Neu"
+  },
+  "confirmDialog": {
+    "title": "Aktion bestätigen",
+    "description": "Sind Sie sicher, dass Sie fortfahren möchten?",
+    "confirm": "Bestätigen",
+    "cancel": "Abbrechen"
+  },
+  "deleteDialog": {
+    "title": "Löschung bestätigen",
+    "description": "Diese Aktion kann nicht rückgängig gemacht werden.",
+    "confirm": "Löschen",
+    "cancel": "Abbrechen"
   }
 }

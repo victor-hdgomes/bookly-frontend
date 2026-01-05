@@ -1,0 +1,17 @@
+{
+  "result": {
+    "success": {
+      "title": "Pagamento Confirmado!",
+      "description": "Sua assinatura foi ativada com sucesso",
+      "message1": "Você receberá um email de confirmação com todos os detalhes da sua assinatura.",
+      "message2": "Agora você pode aproveitar todos os recursos do seu plano!"
+    },
+    "cancel": {
+      "title": "Pagamento Cancelado",
+      "description": "Você cancelou o processo de assinatura",
+      "message1": "Não se preocupe! Você pode retornar a qualquer momento para assinar um de nossos planos.",
+      "message2": "Se tiver alguma dúvida sobre nossos planos, entre em contato com nosso suporte."
+    },
+    "backToSettings": "Voltar para Configurações"
+  }
+}
