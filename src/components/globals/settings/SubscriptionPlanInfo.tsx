@@ -17,7 +17,7 @@ export function SubscriptionPlanInfo({ plan, planConfig }: SubscriptionPlanInfoP
       {planConfig && (
         <p className="text-muted-foreground">
           {planConfig.price > 0
-            ? `R$ ${planConfig.price.toFixed(2)}${t('subscription.currentPlan.perMonth')}`
+            ? `R$ ${Number(planConfig.price).toFixed(2)}${t('subscription.currentPlan.perMonth')}`
             : t('subscription.currentPlan.free')}
         </p>
       )}
