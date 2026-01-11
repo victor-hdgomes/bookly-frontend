@@ -45,7 +45,9 @@
     "clearFilters": "Limpiar filtros"
   },
   "list": {
-    "durationMinutes": "{{duration}} min"
+    "durationMinutes": "{{duration}} min",
+    "client": "Cliente",
+    "employee": "Empleado"
   },
   "deleteDialog": {
     "title": "Confirmar eliminación",

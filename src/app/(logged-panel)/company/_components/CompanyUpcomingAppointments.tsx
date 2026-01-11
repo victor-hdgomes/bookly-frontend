@@ -14,6 +14,7 @@ import { Calendar, Clock } from "lucide-react";
 import { UpcomingAppointment } from "@/types/dashboard.types";
 import { getUserDisplayName, getUserInitials } from "@/lib/user-utils";
 import { formatCurrency, formatDateTime } from "@/lib/date-utils";
+import { calculateFinalPrice, hasDiscount as checkHasDiscount } from "@/lib/price-utils";
 
 export function CompanyUpcomingAppointments({ appointments }: { appointments: UpcomingAppointment[] }) {
   const { t } = useTranslation('companyDashboard');
@@ -31,8 +32,8 @@ export function CompanyUpcomingAppointments({ appointments }: { appointments: Up
         ) : (
           <div className="space-y-3">
             {appointments.map((appointment) => {
-              const finalPrice = appointment.service.price - appointment.service.discount;
-              const hasDiscount = appointment.service.discount > 0;
+              const finalPrice = calculateFinalPrice(appointment.service.price, appointment.service.discount);
+              const hasDiscount = checkHasDiscount(appointment.service.discount);
 
               const content = (
                 <div className="flex items-center justify-between">
@@ -50,9 +51,14 @@ export function CompanyUpcomingAppointments({ appointments }: { appointments: Up
                       </span>
                       <div className="flex items-center gap-2">
                         {hasDiscount && (
-                          <Badge variant="outline" className="text-xs line-through text-muted-foreground">
-                            {formatCurrency(appointment.service.price)}
-                          </Badge>
+                          <>
+                            <Badge variant="destructive" className="text-xs">
+                              -{appointment.service.discount}%
+                            </Badge>
+                            <Badge variant="outline" className="text-xs line-through text-muted-foreground">
+                              {formatCurrency(appointment.service.price)}
+                            </Badge>
+                          </>
                         )}
                         <Badge variant="secondary" className="text-xs">
                           {formatCurrency(finalPrice)}

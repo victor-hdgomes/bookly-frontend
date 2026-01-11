@@ -61,7 +61,7 @@ export function EditAppointmentDialog({
       notes: appointment.notes || "",
       status: appointment.status,
       serviceId: appointment.serviceId,
-      userId: appointment.userId,
+      employeeId: appointment.employeeId || undefined,
     },
   });
 
@@ -100,7 +100,7 @@ export function EditAppointmentDialog({
 
             <EmployeeSelectField
               control={form.control}
-              name="userId"
+              name="employeeId"
               label={t("editDialog.employeeLabel")}
               employees={employeesResponse?.data}
             />

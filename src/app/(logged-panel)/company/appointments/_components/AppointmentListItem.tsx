@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Calendar, Clock, User, CheckCircle } from "lucide-react";
@@ -12,6 +10,7 @@ import { EditAppointmentDialog } from "./EditAppointmentDialog";
 import { useUpdateAppointment } from "@/hooks/company/appointments/useAppointments";
 import { APPOINTMENT_STATUS_COLORS } from "@/constants";
 import { getUserDisplayName } from "@/lib/user-utils";
+import { calculateFinalPrice, hasDiscount as checkHasDiscount } from "@/lib/price-utils";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
@@ -51,8 +50,8 @@ export function AppointmentListItem({
     { locale: ptBR }
   );
 
-  const finalPrice = appointment.service.price - (appointment.service.discount || 0);
-  const hasDiscount = (appointment.service.discount || 0) > 0;
+  const finalPrice = calculateFinalPrice(appointment.service.price, appointment.service.discount || 0);
+  const hasDiscount = checkHasDiscount(appointment.service.discount || 0);
 
   const statusColor = APPOINTMENT_STATUS_COLORS[appointment.status];
 
@@ -78,10 +77,18 @@ export function AppointmentListItem({
           <Calendar className="h-3 w-3" />
           {formattedDate}
         </span>
+      </div>
+      <div className="flex flex-wrap gap-4">
         <span className="flex items-center gap-1">
           <User className="h-3 w-3" />
-          {getUserDisplayName(appointment.user)}
+          <span className="font-medium">{t("list.client")}:</span> {getUserDisplayName(appointment.user)}
         </span>
+        {appointment.employee && (
+          <span className="flex items-center gap-1">
+            <User className="h-3 w-3" />
+            <span className="font-medium">{t("list.employee")}:</span> {getUserDisplayName(appointment.employee.user)}
+          </span>
+        )}
       </div>
       <div className="flex flex-wrap gap-4">
         <span className="flex items-center gap-1">

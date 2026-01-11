@@ -46,7 +46,7 @@ export function EmployeeSelectField<T extends FieldValues>({
             </FormControl>
             <SelectContent>
               {employees?.map((employee) => (
-                <SelectItem key={employee.id} value={employee.userId}>
+                <SelectItem key={employee.id} value={employee.id}>
                   {getEmployeeDisplayName(employee)}
                 </SelectItem>
               ))}

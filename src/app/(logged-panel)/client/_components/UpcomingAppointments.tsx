@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import {
   Card,
@@ -13,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import { Calendar, Clock } from "lucide-react";
 import { useDateFormat } from "@/hooks";
 import { formatCurrency, formatDateTimeWithLocale } from "@/lib/date-utils";
+import { calculateFinalPrice, hasDiscount as checkHasDiscount } from "@/lib/price-utils";
 import { getInitials } from "@/lib/user-utils";
 import { UpcomingAppointment } from "@/types/dashboard.types";
 import { useDeleteAppointment } from "@/hooks/company/appointments";
@@ -54,8 +53,8 @@ export function UpcomingAppointments({ appointments }: { appointments: UpcomingA
         ) : (
           <div className="space-y-3">
             {appointments.map((appointment) => {
-              const finalPrice = appointment.service.price - appointment.service.discount;
-              const hasDiscount = appointment.service.discount > 0;
+              const finalPrice = calculateFinalPrice(appointment.service.price, appointment.service.discount);
+              const hasDiscount = checkHasDiscount(appointment.service.discount);
 
               const content = (
                 <div className="flex flex-col gap-2 text-sm text-muted-foreground mt-1">

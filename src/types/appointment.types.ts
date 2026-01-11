@@ -14,6 +14,7 @@ export interface Appointment {
   companyId: string;
   serviceId: string;
   userId: string;
+  employeeId: string | null;
   service: {
     id: string;
     name: string;
@@ -34,6 +35,19 @@ export interface Appointment {
     email: string;
     photo: string | null;
   };
+  employee: {
+    id: string;
+    userId: string;
+    position: string | null;
+    user: {
+      id: string;
+      firstName: string | null;
+      lastName: string | null;
+      displayName: string | null;
+      email: string;
+      photo: string | null;
+    };
+  } | null;
 }
 
 export interface CreateAppointmentPayload {
@@ -49,7 +63,7 @@ export interface UpdateAppointmentPayload {
   notes?: string;
   status?: AppointmentStatus;
   serviceId?: string;
-  userId?: string;
+  employeeId?: string;
 }
 
 export interface AppointmentsResponse {

@@ -4,6 +4,7 @@ import { Clock, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Service } from "@/types/service-group.types";
 import { useCurrency } from "@/hooks/useCurrency";
+import { calculateFinalPrice } from "@/lib/price-utils";
 import { useTranslation } from "react-i18next";
 
 interface ServiceCardProps {
@@ -16,7 +17,7 @@ export function ServiceCard({ service, isSelected, onSelect }: ServiceCardProps)
   const { formatCurrency } = useCurrency();
   const { t } = useTranslation("booking");
   
-  const finalPrice = service.price - (service.discount || 0);
+  const finalPrice = calculateFinalPrice(service.price, service.discount || 0);
 
   return (
     <Card
@@ -31,8 +32,8 @@ export function ServiceCard({ service, isSelected, onSelect }: ServiceCardProps)
           <div className="flex items-center gap-2">
             <h4 className="font-semibold">{service.name}</h4>
             {service.discount > 0 && (
-              <Badge variant="secondary" className="text-xs">
-                -{formatCurrency(service.discount)}
+              <Badge variant="destructive" className="text-xs">
+                -{service.discount}%
               </Badge>
             )}
           </div>

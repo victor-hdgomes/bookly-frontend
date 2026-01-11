@@ -31,9 +31,11 @@
     "description": "Gérer tous les rendez-vous de l'entreprise",
     "emptyAppointmentsTitle": "Aucun rendez-vous trouvé",
     "emptyAppointmentsDescription": "Créez votre premier rendez-vous pour commencer"
-  },  "actions": {
+  },
+  "actions": {
     "complete": "Terminer le rendez-vous"
-  },  "filters": {
+  },
+  "filters": {
     "searchPlaceholder": "Rechercher par client ou notes...",
     "createButton": "Nouveau Rendez-vous",
     "servicePlaceholder": "Filtrer par service",
@@ -45,7 +47,9 @@
     "clearFilters": "Effacer les filtres"
   },
   "list": {
-    "durationMinutes": "{{duration}} min"
+    "durationMinutes": "{{duration}} min",
+    "client": "Client",
+    "employee": "Employé"
   },
   "deleteDialog": {
     "title": "Confirmer la suppression",

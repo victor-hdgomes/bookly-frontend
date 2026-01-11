@@ -5,7 +5,7 @@ export const createAppointmentSchema = z.object({
   date: z.string().min(1, "validation.dateRequired"),
   notes: z.string().optional(),
   serviceId: z.string().min(1, "validation.serviceRequired"),
-  userId: z.string().min(1, "validation.employeeRequired"),
+  employeeId: z.string().optional(),
 });
 
 export type CreateAppointmentFormData = z.infer<typeof createAppointmentSchema>;
@@ -15,7 +15,7 @@ export const updateAppointmentSchema = z.object({
   notes: z.string().optional(),
   status: z.nativeEnum(AppointmentStatus).optional(),
   serviceId: z.string().optional(),
-  userId: z.string().optional(),
+  employeeId: z.string().optional(),
 });
 
 export type UpdateAppointmentFormData = z.infer<typeof updateAppointmentSchema>;

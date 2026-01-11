@@ -11,7 +11,7 @@ export enum BookingStep {
 export function useBookingState() {
   const [currentStep, setCurrentStep] = useState<BookingStep>(BookingStep.SERVICE);
   const [selectedService, setSelectedService] = useState<Service | null>(null);
-  const [selectedEmployeeId, setSelectedEmployeeId] = useState<string | null | undefined>(undefined);
+  const [selectedEmployeeId, setSelectedEmployeeId] = useState<string | null>("");
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [notes, setNotes] = useState("");
