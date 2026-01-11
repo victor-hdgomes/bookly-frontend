@@ -27,6 +27,12 @@
   "toast": {
     "employeeRemoved": "Mitarbeiter entfernt",
     "employeeRemovedDescription": "Der Mitarbeiter wurde erfolgreich aus dem Unternehmen entfernt.",
+    "employeeActivated": "Mitarbeiter aktiviert",
+    "employeeActivatedDescription": "Der Mitarbeiter wurde erfolgreich aktiviert.",
+    "employeeDeactivated": "Mitarbeiter deaktiviert",
+    "employeeDeactivatedDescription": "Der Mitarbeiter wurde erfolgreich deaktiviert.",
+    "error": "Fehler",
+    "errorDescription": "Bei der Verarbeitung der Anfrage ist ein Fehler aufgetreten.",
     "employeeAdded": "Mitarbeiter hinzugefügt",
     "employeeAddedDescription": "Der Mitarbeiter wurde erfolgreich dem Unternehmen hinzugefügt.",
     "errorRemoving": "Fehler beim Entfernen des Mitarbeiters",

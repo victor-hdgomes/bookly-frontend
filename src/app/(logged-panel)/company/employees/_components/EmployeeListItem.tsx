@@ -7,9 +7,10 @@ import { ListItem } from "@/components/globals";
 interface EmployeeListItemProps {
   employee: Employee;
   onDelete: (employeeId: string) => void;
+  onToggleStatus: (employeeId: string) => void;
 }
 
-export function EmployeeListItem({ employee, onDelete }: EmployeeListItemProps) {
+export function EmployeeListItem({ employee, onDelete, onToggleStatus }: EmployeeListItemProps) {
   const displayName = employee.user.displayName || 
     `${employee.user.firstName} ${employee.user.lastName}`;
   
@@ -29,6 +30,7 @@ export function EmployeeListItem({ employee, onDelete }: EmployeeListItemProps) 
           <Badge variant="secondary">{employee.position}</Badge>
         ) : null
       }
+      onToggleStatus={() => onToggleStatus(employee.id)}
       onDelete={() => onDelete(employee.id)}
       className="p-4"
     />

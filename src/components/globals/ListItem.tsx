@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { Pencil, Trash2 } from "lucide-react";
+import { Pencil, Trash2, Power } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -18,6 +18,7 @@ interface ListItemProps {
   content?: ReactNode;
   onEdit?: () => void;
   onDelete?: () => void;
+  onToggleStatus?: () => void;
   customActions?: ReactNode;
   className?: string;
 }
@@ -32,6 +33,7 @@ export function ListItem({
   content,
   onEdit,
   onDelete,
+  onToggleStatus,
   customActions,
   className = ""
 }: ListItemProps) {
@@ -64,9 +66,19 @@ export function ListItem({
         </div>
       </div>
       
-      {(onEdit || onDelete || customActions) && (
+      {(onEdit || onDelete || onToggleStatus || customActions) && (
         <div className="flex items-center gap-1">
           {customActions}
+          {onToggleStatus && (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={onToggleStatus}
+              title={isActive ? "Desativar" : "Ativar"}
+            >
+              <Power className={`h-4 w-4 ${isActive ? 'text-green-600' : 'text-gray-400'}`} />
+            </Button>
+          )}
           {onEdit && (
             <Button
               variant="ghost"

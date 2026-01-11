@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Users } from "lucide-react";
 import { useSelectedCompanyContext } from "@/contexts/SelectedCompanyContext";
-import { useEmployees, useDeleteEmployee } from "@/hooks/company/employees";
+import { useEmployees, useDeleteEmployee, useToggleEmployeeStatus } from "@/hooks/company/employees";
 import { LoadingState, ErrorState, EmptyState } from "@/components/states";
 import { PageHeader, EmployeeFilters, DataList, DeleteConfirmDialog } from "@/components/globals";
 import { AddEmployeeDialog } from "./_components/AddEmployeeDialog";
@@ -32,6 +32,7 @@ export default function EmployeesPage() {
   });
   
   const deleteEmployee = useDeleteEmployee();
+  const toggleEmployeeStatus = useToggleEmployeeStatus();
 
   const handleDeleteEmployee = async () => {
     if (!employeeToDelete || !selectedCompany?.id) return;
@@ -47,6 +48,20 @@ export default function EmployeesPage() {
     });
     
     setEmployeeToDelete(null);
+  };
+
+  const handleToggleEmployeeStatus = async (employeeId: string) => {
+    const employee = employees.find(emp => emp.id === employeeId);
+    const newStatus = !employee?.isActive;
+
+    await toggleEmployeeStatus.mutateAsync({ employeeId });
+    
+    toast({
+      title: newStatus ? t("toast.employeeActivated") : t("toast.employeeDeactivated"),
+      description: newStatus 
+        ? t("toast.employeeActivatedDescription") 
+        : t("toast.employeeDeactivatedDescription"),
+    });
   };
 
   if (isLoading) {
@@ -93,6 +108,7 @@ export default function EmployeesPage() {
           <EmployeeListItem
             employee={employee}
             onDelete={setEmployeeToDelete}
+            onToggleStatus={handleToggleEmployeeStatus}
           />
         )}
         emptyState={{

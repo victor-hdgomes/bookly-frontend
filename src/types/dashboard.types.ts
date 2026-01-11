@@ -16,6 +16,7 @@ export interface AppointmentService {
   id: string;
   name: string;
   price: number;
+  discount: number;
   duration: number;
 }
 

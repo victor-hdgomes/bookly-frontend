@@ -10,6 +10,7 @@ export const EMPLOYEES_ENDPOINTS = {
   LIST_BY_COMPANY: (companyId: string) => `/employees/${companyId}`,
   CREATE: '/employees',
   UPDATE: (employeeId: string) => `/employees/${employeeId}`,
+  TOGGLE_STATUS: (employeeId: string) => `/employees/${employeeId}/toggle-status`,
   DELETE: (employeeId: string) => `/employees/${employeeId}`,
   SEARCH_USER: '/employees/search-user',
   STATS: (companyId: string) => `/employees/company/${companyId}/stats`,

@@ -54,6 +54,9 @@ export function UpcomingAppointments({ appointments }: { appointments: UpcomingA
         ) : (
           <div className="space-y-3">
             {appointments.map((appointment) => {
+              const finalPrice = appointment.service.price - appointment.service.discount;
+              const hasDiscount = appointment.service.discount > 0;
+
               const content = (
                 <div className="flex flex-col gap-2 text-sm text-muted-foreground mt-1">
                   <div className="flex flex-wrap gap-6">
@@ -67,9 +70,16 @@ export function UpcomingAppointments({ appointments }: { appointments: UpcomingA
                       <Clock className="h-3 w-3" />
                       {t('upcomingAppointments.duration', { duration: appointment.service.duration })}
                     </span>
-                    <Badge variant="secondary" className="text-xs">
-                      {formatCurrency(appointment.service.price)}
-                    </Badge>
+                    <div className="flex items-center gap-2">
+                      {hasDiscount && (
+                        <Badge variant="outline" className="text-xs line-through text-muted-foreground">
+                          {formatCurrency(appointment.service.price)}
+                        </Badge>
+                      )}
+                      <Badge variant="secondary" className="text-xs">
+                        {formatCurrency(finalPrice)}
+                      </Badge>
+                    </div>
                   </div>
                   {appointment.notes && (
                     <p className="text-xs italic mt-1">{appointment.notes}</p>
