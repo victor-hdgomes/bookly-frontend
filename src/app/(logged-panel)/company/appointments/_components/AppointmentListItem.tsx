@@ -51,6 +51,9 @@ export function AppointmentListItem({
     { locale: ptBR }
   );
 
+  const finalPrice = appointment.service.price - (appointment.service.discount || 0);
+  const hasDiscount = (appointment.service.discount || 0) > 0;
+
   const statusColor = APPOINTMENT_STATUS_COLORS[appointment.status];
 
   const badges = (
@@ -85,12 +88,22 @@ export function AppointmentListItem({
           <Clock className="h-3 w-3" />
           {t("list.durationMinutes", { duration: appointment.service.duration })}
         </span>
-        <span className="font-medium">
-          {appointment.service.price.toLocaleString("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          })}
-        </span>
+        <div className="flex items-center gap-2">
+          {hasDiscount && (
+            <span className="line-through text-muted-foreground text-xs">
+              {appointment.service.price.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </span>
+          )}
+          <span className={`font-medium ${hasDiscount ? "text-green-600" : ""}`}>
+            {finalPrice.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </span>
+        </div>
       </div>
       {appointment.notes && (
         <p className="text-xs italic mt-1">{appointment.notes}</p>
