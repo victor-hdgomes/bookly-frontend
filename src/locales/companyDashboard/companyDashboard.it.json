@@ -31,6 +31,17 @@
     "duration": "{{duration}} min",
     "client": "Cliente",
     "employee": "Dipendente"
+  },
+  "dashboard": {
+    "locked": {
+      "title": "Dashboard Premium",
+      "subtitle": "Sblocca metriche avanzate e insights potenti per il tuo business",
+      "currentPlan": "Piano Attuale",
+      "popular": "Popolare",
+      "complete": "Completo",
+      "upgrade": "Aggiorna Ora",
+      "viewPlans": "Visualizza Piani e Prezzi"
+    }
   }
 }
 

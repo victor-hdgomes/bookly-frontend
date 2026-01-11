@@ -31,6 +31,32 @@
     "duration": "{{duration}} min",
     "client": "Cliente",
     "employee": "Funcionário"
+  },
+  "dashboard": {
+    "locked": {
+      "title": "Dashboard Premium",
+      "subtitle": "Desbloqueie métricas avançadas e insights poderosos para seu negócio",
+      "currentPlan": "Plano Atual",
+      "popular": "Popular",
+      "complete": "Completo",
+      "upgrade": "Fazer Upgrade Agora",
+      "viewPlans": "Ver Planos e Preços",
+      "features": {
+        "pro": {
+          "complete": "Dashboard completo com métricas",
+          "employees": "Até 10 funcionários",
+          "reports": "Relatórios avançados",
+          "support": "Suporte prioritário"
+        },
+        "premium": {
+          "all": "Tudo do PRO +",
+          "employees": "Até 50 funcionários",
+          "analytics": "Analytics em tempo real",
+          "api": "API personalizada",
+          "support": "Suporte 24/7"
+        }
+      }
+    }
   }
 }
 

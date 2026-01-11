@@ -31,6 +31,32 @@
     "duration": "{{duration}} min",
     "client": "Client",
     "employee": "Employee"
+  },
+  "dashboard": {
+    "locked": {
+      "title": "Premium Dashboard",
+      "subtitle": "Unlock advanced metrics and powerful insights for your business",
+      "currentPlan": "Current Plan",
+      "popular": "Popular",
+      "complete": "Complete",
+      "upgrade": "Upgrade Now",
+      "viewPlans": "View Plans & Pricing",
+      "features": {
+        "pro": {
+          "complete": "Complete dashboard with metrics",
+          "employees": "Up to 10 employees",
+          "reports": "Advanced reports",
+          "support": "Priority support"
+        },
+        "premium": {
+          "all": "Everything in PRO +",
+          "employees": "Up to 50 employees",
+          "analytics": "Real-time analytics",
+          "api": "Custom API",
+          "support": "24/7 support"
+        }
+      }
+    }
   }
 }
 

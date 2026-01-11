@@ -6,8 +6,10 @@ import { useCompanyDashboard } from "@/hooks/company/dashboard/useCompanyDashboa
 import { CompanyStatsCards } from "../_components/CompanyStatsCards";
 import { CompanyUpcomingAppointments } from "../_components/CompanyUpcomingAppointments";
 import { EmployeeStatsSection } from "./_components/EmployeeStatsSection";
+import { DashboardGuard } from "./_components/DashboardGuard";
 import { LoadingState, ErrorState, EmptyState } from "@/components/states";
 import { PageHeader } from "@/components/globals";
+import { Plan } from "@/types/subscription.types";
 
 export default function CompanyDashboard() {
   const { t } = useTranslation('companyDashboard');
@@ -45,14 +47,20 @@ export default function CompanyDashboard() {
         showCompanySelector
       />
 
-      <CompanyStatsCards
-        appointmentsStats={data?.appointmentsStats || { total: 0, scheduled: 0, completed: 0, canceled: 0 }}
-        companyStats={data?.stats || { totalServices: 0, totalRevenue: 0 }}
-      />
+      <DashboardGuard
+        hasAccess={data?.hasAccess ?? true}
+        currentPlan={data?.plan ?? Plan.STARTER}
+        companyId={selectedCompanyId}
+      >
+        <CompanyStatsCards
+          appointmentsStats={data?.appointmentsStats || { total: 0, scheduled: 0, completed: 0, canceled: 0 }}
+          companyStats={data?.stats || { totalServices: 0, totalRevenue: 0 }}
+        />
 
-      <CompanyUpcomingAppointments appointments={data?.upcomingAppointments || []} />
+        <CompanyUpcomingAppointments appointments={data?.upcomingAppointments || []} />
 
-      <EmployeeStatsSection />
+        <EmployeeStatsSection />
+      </DashboardGuard>
     </div>
   );
 }

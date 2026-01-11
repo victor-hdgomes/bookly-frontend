@@ -31,6 +31,17 @@
     "duration": "{{duration}} Min",
     "client": "Kunde",
     "employee": "Mitarbeiter"
+  },
+  "dashboard": {
+    "locked": {
+      "title": "Premium-Dashboard",
+      "subtitle": "Schalten Sie erweiterte Metriken und leistungsstarke Einblicke für Ihr Unternehmen frei",
+      "currentPlan": "Aktueller Plan",
+      "popular": "Beliebt",
+      "complete": "Vollständig",
+      "upgrade": "Jetzt Upgraden",
+      "viewPlans": "Pläne und Preise Ansehen"
+    }
   }
 }
 

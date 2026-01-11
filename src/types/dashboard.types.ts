@@ -42,6 +42,9 @@ export interface CompanyStats {
 }
 
 export interface CompanyDashboardData {
+  hasAccess: boolean;
+  plan: string;
+  requiresUpgrade: boolean;
   appointmentsStats: AppointmentStats;
   upcomingAppointments: UpcomingAppointment[];
   stats: CompanyStats;

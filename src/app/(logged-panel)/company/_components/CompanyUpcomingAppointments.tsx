@@ -19,7 +19,7 @@ export function CompanyUpcomingAppointments({ appointments }: { appointments: Up
   const { t } = useTranslation('companyDashboard');
 
   return (
-    <Card>
+    <Card className="my-4">
       <CardHeader>
         <CardTitle>{t('upcomingAppointments.title')}</CardTitle>
       </CardHeader>
