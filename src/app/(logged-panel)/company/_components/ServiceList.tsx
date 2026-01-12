@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslation } from "react-i18next";
 import { Service } from "@/types/service-group.types";
 import { useDeleteService } from "@/hooks/company/services/useDeleteService";
 import { ServiceListItem } from "./ServiceListItem";
@@ -11,7 +10,6 @@ interface ServiceListProps {
 }
 
 export function ServiceList({ services, companyId }: ServiceListProps) {
-  const { t } = useTranslation("services");
   const deleteService = useDeleteService();
 
   const handleDelete = async (serviceId: string, serviceName: string) => {

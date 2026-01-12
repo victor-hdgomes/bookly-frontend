@@ -23,5 +23,8 @@
     "description": "Esta ação não pode ser desfeita.",
     "confirm": "Excluir",
     "cancel": "Cancelar"
+  },
+  "auth": {
+    "authenticating": "Autenticando..."
   }
 }

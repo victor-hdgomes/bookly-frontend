@@ -23,5 +23,8 @@
     "description": "This action cannot be undone.",
     "confirm": "Delete",
     "cancel": "Cancel"
+  },
+  "auth": {
+    "authenticating": "Authenticating..."
   }
 }

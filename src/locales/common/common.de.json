@@ -23,5 +23,8 @@
     "description": "Diese Aktion kann nicht rückgängig gemacht werden.",
     "confirm": "Löschen",
     "cancel": "Abbrechen"
+  },
+  "auth": {
+    "authenticating": "Authentifizierung..."
   }
 }

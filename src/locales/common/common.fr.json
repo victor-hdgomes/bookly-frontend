@@ -21,5 +21,9 @@
     "title": "Confirmer la suppression",
     "description": "Cette action ne peut pas être annulée.",
     "confirm": "Supprimer",
-    "cancel": "Annuler"  }
+    "cancel": "Annuler"
+  },
+  "auth": {
+    "authenticating": "Authentification..."
+  }
 }

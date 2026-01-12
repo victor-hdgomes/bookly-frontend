@@ -23,5 +23,8 @@
     "description": "Questa azione non può essere annullata.",
     "confirm": "Elimina",
     "cancel": "Annulla"
+  },
+  "auth": {
+    "authenticating": "Autenticazione..."
   }
 }

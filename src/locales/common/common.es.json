@@ -23,5 +23,8 @@
     "description": "Esta acción no se puede deshacer.",
     "confirm": "Eliminar",
     "cancel": "Cancelar"
+  },
+  "auth": {
+    "authenticating": "Autenticando..."
   }
 }
