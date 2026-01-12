@@ -8,4 +8,5 @@ export { PageWithTableSkeleton } from './PageWithTableSkeleton';
 export { PageWithStatsSkeleton } from './PageWithStatsSkeleton';
 export { PageWithFormSkeleton } from './PageWithFormSkeleton';
 export { DashboardSkeleton } from './DashboardSkeleton';
+export { LoadingSpinner } from './LoadingSpinner';
 

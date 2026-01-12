@@ -1,4 +1,5 @@
 import { useRouter } from "next/navigation";
+import { Dispatch, SetStateAction } from "react";
 import { Service } from "@/types/service-group.types";
 import { BookingStep } from "./useBookingState";
 
@@ -6,7 +7,7 @@ interface UseBookingNavigationProps {
   currentStep: BookingStep;
   setCurrentStep: (step: BookingStep) => void;
   setSelectedService: (service: Service | null) => void;
-  setSelectedEmployeeId: (id: string | null | undefined) => void;
+  setSelectedEmployeeId: Dispatch<SetStateAction<string | null>>;
   setSelectedDate: (date: Date | null) => void;
   setSelectedTime: (time: string | null) => void;
 }

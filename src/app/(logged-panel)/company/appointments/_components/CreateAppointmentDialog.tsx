@@ -56,7 +56,6 @@ export function CreateAppointmentDialog({
       date: "",
       notes: "",
       serviceId: "",
-      userId: "",
     },
   });
 
@@ -92,7 +91,7 @@ export function CreateAppointmentDialog({
 
             <EmployeeSelectField
               control={form.control}
-              name="userId"
+              name="employeeId"
               label={t("createDialog.employeeLabel")}
               employees={employeesResponse?.data}
             />
